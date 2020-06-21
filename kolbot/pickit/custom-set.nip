@@ -75,12 +75,12 @@
 //[name] == crown && [quality] == set # [maxhp] == 15 && [maxmana] == 15 // milabrega's diadem
 
 // # (西剛的全套刀劍)sigon's steel #
-[name] == greathelm && [quality] == set // sigon's visor
-[name] == gothicplate && [quality] == set // sigon's shelter
-[name] == greaves && [quality] == set // sigon's sabot
-[name] == towershield && [quality] == set // sigon's guard
-[name] == platedbelt && [quality] == set // sigon's warp
-[name] == gauntlets && [quality] == set // sigon's gage
+//[name] == greathelm && [quality] == set // sigon's visor
+//[name] == gothicplate && [quality] == set // sigon's shelter
+//[name] == greaves && [quality] == set // sigon's sabot
+//[name] == towershield && [quality] == set // sigon's guard
+//[name] == platedbelt && [quality] == set // sigon's warp
+//[name] == gauntlets && [quality] == set // sigon's gage
 
 // # (坦克雷的戰鬥工具)tancred's battlegear #
 //[name] == bonehelm && [quality] == set // tancred's skull
@@ -111,29 +111,29 @@
 [name] == heavyboots && [quality] == set # [dexterity] == 20 && [itemmagicbonus] == 25 // cow king's hooves
 
 // # (門徒)the disciple #
-[type] == amulet && [quality] == set # [itemallskills] == 1 && [coldresist] == 18 // telling of beads
-[name] == bramblemitts && [quality] == set // laying of hands
-[name] == duskshroud && [quality] == set // dark adherent
-[name] == demonhideboots && [quality] == set // rite of passage
+//[type] == amulet && [quality] == set # [itemallskills] == 1 && [coldresist] == 18 // telling of beads
+//[name] == bramblemitts && [quality] == set // laying of hands
+//[name] == duskshroud && [quality] == set // dark adherent
+//[name] == demonhideboots && [quality] == set // rite of passage
 [name] == mithrilcoil && [quality] == set // credendum
 
 // # (格瑞斯華爾德的傳奇)griswold's legacy #
-[name] == ornateplate && [quality] == set # [defense] >= 920 // griswold's heart
+//[name] == ornateplate && [quality] == set # [defense] >= 920 // griswold's heart
 [name] == corona && [quality] == set # [enhanceddefense] >= 55 // griswold's valor
 [name] == caduceus && [quality] == set # [sockets] >= 3 && [enhanceddamage] >= 200 // griswold's redemption
 [name] == vortexshield && [quality] == set # [defense] >= 290 // griswold's honor
 
 // # (天堂的信徒)heaven's brethren #
-[name] == cuirass && [quality] == set // haemosu's adamant
-[name] == reinforcedmace && [quality] == set // dangoon's teaching
-[name] == ward && [quality] == set // taebaek's glory
-[name] == spiredhelm && [quality] == set // ondal's almighty
+//[name] == cuirass && [quality] == set // haemosu's adamant
+//[name] == reinforcedmace && [quality] == set // dangoon's teaching
+//[name] == ward && [quality] == set // taebaek's glory
+//[name] == spiredhelm && [quality] == set // ondal's almighty
 
 // # (華寧的威嚴)hwanin's majesty #
-[name] == grandcrown && [quality] == set // hwanin's splendor
-[name] == bill && [quality] == set // hwanin's justice
-[name] == tigulatedmail && [quality] == set // hwanin's refuge
-[name] == belt && [quality] == set # [lightmindam] == 3 && [lightmaxdam] == 33 // hwanin's blessing
+//[name] == grandcrown && [quality] == set // hwanin's splendor
+//[name] == bill && [quality] == set // hwanin's justice
+//[name] == tigulatedmail && [quality] == set // hwanin's refuge
+//[name] == belt && [quality] == set # [lightmindam] == 3 && [lightmaxdam] == 33 // hwanin's blessing
 
 // # (不朽之王)immortal king #
 [name] == warbelt && [quality] == set // immortal king's detail
@@ -157,28 +157,29 @@
 [name] == meshboots && [quality] == set // natalya's soul
 
 // # (娜吉的古代遺跡)naj's ancient vestige #
-[name] == circlet && [quality] == set // naj's circlet
-[name] == hellforgeplate && [quality] == set // naj's light plate
-[name] == elderstaff && [quality] == set // naj's puzzler
+//[name] == circlet && [quality] == set // naj's circlet
+//[name] == hellforgeplate && [quality] == set // naj's light plate
+//[name] == elderstaff && [quality] == set // naj's puzzler
 
 // # (孤兒的呼喚)orphan's call #
-[name] == wingedhelm && [quality] == set // guillaume's face
-[name] == roundshield && [quality] == set // whistan's guard
-[name] == sharkskingloves && [quality] == set // magnus' skin
-[name] == battlebelt && [quality] == set // wilhelm's pride
+//[name] == wingedhelm && [quality] == set // guillaume's face
+//[name] == roundshield && [quality] == set // whistan's guard
+//[name] == sharkskingloves && [quality] == set // magnus' skin
+//[name] == battlebelt && [quality] == set // wilhelm's pride
 
 // # (山德的愚行)sander's folly #
-[name] == cap && [quality] == set # [itemmagicbonus] == 35 // sander's paragon
-[name] == bonewand && [quality] == set // sander's superstition
-[name] == heavygloves && [quality] == set # [maxhp] == 40 // sander's taboo
-[name] == heavyboots && [quality] == set # [dexterity] == 10 && [strength] == 5 // sander's riprap
+//[name] == cap && [quality] == set # [itemmagicbonus] == 35 // sander's paragon
+//[name] == bonewand && [quality] == set // sander's superstition
+//[name] == heavygloves && [quality] == set # [maxhp] == 40 // sander's taboo
+//[name] == heavyboots && [quality] == set # [dexterity] == 10 && [strength] == 5 // sander's riprap
 
 // # (沙撒璧的雄偉貢品)sazabi's grand tribute #
-[name] == basinet && [quality] == set // sazabi's mental sheath
-[name] == crypticsword && [quality] == set // sazabi's cobalt redeemer
-[name] == balrogskin && [quality] == set // sazabi's ghost liberator
+//[name] == basinet && [quality] == set // sazabi's mental sheath
+//[name] == crypticsword && [quality] == set // sazabi's cobalt redeemer
+//[name] == balrogskin && [quality] == set // sazabi's ghost liberator
 
 // # (塔.拉夏的外袍)tal rasha's wrappings #
+[name] == swirlingcrystal && [quality] == set //1-2 tal rasha's lidless eye
 [name] == swirlingcrystal && [quality] == set # [skilllightningmastery] >= 2 && [skillcoldmastery] >= 2 && [skillfiremastery] >= 2 //1-2 tal rasha's lidless eye
 [name] == deathmask && [quality] == set # [defense] >= 100 //99-131 tal rasha's horadric crest
 [name] == lacqueredplate && [quality] == set # [defense] >= 833 // 833-941 tal rasha's guardianship

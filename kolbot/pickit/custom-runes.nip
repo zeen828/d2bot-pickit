@@ -1,25 +1,28 @@
+//-----------------------------------------------------------------------------------------------------
+// 雜項
+// -----------------------------------------------------------------------------------------------------
 
-//scrolls
-[name] == scrolloftownportal 
+//(卷軸)scrolls
+[name] == scrolloftownportal
 //[name] == scrollofidentify
 
 //chest key
 //[name] == key # # [maxquantity] == 12
 
-//uber quest keys
-//[name] == keyofterror
-//[name] == keyofhate
-//[name] == keyofdestruction
-//[name] == keyofterror # # [maxquantity] == 3
-//[name] == keyofhate # # [maxquantity] == 3
-//[name] == keyofdestruction # # [maxquantity] == 3
+//(鑰匙)uber quest keys
+[name] == keyofterror
+[name] == keyofhate
+[name] == keyofdestruction
+[name] == keyofterror # # [maxquantity] == 3
+[name] == keyofhate # # [maxquantity] == 3
+[name] == keyofdestruction # # [maxquantity] == 3
 
-//uber quest organs
+//(器官)uber quest organs
 [name] == diablo'shorn
 [name] == mephisto'sbrain
 [name] == baal'seye
 
-//respec essences
+//(精華)respec essences
 [name] == twistedessenceofsuffering # # [maxquantity] == 2
 [name] == chargedessenceofhatred # # [maxquantity] == 2
 [name] == burningessenceofterror # # [maxquantity] == 2
@@ -89,7 +92,7 @@
 [name] == perfectskull # # [maxquantity] == 3
 [name] == perfecttopaz # # [maxquantity] == 3
 
-//potions
+//(藥水)potions
 [name] == greaterhealingpotion
 [name] == superhealingpotion
 [name] == greatermanapotion
@@ -97,7 +100,7 @@
 [name] == rejuvenationpotion
 [name] == fullrejuvenationpotion
 
-//ears 
+//(耳朵)ears 
 // used in conjunction with the hostilekill function
 // if you want to collect ears, then simply uncomment
 

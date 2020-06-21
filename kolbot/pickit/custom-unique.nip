@@ -1,8 +1,5 @@
 //-----------------------------------------------------------------------------------------------------
-// this is a list of unique items that you want your bot to pick up.
-//
-// any item on this list which starts with //[ will not be picked up at all
-// any item on this list which starts with [ will be picked up, then kept unid'ed or checked and then kept if it's good enough.
+// 獨特裝備
 // -----------------------------------------------------------------------------------------------------
 
 //(獨特手套)unique gloves

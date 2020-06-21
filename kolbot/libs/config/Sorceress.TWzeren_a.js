@@ -29,11 +29,11 @@ function LoadConfig() {
 
 	// *** (第一章)act 1 ***
 	Scripts.Corpsefire = true; //屍體發火/邪惡洞窟	
-		Config.Corpsefire.ClearDen = false;
+		Config.Corpsefire.ClearDen = true;
 	Scripts.Mausoleum = false; //血鳥/冰冷之原-埋骨之地
 		Config.Mausoleum.KillBloodRaven = false;
 		Config.Mausoleum.ClearCrypt = false;
-	Scripts.Rakanishu = true; //尼拉卡修/石塊曠野
+	Scripts.Rakanishu = false; //尼拉卡修/石塊曠野
 		Config.Rakanishu.KillGriswold = true;
 	Scripts.UndergroundPassage = false;
 	Scripts.Coldcrow = false;
@@ -45,32 +45,32 @@ function LoadConfig() {
 	Scripts.Treehead = false; //樹頭木拳/黑暗森林
 	Scripts.Smith = false;
 	Scripts.BoneAsh = true; //骨灰/外側回廊-大教堂
-	Scripts.Countess = true; //女伯爵/黑暗森林-高塔地牢第五層
+	Scripts.Countess = false; //女伯爵/黑暗森林-高塔地牢第五層
 		Config.Countess.KillGhosts = true;
 	Scripts.Andariel = true; //安達利爾
 	Scripts.Cows = false;
 
 	// *** (第二章)act 2 ***
-	Scripts.Radament = true; //羅達門特/下水道第三層
-	Scripts.Coldworm = true;
+	Scripts.Radament = false; //羅達門特/下水道第三層
+	Scripts.Coldworm = false;
 		Config.Coldworm.KillBeetleburst = false;
 		Config.Coldworm.ClearMaggotLair = false; // (清怪)Clear all 3 levels
 	Scripts.AncientTunnels = false;
 		Config.AncientTunnels.OpenChest = false; // (開特殊箱子)Open special chest in Lost City
 		Config.AncientTunnels.KillDarkElder = false; //黑暗長老/遺失的城市
-	Scripts.Summoner = true; //召喚者/神秘避難所
+	Scripts.Summoner = false; //召喚者/神秘避難所
 		Config.Summoner.FireEye = false;
 	Scripts.Tombs = false;
 	Scripts.Duriel = false; //督瑞爾
 
 	// *** (第三章)act 3 ***
-	Scripts.Stormtree = true; //暴風之樹/進入庫拉斯特下層前
+	Scripts.Stormtree = false; //暴風之樹/進入庫拉斯特下層前
 	Scripts.KurastTemples = false;
 	Scripts.Icehawk = false;
 	Scripts.Endugu = false;
 	Scripts.Travincal = false;
 		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Mephisto = true; //墨菲斯托
+	Scripts.Mephisto = false; //墨菲斯托
 		Config.Mephisto.MoatTrick = false;
 		Config.Mephisto.KillCouncil = false;
 		Config.Mephisto.TakeRedPortal = true;
@@ -91,18 +91,18 @@ function LoadConfig() {
 	Scripts.SealLeader = false; // Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
 
 	// *** (第五章)act 5 ***
-	Scripts.Pindleskin = true; //暴躁外皮/尼拉塞克的神殿
+	Scripts.Pindleskin = false; //暴躁外皮/尼拉塞克的神殿
 		Config.Pindleskin.UseWaypoint = false;
 		Config.Pindleskin.KillNihlathak = false;
 		Config.Pindleskin.ViperQuit = false; // End script if Tomb Vipers are found.
 	Scripts.Nihlathak = false; //尼拉塞克/瓦特之廳
 		Config.Nihlathak.ViperQuit = false; // End script if Tomb Vipers are found.
-	Scripts.Eldritch = true; //矯正者-怪異/冰凍高地
+	Scripts.Eldritch = false; //矯正者-怪異/冰凍高地
 		Config.Eldritch.OpenChest = true;
 		Config.Eldritch.KillShenk = true;
 		Config.Eldritch.KillDacFarren = true;
 	Scripts.Eyeback = false; //狂暴者-眼魔/亞瑞特高原
-	Scripts.SharpTooth = true; //利牙殺手/冰凍高地
+	Scripts.SharpTooth = false; //利牙殺手/冰凍高地
 	Scripts.ThreshSocket = false; //剝殼凹槽/亞瑞特高原
 	Scripts.Abaddon = false;
 	Scripts.Frozenstein = false; //冰凍魔怪/冰河
@@ -256,10 +256,10 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [1,1,1,1,1,1,1,0,0,0];
-	Config.Inventory[1] = [1,1,1,1,1,1,1,0,0,0];
-	Config.Inventory[2] = [1,1,1,1,1,1,1,0,0,0];
-	Config.Inventory[3] = [1,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[0] = [1,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[1] = [1,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[2] = [1,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[3] = [1,1,1,1,1,0,0,0,0,0];
 
 	Config.StashGold = 100000; // (滿額存錢)Minimum amount of gold to stash.
 
@@ -434,7 +434,7 @@ function LoadConfig() {
 	// (遊戲配置)General config
 	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
 	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
-	Config.MinGameTime = 300; // (最短遊戲時間/秒)Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
+	Config.MinGameTime = 420; // (最短遊戲時間/秒)Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
 	Config.MaxGameTime = 1800; // (最長遊戲時間/秒)Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
 	Config.OpenChests = true; // Open chests. Controls key buying.
@@ -512,8 +512,8 @@ function LoadConfig() {
 		//"Monster Name": [-1, -1]
 	};
 
-	Config.Dodge = false; // Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
-	Config.DodgeRange = 15; // Distance to keep from monsters.
+	Config.Dodge = true; // Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
+	Config.DodgeRange = 10; // Distance to keep from monsters.
 	Config.DodgeHP = 100; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
 	Config.BossPriority = true; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all

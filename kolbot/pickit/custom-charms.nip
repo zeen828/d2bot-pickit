@@ -1,7 +1,11 @@
-// all skill gc's
-//[name] == grandcharm && [quality] == magic # [itemaddskilltab] == 1
+//-----------------------------------------------------------------------------------------------------
+// 護身符
+// -----------------------------------------------------------------------------------------------------
 
-// skiller gc
+// (全部技能版)all skill gc's
+[name] == grandcharm && [quality] == magic # [itemaddskilltab] == 1
+
+// (技能版)skiller gc
 [name] == grandcharm && [quality] == magic # [palicombatskilltab] == 1
 [name] == grandcharm && [quality] == magic # [offensiveaurasskilltab] == 1
 [name] == grandcharm && [quality] == magic # [defensiveaurasskilltab] == 1
