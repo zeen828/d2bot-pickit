@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------------------------------
 // 獨特裝備
-// -----------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------
 
 //(獨特手套)unique gloves
 //[name] == heavygloves && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(血拳)blood fist
@@ -14,7 +14,7 @@
 //(獨特腰帶)unique belts
 [name] == heavybelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 60 && [itemgoldbonus] >= 80 //(金色包袱)gold wrap
 [name] == demonhidesash && [quality] == unique && [flag] != ethereal # [lifeleech] >= 5 && [damageresist] >= 10 && [magicdamagereduction] >= 10 //(長串之耳)string of ears
-[name] == sharkskinbelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 100 //(剃刀之尾)razortail
+//[name] == sharkskinbelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 100 //(剃刀之尾)razortail
 [name] == battlebelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 100 //(雪之衝突)snowclash
 [name] == warbelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 100 //(雷神之力)thundergod's vigor
 [name] == spiderwebsash && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 75 //(蜘蛛之網)arachnid mesh
@@ -22,8 +22,8 @@
 [name] == mithrilcoil && [quality] == unique && [flag] != ethereal # ([vitality] >= 1 && [damageresist] >= 10 && [hpregen] >= 1) || ([vitality] >= 30 && [damageresist] >= 10 && [hpregen] >= 6) //(維爾登戈的心結)verdungo's hearty cord
 
 //(獨特鞋子)unique boots
-[name] == boots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(熱靴刺)hotspur
-[name] == demonhideboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 100 && [itemgoldbonus] >= 40 //(地獄闊步)infernostride
+//[name] == boots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(熱靴刺)hotspur
+//[name] == demonhideboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 100 && [itemgoldbonus] >= 40 //(地獄闊步)infernostride
 [name] == sharkskinboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 70 && [maxhp] >= 45 //(水上飄)waterwalk
 [name] == battleboots && [quality] == unique && [flag] != ethereal # [itemmagicbonus] >= 20 //(戰爭旅者)war traveler
 [name] == warboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 95 //(蝕肉騎士)gore rider
@@ -33,9 +33,9 @@
 [name] == myrmidongreaves && [quality] == unique && [flag] != ethereal # [shadowdisciplinesskilltab] >= 1 && [dexterity] >= 5 //(影舞者)shadow dancer
 
 //(獨特頭盔)unique helms
-[name] == skullcap && [quality] == unique && [flag] != ethereal # [itemmagicbonus] == 48 //(塔因頭盔)tarnhelm
-[name] == skullcap && [quality] == unique && [flag] == ethereal # [itemmagicbonus] == 48 //ethereal tarnhelm
-[name] == warhat && [quality] == unique && [flag] != ethereal # [itemallskills] == 1   //(粗野之冠)peasant crown
+//[name] == skullcap && [quality] == unique && [flag] != ethereal # [itemmagicbonus] == 48 //(塔因頭盔)tarnhelm
+//[name] == skullcap && [quality] == unique && [flag] == ethereal # [itemmagicbonus] == 48 //ethereal tarnhelm
+//[name] == warhat && [quality] == unique && [flag] != ethereal # [itemallskills] == 1   //(粗野之冠)peasant crown
 [name] == sallet && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 60 && [coldresist] >= 0 && [fireresist] >= 0 && [lightresist] >= 0 //(岩石制動器)rock stopper
 [name] == sallet && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 60 && [coldresist] >= 0 && [fireresist] >= 0 && [lightresist] >= 0 //ethereal rock stopper
 [name] == casque && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 && [itemmagicbonus] >= 0 //(偷取骷髏)stealskull
@@ -75,9 +75,9 @@
 [name] == sacredarmor && [quality] == unique # [enhanceddefense] >= 10 && [strength] >= 2 && [coldresist]+[fireresist]+[lightresist]+[poisonresist] >= 8 //(泰瑞爾的力量)tyreal's might
 
 //(獨特盾牌)unique shields
-[name] == roundshield && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(摩西祝福之環)moser's blessed circle
-[name] == barbedshield && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(長槍守衛)lance guard
-[name] == pavise && [quality] == unique && [flag] != ethereal # [coldresist]+[fireresist]+[lightresist]+[poisonresist] >= 10 && [normaldamagereduction] >=1 && [magicdamagereduction] >= 1 //(基爾克的聖堂)gerke's sanctuary
+//[name] == roundshield && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(摩西祝福之環)moser's blessed circle
+//[name] == barbedshield && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(長槍守衛)lance guard
+//[name] == pavise && [quality] == unique && [flag] != ethereal # [coldresist]+[fireresist]+[lightresist]+[poisonresist] >= 10 && [normaldamagereduction] >=1 && [magicdamagereduction] >= 1 //(基爾克的聖堂)gerke's sanctuary
 [name] == grimshield && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 //(警戒之牆)ethereal lidless wall
 [name] == luna && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(黑橡樹盾)blackoak shield
 [name] == monarch && [quality] == unique && [flag] != ethereal //(暴風之盾)stormshield

@@ -285,10 +285,11 @@ function LoadConfig() {
 	Config.PickitFiles.push("LLD.nip");//白,藍,黃裝備
 	Config.PickitFiles.push("classic.nip");//橘色手工藝
 	Config.PickitFiles.push("gold.nip");//金幣
-	Config.PickitFiles.push("custom-set.nip");//自訂套裝
-	Config.PickitFiles.push("custom-unique.nip");//自訂獨特防具
-	Config.PickitFiles.push("custom-charms.nip");//護身符
-	Config.PickitFiles.push("custom-runes.nip");//符文
+	Config.PickitFiles.push("custom-set.nip");//自訂成套裝備
+	Config.PickitFiles.push("custom-unique.nip");//自訂獨特裝備
+	Config.PickitFiles.push("custom-charms.nip");//自訂護符
+	Config.PickitFiles.push("custom-runes.nip");//自訂符文
+	Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
 	Config.PickitFiles.push("test.nip");//測試
 	Config.PickRange = 40; // Pick radius
 	Config.FastPick = true; // Check and pick items between attacks
@@ -491,16 +492,17 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	Config.AttackSkill[0] = 40; // Preattack skill.
+	//40冰封裝甲42靜態立場,47火球,55冰尖柱,56隕石,64冰封球
+	Config.AttackSkill[0] = 47; // Preattack skill.
 	Config.AttackSkill[1] = 56; // Primary skill to bosses.
-	Config.AttackSkill[2] = 47; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
+	Config.AttackSkill[2] = 42; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
 	Config.AttackSkill[3] = 64; // Primary skill to others.
 	Config.AttackSkill[4] = 55; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
 	Config.AttackSkill[5] = 64; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
 	// Low mana skills - these will be used if main skills can't be cast.
-	Config.LowManaSkill[0] = -1; // Timed low mana skill.
+	Config.LowManaSkill[0] = 40; // Timed low mana skill.
 	Config.LowManaSkill[1] = -1; // Untimed low mana skill.
 
 	/* Advanced Attack config. Allows custom skills to be used on custom monsters.
