@@ -41,7 +41,7 @@
 //[name] == sacredarmor && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4) 
 
 // ##### (盔甲)armor = normal #############################################################################
-[name] == breastplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) 
+//[name] == breastplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) //胸甲
 [name] == mageplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) 
 [name] == duskshroud && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
 [name] == wyrmhide && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 

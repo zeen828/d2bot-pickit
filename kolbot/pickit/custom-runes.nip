@@ -23,7 +23,7 @@
 [name] == baal'seye
 
 //(精華)respec essences
-[name] == twistedessenceofsuffering # # [maxquantity] == 2
+[name] == twistedessenceofsuffering # # [maxquantity] == 2 //扭曲的苦痛精華
 [name] == chargedessenceofhatred # # [maxquantity] == 2
 [name] == burningessenceofterror # # [maxquantity] == 2
 [name] == festeringessenceofdestruction # # [maxquantity] == 2

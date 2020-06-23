@@ -58,7 +58,7 @@ function LoadConfig() {
 	Scripts.AncientTunnels = false;
 		Config.AncientTunnels.OpenChest = false; // (開特殊箱子)Open special chest in Lost City
 		Config.AncientTunnels.KillDarkElder = false; //黑暗長老/遺失的城市
-	Scripts.Summoner = true; //召喚者/神秘避難所
+	Scripts.Summoner = false; //召喚者/神秘避難所
 		Config.Summoner.FireEye = false;
 	Scripts.Tombs = false;
 	Scripts.Duriel = false; //督瑞爾
@@ -70,7 +70,7 @@ function LoadConfig() {
 	Scripts.Endugu = false;
 	Scripts.Travincal = false;
 		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Mephisto = false; //墨菲斯托
+	Scripts.Mephisto = true; //墨菲斯托
 		Config.Mephisto.MoatTrick = false;
 		Config.Mephisto.KillCouncil = false;
 		Config.Mephisto.TakeRedPortal = true;
@@ -91,18 +91,18 @@ function LoadConfig() {
 	Scripts.SealLeader = false; // Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
 
 	// *** (第五章)act 5 ***
-	Scripts.Pindleskin = true; //暴躁外皮/尼拉塞克的神殿
+	Scripts.Pindleskin = false; //暴躁外皮/尼拉塞克的神殿
 		Config.Pindleskin.UseWaypoint = false;
 		Config.Pindleskin.KillNihlathak = false;
 		Config.Pindleskin.ViperQuit = false; // End script if Tomb Vipers are found.
 	Scripts.Nihlathak = false; //尼拉塞克/瓦特之廳
 		Config.Nihlathak.ViperQuit = false; // End script if Tomb Vipers are found.
-	Scripts.Eldritch = false; //矯正者-怪異/冰凍高地
+	Scripts.Eldritch = true; //矯正者-怪異/冰凍高地
 		Config.Eldritch.OpenChest = true;
 		Config.Eldritch.KillShenk = true;
 		Config.Eldritch.KillDacFarren = true;
 	Scripts.Eyeback = false; //狂暴者-眼魔/亞瑞特高原
-	Scripts.SharpTooth = false; //利牙殺手/冰凍高地
+	Scripts.SharpTooth = true; //利牙殺手/冰凍高地
 	Scripts.ThreshSocket = false; //剝殼凹槽/亞瑞特高原
 	Scripts.Abaddon = false;
 	Scripts.Frozenstein = false; //冰凍魔怪/冰河
@@ -256,10 +256,10 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [1,1,1,1,1,1,0,0,0,0];
-	Config.Inventory[1] = [1,1,1,1,1,1,0,0,0,0];
-	Config.Inventory[2] = [1,1,1,1,1,1,0,0,0,0];
-	Config.Inventory[3] = [1,1,1,1,1,0,0,0,0,0];
+	Config.Inventory[0] = [1,1,1,1,1,1,1,1,0,0];
+	Config.Inventory[1] = [1,1,1,1,1,1,1,1,0,0];
+	Config.Inventory[2] = [1,1,1,1,1,1,1,1,0,0];
+	Config.Inventory[3] = [1,1,1,1,1,1,1,1,0,0];
 
 	Config.StashGold = 100000; // (滿額存錢)Minimum amount of gold to stash.
 
@@ -285,11 +285,10 @@ function LoadConfig() {
 	Config.PickitFiles.push("LLD.nip");//白,藍,黃裝備
 	Config.PickitFiles.push("classic.nip");//橘色手工藝
 	Config.PickitFiles.push("gold.nip");//金幣
-	Config.PickitFiles.push("custom-set.nip");//自訂成套裝備
-	Config.PickitFiles.push("custom-unique.nip");//自訂獨特裝備
-	Config.PickitFiles.push("custom-charms.nip");//自訂護符
-	Config.PickitFiles.push("custom-runes.nip");//自訂符文
-	Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
+	Config.PickitFiles.push("custom-set.nip");//自訂套裝
+	Config.PickitFiles.push("custom-unique.nip");//自訂獨特防具
+	Config.PickitFiles.push("custom-charms.nip");//護身符
+	Config.PickitFiles.push("custom-runes.nip");//符文
 	Config.PickitFiles.push("test.nip");//測試
 	Config.PickRange = 40; // Pick radius
 	Config.FastPick = true; // Check and pick items between attacks
@@ -492,7 +491,6 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	//40冰封裝甲42靜態立場,47火球,55冰尖柱,56隕石,64冰封球
 	Config.AttackSkill[0] = 40; // Preattack skill.
 	Config.AttackSkill[1] = 56; // Primary skill to bosses.
 	Config.AttackSkill[2] = 47; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
@@ -502,7 +500,7 @@ function LoadConfig() {
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
 	// Low mana skills - these will be used if main skills can't be cast.
-	Config.LowManaSkill[0] = 40; // Timed low mana skill.
+	Config.LowManaSkill[0] = -1; // Timed low mana skill.
 	Config.LowManaSkill[1] = -1; // Untimed low mana skill.
 
 	/* Advanced Attack config. Allows custom skills to be used on custom monsters.
