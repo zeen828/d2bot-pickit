@@ -43,7 +43,7 @@
 // ##### (盔甲)armor = normal #############################################################################
 //[name] == breastplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) //胸甲
 [name] == mageplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) 
-[name] == duskshroud && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
+//[name] == duskshroud && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) //法師鎧甲
 [name] == wyrmhide && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
 //[name] == scarabhusk && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
 //[name] == wirefleece && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
