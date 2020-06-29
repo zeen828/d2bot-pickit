@@ -137,11 +137,11 @@
 
 // # (不朽之王)immortal king #
 [name] == warbelt && [quality] == set // immortal king's detail
-[name] == avengerguard && [quality] == set // immortal king's will
-[name] == ogremaul && [quality] == set // immortal king's stone crusher
+//[name] == avengerguard && [quality] == set // (不朽之王的意志-頭)immortal king's will
+//[name] == ogremaul && [quality] == set // (不朽之王的碎魂者-槌)immortal king's stone crusher
 [name] == sacredarmor && [quality] == set // immortal king's soul cage
-[name] == wargauntlets && [quality] == set // immortal king's forge
-[name] == warboots && [quality] == set // immortal king's pillar
+//[name] == wargauntlets && [quality] == set // (不朽之王的融爐-手)immortal king's forge
+//[name] == warboots && [quality] == set // (不朽之王之柱-腳)immortal king's pillar
 
 // # (馬維娜之戰鬥詩歌)m'avina's battle hymn #
 [name] == diadem && [quality] == set // m'avina's true sight

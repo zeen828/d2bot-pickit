@@ -6,7 +6,7 @@
 //[name] == heavygloves && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(血拳)blood fist
 [name] == chaingloves && [quality] == unique && [flag] != ethereal # [itemmagicbonus] >= 20 && [enhanceddefense] >= 20 //(運氣守護)chance guards
 [name] == lightgauntlets && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(法師之拳)magefist
-[name] == gauntlets && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(霜燃)frostburn
+//[name] == gauntlets && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(霜燃)frostburn
 [name] == vampirebonegloves && [quality] == unique && [flag] != ethereal # [strength] == 15 && [lifeleech] >= 5 && [itemhealafterkill] >= 1 //(卓古拉之握)dracul's grasp
 [name] == vambraces && [quality] == unique && [flag] != ethereal # [lifeleech] >= 5 && [manaleech] >= 5 && [enhanceddefense] >= 100 //(吸魂者)soul drainer
 [name] == ogregauntlets && [quality] == unique && [flag] != ethereal # (([enhanceddamage] >= 60 && [strength] >= 15) || ([enhanceddamage] >= 30 && [strength] >= 20)) //(碎鋼)steelrend
