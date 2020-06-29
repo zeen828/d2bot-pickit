@@ -29,38 +29,38 @@ function LoadConfig() {
 
 	// *** (第一章)act 1 ***
 	Scripts.Corpsefire = true; //屍體發火/邪惡洞窟	
-		Config.Corpsefire.ClearDen = true;
-	Scripts.Mausoleum = false; //血鳥/冰冷之原-埋骨之地
-		Config.Mausoleum.KillBloodRaven = false;
-		Config.Mausoleum.ClearCrypt = false;
+		Config.Corpsefire.ClearDen = true; //是否全清洞窟
+	Scripts.Mausoleum = true; //大陵墓
+		Config.Mausoleum.KillBloodRaven = false; //血鳥/冰冷之原-埋骨之地
+		Config.Mausoleum.ClearCrypt = true; //是否清另一個墳墓
 	Scripts.Rakanishu = false; //尼拉卡修/石塊曠野
 		Config.Rakanishu.KillGriswold = true;
-	Scripts.UndergroundPassage = false;
+	Scripts.UndergroundPassage = false; //地底通道
 	Scripts.Coldcrow = false;
-	Scripts.Tristram = false;
+	Scripts.Tristram = false; //崔斯特瑞姆
 		Config.Tristram.WalkClear = false; // (不傳送)Disable teleport while clearing to protect leechers
 		Config.Tristram.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Pit = false;
-		Config.Pit.ClearPit1 = true;
+	Scripts.Pit = false; //泰摩高地地穴
+		Config.Pit.ClearPit1 = true; //清理一層
 	Scripts.Treehead = false; //樹頭木拳/黑暗森林
 	Scripts.Smith = false;
 	Scripts.BoneAsh = true; //骨灰/外側回廊-大教堂
 	Scripts.Countess = false; //女伯爵/黑暗森林-高塔地牢第五層
-		Config.Countess.KillGhosts = true;
+		Config.Countess.KillGhosts = true; //是否清路上的菁英怪
 	Scripts.Andariel = true; //安達利爾
-	Scripts.Cows = false;
+	Scripts.Cows = false; //母牛關
 
 	// *** (第二章)act 2 ***
 	Scripts.Radament = false; //羅達門特/下水道第三層
 	Scripts.Coldworm = false;
 		Config.Coldworm.KillBeetleburst = false;
 		Config.Coldworm.ClearMaggotLair = false; // (清怪)Clear all 3 levels
-	Scripts.AncientTunnels = false;
+	Scripts.AncientTunnels = false; //古代通道
 		Config.AncientTunnels.OpenChest = false; // (開特殊箱子)Open special chest in Lost City
 		Config.AncientTunnels.KillDarkElder = false; //黑暗長老/遺失的城市
-	Scripts.Summoner = true; //召喚者/神秘避難所
+	Scripts.Summoner = false; //召喚者/神秘避難所
 		Config.Summoner.FireEye = false;
-	Scripts.Tombs = false;
+	Scripts.Tombs = false; //古墓
 	Scripts.Duriel = false; //督瑞爾
 
 	// *** (第三章)act 3 ***
@@ -68,37 +68,37 @@ function LoadConfig() {
 	Scripts.KurastTemples = false;
 	Scripts.Icehawk = false;
 	Scripts.Endugu = false;
-	Scripts.Travincal = false;
+	Scripts.Travincal = false; //催凡克
 		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Mephisto = false; //墨菲斯托
-		Config.Mephisto.MoatTrick = false;
-		Config.Mephisto.KillCouncil = false;
-		Config.Mephisto.TakeRedPortal = true;
+	Scripts.Mephisto = true; //墨菲斯托
+		Config.Mephisto.MoatTrick = true; //脆弱的法師用隔河殺BOSS
+		Config.Mephisto.KillCouncil = false; //殺議員
+		Config.Mephisto.TakeRedPortal = true; //走紅門道ACT4
 
 	// *** (第四章)act 4 ***
 	Scripts.OuterSteppes = false;
 	Scripts.Izual = false; //衣卒爾/絕望平原
 	Scripts.Hephasto = false; //海法斯特盔甲製作者/火焰之河
-	Scripts.Vizier = false; // Intended for classic sorc, kills Vizier only.
-	Scripts.FastDiablo = false;
+	Scripts.Vizier = false; // (非資料片專用)Intended for classic sorc, kills Vizier only.
+	Scripts.FastDiablo = false; //快速殺暗黑破壞神
 	Scripts.Diablo = false; //暗黑破壞神
-		Config.Diablo.WalkClear = false; // Disable teleport while clearing to protect leechers
-		Config.Diablo.Entrance = true; // Start from entrance
-		Config.Diablo.SealWarning = "Leave the seals alone!";
-		Config.Diablo.EntranceTP = "Entrance TP up";
-		Config.Diablo.StarTP = "Star TP up";
-		Config.Diablo.DiabloMsg = "Diablo";
-	Scripts.SealLeader = false; // Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
+		Config.Diablo.WalkClear = false; // (是否從進門開始清除,false從五星開始)Disable teleport while clearing to protect leechers
+		Config.Diablo.Entrance = true; // (發送消息)Start from entrance
+		Config.Diablo.SealWarning = "Leave the seals alone!"; //
+		Config.Diablo.EntranceTP = "Entrance TP up"; //入口開門
+		Config.Diablo.StarTP = "Star TP up"; //五星開門
+		Config.Diablo.DiabloMsg = "Diablo"; //等diablo時
+	Scripts.SealLeader = false; // (清理出一個安全的區域給小號吸經驗)Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
 
 	// *** (第五章)act 5 ***
 	Scripts.Pindleskin = true; //暴躁外皮/尼拉塞克的神殿
-		Config.Pindleskin.UseWaypoint = false;
-		Config.Pindleskin.KillNihlathak = false;
-		Config.Pindleskin.ViperQuit = false; // End script if Tomb Vipers are found.
+		Config.Pindleskin.UseWaypoint = false; //沒紅門用傳點
+		Config.Pindleskin.KillNihlathak = false; //殺尼拉薩克
+		Config.Pindleskin.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
 	Scripts.Nihlathak = false; //尼拉塞克/瓦特之廳
-		Config.Nihlathak.ViperQuit = false; // End script if Tomb Vipers are found.
+		Config.Nihlathak.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
 	Scripts.Eldritch = false; //矯正者-怪異/冰凍高地
-		Config.Eldritch.OpenChest = true;
+		Config.Eldritch.OpenChest = true; //開寶相
 		Config.Eldritch.KillShenk = true;
 		Config.Eldritch.KillDacFarren = true;
 	Scripts.Eyeback = false; //狂暴者-眼魔/亞瑞特高原
@@ -106,19 +106,19 @@ function LoadConfig() {
 	Scripts.ThreshSocket = false; //剝殼凹槽/亞瑞特高原
 	Scripts.Abaddon = false;
 	Scripts.Frozenstein = false; //冰凍魔怪/冰河
-		Config.Frozenstein.ClearFrozenRiver = true;
+		Config.Frozenstein.ClearFrozenRiver = true; //全清冰河
 	Scripts.Bonesaw = false; //骨碎破壞者/冰河路徑
 		Config.Bonesaw.ClearDrifterCavern = false;
 	Scripts.Snapchip = false;
 		Config.Snapchip.ClearIcyCellar = true;
-	Scripts.Worldstone = false;
+	Scripts.Worldstone = false; //世界之石大殿
 	Scripts.Baal = false; //巴爾
-		Config.Baal.HotTPMessage = "Hot TP!";
-		Config.Baal.SafeTPMessage = "Safe TP!";
-		Config.Baal.BaalMessage = "Baal!";
-		Config.Baal.SoulQuit = true; // (避開燃燒靈魂)End script if Souls (Burning Souls) are found.
-		Config.Baal.DollQuit = true; // (避開亡靈靈魂殺手)End script if Dolls (Undead Soul Killers) are found.
-		Config.Baal.KillBaal = true; // Kill Baal. Leaves game after wave 5 if false.
+		Config.Baal.HotTPMessage = "Hot TP!"; //到達王座開一個"危險的門"發送消息
+		Config.Baal.SafeTPMessage = "Safe TP!"; //到達王座開一個安全的門發送消息
+		Config.Baal.BaalMessage = "Baal!"; //等待巴爾時
+		Config.Baal.SoulQuit = true; // (避開亡靈靈魂殺手)End script if Souls (Burning Souls) are found.
+		Config.Baal.DollQuit = true; // (避開燃燒靈魂)End script if Dolls (Undead Soul Killers) are found.
+		Config.Baal.KillBaal = true; // (是否殺巴爾)Kill Baal. Leaves game after wave 5 if false.
 
 	/* ### (吸經驗用)leeching section ###
 	* Unless stated otherwise, leader's character name isn't needed on order to run.
@@ -179,7 +179,7 @@ function LoadConfig() {
 	Scripts.Gamble = false; // Gambling system, other characters will mule gold into your game so you can gamble infinitely. See Gambling.js
 	Scripts.Crafting = false; // Crafting system, other characters will mule crafting ingredients. See CraftingSystem.js
 	Scripts.GhostBusters = false; // Kill ghosts in most areas that contain them
-	Scripts.Enchant = false;
+	Scripts.Enchant = false; //強化腳本
 		Config.Enchant.Triggers = ["chant", "cows", "wps"]; // Chat commands for enchant, cow level and waypoint giving
 		Config.Enchant.GetLeg = false; // Get Wirt's Leg from Tristram. If set to false, it will check for the leg in town.
 		Config.Enchant.AutoChant = false; // Automatically enchant nearby players and their minions
@@ -207,7 +207,7 @@ function LoadConfig() {
 
 	// *** Guest scripts ***
 
-	// Baal Assistant by YourGreatestMember
+	// (巴爾跟班的打手腳本)Baal Assistant by YourGreatestMember
 	Scripts.BaalAssistant = false; // Used to leech or help in baal runs.
 		Config.BaalAssistant.Wait = 120; // Seconds to wait for a runner to be in the throne / portal wait / safe TP wait / hot TP wait...
 		Config.BaalAssistant.KillNihlathak = false; // Kill Nihlathak before going to Throne
@@ -257,8 +257,8 @@ function LoadConfig() {
 	 * If you don't change the default values, the bot won't stash items.
 	 */
 	Config.Inventory[0] = [1,1,1,1,1,1,0,0,0,0];
-	Config.Inventory[1] = [1,1,1,1,1,1,0,0,0,0];
-	Config.Inventory[2] = [1,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[1] = [1,1,1,1,1,0,0,0,0,0];
+	Config.Inventory[2] = [1,1,1,1,1,0,0,0,0,0];
 	Config.Inventory[3] = [1,1,1,1,1,0,0,0,0,0];
 
 	Config.StashGold = 100000; // (滿額存錢)Minimum amount of gold to stash.
@@ -291,7 +291,7 @@ function LoadConfig() {
 	Config.PickitFiles.push("custom-runes.nip");//自訂符文
 	Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
 	Config.PickitFiles.push("test.nip");//測試
-	Config.PickRange = 40; // Pick radius
+	Config.PickRange = 40; // (撿取距離)Pick radius
 	Config.FastPick = true; // Check and pick items between attacks
 
 	/* Advanced automule settings
@@ -345,18 +345,19 @@ function LoadConfig() {
 	Config.GambleGoldStop = 500000;
 
 	// (賭博項目)List of item names or classids for gambling. Check libs/NTItemAlias.dbl file for other item classids.
-	Config.GambleItems.push("Amulet");
-	Config.GambleItems.push("Ring");
-	Config.GambleItems.push("Circlet");
-	Config.GambleItems.push("Coronet");
+	Config.GambleItems.push("Amulet"); //項鍊
+	Config.GambleItems.push("Ring"); //戒指
+	Config.GambleItems.push("Circlet"); //頭
+	Config.GambleItems.push("Coronet"); //頭
 
-	/* Cubing config. All recipe names are available in Templates/Cubing.txt. For item names/classids check NTItemAlias.dbl
+	/* (合成項目)Cubing config. All recipe names are available in Templates/Cubing.txt. For item names/classids check NTItemAlias.dbl
 	 * The format is Config.Recipes.push([recipe_name, item_name_or_classid, etherealness]). Etherealness is optional and only applies to some recipes.
 	 */
 	Config.Cubing = false; // Set to true to enable cubing.
 
 	// Ingredients for the following recipes will be auto-picked, for classids check libs/NTItemAlias.dbl
 
+	//寶時
 	//Config.Recipes.push([Recipe.Gem, "Flawless Amethyst"]); // Make Perfect Amethyst
 	//Config.Recipes.push([Recipe.Gem, "Flawless Topaz"]); // Make Perfect Topaz
 	//Config.Recipes.push([Recipe.Gem, "Flawless Sapphire"]); // Make Perfect Sapphire
@@ -365,14 +366,16 @@ function LoadConfig() {
 	//Config.Recipes.push([Recipe.Gem, "Flawless Diamond"]); // Make Perfect Diamond
 	//Config.Recipes.push([Recipe.Gem, "Flawless Skull"]); // Make Perfect Skull
 
-	//Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
+	//Config.Recipes.push([Recipe.Token]); // (洗點勳章)Make Token of Absolution
 
+	//符文
 	//Config.Recipes.push([Recipe.Rune, "Pul Rune"]); // Upgrade Pul to Um
 	//Config.Recipes.push([Recipe.Rune, "Um Rune"]); // Upgrade Um to Mal
 	//Config.Recipes.push([Recipe.Rune, "Mal Rune"]); // Upgrade Mal to Ist
 	//Config.Recipes.push([Recipe.Rune, "Ist Rune"]); // Upgrade Ist to Gul
 	//Config.Recipes.push([Recipe.Rune, "Gul Rune"]); // Upgrade Gul to Vex
 
+	//手工藝品
 	//Config.Recipes.push([Recipe.Caster.Amulet]); // Craft Caster Amulet
 	//Config.Recipes.push([Recipe.Blood.Ring]); // Craft Blood Ring
 	//Config.Recipes.push([Recipe.Blood.Helm, "Armet"]); // Craft Blood Armet
@@ -385,7 +388,7 @@ function LoadConfig() {
 
 	//Config.Recipes.push([Recipe.Reroll.Rare, "Diadem"]); // Reroll rare Diadem
 
-	/* Base item for the following recipes must be in pickit. The rest of the ingredients will be auto-picked.
+	/* (打孔)Base item for the following recipes must be in pickit. The rest of the ingredients will be auto-picked.
 	 * Use Roll.Eth, Roll.NonEth or Roll.All to determine what kind of base item to roll - ethereal, non-ethereal or all.
 	 */
 	//Config.Recipes.push([Recipe.Socket.Weapon, "Thresher", Roll.Eth]); // Socket ethereal Thresher
@@ -393,6 +396,7 @@ function LoadConfig() {
 	//Config.Recipes.push([Recipe.Socket.Armor, "Sacred Armor", Roll.Eth]); // Socket ethereal Sacred Armor
 	//Config.Recipes.push([Recipe.Socket.Armor, "Archon Plate", Roll.Eth]); // Socket ethereal Archon Plate
 
+	//暗金升級
 	//Config.Recipes.push([Recipe.Unique.Armor.ToExceptional, "Heavy Gloves", Roll.NonEth]); // Upgrade Bloodfist to Exceptional
 	//Config.Recipes.push([Recipe.Unique.Armor.ToExceptional, "Light Gauntlets", Roll.NonEth]); // Upgrade Magefist to Exceptional
 	//Config.Recipes.push([Recipe.Unique.Armor.ToElite, "Sharkskin Gloves", Roll.NonEth]); // Upgrade Bloodfist or Grave Palm to Elite
@@ -414,7 +418,7 @@ function LoadConfig() {
 
 	//Config.KeepRunewords.push("[type] == shield || [type] == auricshields # [fcr] == 35");
 
-	// Public game options
+	// (共用設定)Public game options
 
 	// If LocalChat is enabled, chat can be sent via 'sendCopyData' instead of BNET
 	// To allow 'say' to use BNET, use 'say("msg", true)', the 2nd parameter will force BNET
@@ -423,12 +427,12 @@ function LoadConfig() {
 	Config.LocalChat.Toggle = false; // optional, set to KEY value to toggle through modes 0, 1, 2
 	Config.LocalChat.Mode = 0; // 0 = disabled, 1 = chat from 'say' (recommended), 2 = all chat (for manual play)
 	// If Config.Leader is set, the bot will only accept invites from leader. If Config.PublicMode is not 0, Baal and Diablo script will open Town Portals.
-	Config.PublicMode = 0; // 1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
+	Config.PublicMode = 0; // (組隊設定)1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
 	// Party message settings. Each setting represents an array of messages that will be randomly chosen.
 	// $name, $level, $class and $killer are replaced by the player's name, level, class and killer
-	Config.Greetings = []; // Example: ["Hello, $name (level $level $class)"]
-	Config.DeathMessages = []; // Example: ["Watch out for that $killer, $name!"]
-	Config.Congratulations = []; // Example: ["Congrats on level $level, $name!"]
+	Config.Greetings = []; // (組隊歡迎消息)Example: ["Hello, $name (level $level $class)"]
+	Config.DeathMessages = []; // (組隊死亡消息)Example: ["Watch out for that $killer, $name!"]
+	Config.Congratulations = []; // (組隊升級消息)Example: ["Congrats on level $level, $name!"]
 	Config.ShitList = false; // Blacklist hostile players so they don't get invited to party.
 	Config.UnpartyShitlisted = false; // Leave party if someone invited a blacklisted player.
 
@@ -463,7 +467,7 @@ function LoadConfig() {
 	Config.PacketCasting = 0; // 0 = disable, 1 = packet teleport, 2 = full packet casting.
 	Config.WaypointMenu = true;
 
-	// Anti-hostile config
+	// (敵對設定)Anti-hostile config
 	Config.AntiHostile = false; // Enable anti-hostile.
 	Config.HostileAction = 0; // 0 - quit immediately, 1 - quit when hostile player is sighted, 2 - attack hostile.
 	Config.TownOnHostile = false; // Go to town instead of quitting when HostileAction is 0 or 1.
