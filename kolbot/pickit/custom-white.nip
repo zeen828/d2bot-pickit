@@ -81,7 +81,7 @@
 //[name] == mageplate && [quality] == normal && [flag] == ethereal # [defense] >= 361 && [sockets] == 0 
 [name] == duskshroud && [quality] == normal && [flag] == ethereal # [defense] >= 670 && [sockets] == 0 
 [name] == wyrmhide && [quality] == normal && [flag] == ethereal # [defense] >= 675 && [sockets] == 0 
-[name] == scarabhusk && [quality] == normal && [flag] == ethereal # [defense] >= 681 && [sockets] == 0 
+//[name] == scarabhusk && [quality] == normal && [flag] == ethereal # [defense] >= 681 && [sockets] == 0 
 [name] == wirefleece && [quality] == normal && [flag] == ethereal # [defense] >= 691 && [sockets] == 0 
 [name] == diamondmail && [quality] == normal && [flag] == ethereal # [defense] >= 703 && [sockets] == 0
 [name] == loricatedmail && [quality] == normal && [flag] == ethereal # [defense] >= 714 && [sockets] == 0

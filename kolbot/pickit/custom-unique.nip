@@ -36,7 +36,7 @@
 //[name] == skullcap && [quality] == unique && [flag] != ethereal # [itemmagicbonus] == 48 //(塔因頭盔)tarnhelm
 //[name] == skullcap && [quality] == unique && [flag] == ethereal # [itemmagicbonus] == 48 //ethereal tarnhelm
 //[name] == warhat && [quality] == unique && [flag] != ethereal # [itemallskills] == 1   //(粗野之冠)peasant crown
-[name] == sallet && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 60 && [coldresist] >= 0 && [fireresist] >= 0 && [lightresist] >= 0 //(岩石制動器)rock stopper
+//[name] == sallet && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 60 && [coldresist] >= 0 && [fireresist] >= 0 && [lightresist] >= 0 //(岩石制動器)rock stopper
 [name] == sallet && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 60 && [coldresist] >= 0 && [fireresist] >= 0 && [lightresist] >= 0 //ethereal rock stopper
 [name] == casque && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 && [itemmagicbonus] >= 0 //(偷取骷髏)stealskull
 [name] == casque && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 20 && [itemmagicbonus] >= 0 //ethereal stealskull

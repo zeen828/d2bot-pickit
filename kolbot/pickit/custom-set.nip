@@ -115,7 +115,7 @@
 //[name] == bramblemitts && [quality] == set // laying of hands
 //[name] == duskshroud && [quality] == set // dark adherent
 //[name] == demonhideboots && [quality] == set // rite of passage
-[name] == mithrilcoil && [quality] == set // credendum
+//[name] == mithrilcoil && [quality] == set // credendum
 
 // # (格瑞斯華爾德的傳奇)griswold's legacy #
 //[name] == ornateplate && [quality] == set # [defense] >= 920 // griswold's heart
