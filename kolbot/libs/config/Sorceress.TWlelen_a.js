@@ -44,7 +44,7 @@ function LoadConfig() {
 		Config.Pit.ClearPit1 = true; //清理一層
 	Scripts.Treehead = false; //樹頭木拳/黑暗森林
 	Scripts.Smith = false;
-	Scripts.BoneAsh = true; //骨灰/外側回廊-大教堂
+	Scripts.BoneAsh = false; //骨灰/外側回廊-大教堂
 	Scripts.Countess = false; //女伯爵/黑暗森林-高塔地牢第五層
 		Config.Countess.KillGhosts = true; //是否清路上的菁英怪
 	Scripts.Andariel = true; //安達利爾
@@ -70,7 +70,7 @@ function LoadConfig() {
 	Scripts.Endugu = false;
 	Scripts.Travincal = false; //催凡克
 		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Mephisto = true; //墨菲斯托
+	Scripts.Mephisto = false; //墨菲斯托
 		Config.Mephisto.MoatTrick = true; //脆弱的法師用隔河殺BOSS
 		Config.Mephisto.KillCouncil = false; //殺議員
 		Config.Mephisto.TakeRedPortal = true; //走紅門道ACT4
@@ -256,9 +256,9 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [1,1,1,1,1,1,1,1,1,0];
-	Config.Inventory[1] = [1,1,1,1,1,1,1,1,0,0];
-	Config.Inventory[2] = [1,1,1,1,1,1,1,1,0,0];
+	Config.Inventory[0] = [1,1,1,1,1,1,1,0,1,0];
+	Config.Inventory[1] = [1,1,1,1,1,1,1,0,0,0];
+	Config.Inventory[2] = [1,1,1,1,1,1,1,0,0,0];
 	Config.Inventory[3] = [1,1,1,1,1,1,1,1,0,0];
 
 	Config.StashGold = 100000; // (滿額存錢)Minimum amount of gold to stash.

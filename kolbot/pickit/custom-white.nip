@@ -44,7 +44,7 @@
 //[name] == breastplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) //胸甲
 [name] == mageplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) 
 //[name] == duskshroud && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) //法師鎧甲
-[name] == wyrmhide && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
+//[name] == wyrmhide && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) //古龍皮
 //[name] == scarabhusk && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
 //[name] == wirefleece && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
 //[name] == diamondmail && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
@@ -127,7 +127,7 @@
 
 // ##### (釘頭錘)maces = normal ############################################################################# 
 [name] == flail && [quality] == normal # [sockets] == 5 // call to arms
-[name] == flail && [quality] == normal # [sockets] == 4 // heart of the oak
+//[name] == flail && [quality] == normal # [sockets] == 4 // (連枷)heart of the oak
 //[name] == flail && [quality] == normal && [flag] != ethereal # [sockets] == 5 // call to arms
 //[name] == flail && [quality] == normal && [flag] != ethereal # [sockets] == 4 // heart of the oak
 

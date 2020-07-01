@@ -38,7 +38,7 @@
 //[name] == warhat && [quality] == unique && [flag] != ethereal # [itemallskills] == 1   //(粗野之冠)peasant crown
 //[name] == sallet && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 60 && [coldresist] >= 0 && [fireresist] >= 0 && [lightresist] >= 0 //(岩石制動器)rock stopper
 [name] == sallet && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 60 && [coldresist] >= 0 && [fireresist] >= 0 && [lightresist] >= 0 //ethereal rock stopper
-[name] == casque && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 && [itemmagicbonus] >= 0 //(偷取骷髏)stealskull
+//[name] == casque && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 && [itemmagicbonus] >= 0 //(偷取骷髏)stealskull
 [name] == casque && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 20 && [itemmagicbonus] >= 0 //ethereal stealskull
 [name] == grandcrown && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 20 && [itemgoldbonus] >= 0 && [lifeleech] >= 2 //(盜賊皇冠)crown of theives
 [name] == grandcrown && [quality] == unique && [flag] == ethereal # [itemgoldbonus] >= 10 && [lifeleech] >= 0 //ethereal crown of thieves
@@ -79,7 +79,7 @@
 //[name] == barbedshield && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(長槍守衛)lance guard
 //[name] == pavise && [quality] == unique && [flag] != ethereal # [coldresist]+[fireresist]+[lightresist]+[poisonresist] >= 10 && [normaldamagereduction] >=1 && [magicdamagereduction] >= 1 //(基爾克的聖堂)gerke's sanctuary
 [name] == grimshield && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 //(警戒之牆)ethereal lidless wall
-[name] == luna && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(黑橡樹盾)blackoak shield
+//[name] == luna && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(黑橡樹盾)blackoak shield
 [name] == monarch && [quality] == unique && [flag] != ethereal //(暴風之盾)stormshield
 [name] == trollnest && [quality] == unique && [flag] != ethereal # [sockets] >= 0 && [plusdefense] >= 40 && [armorclassvsmissile] >= 35 && [fireresist] >= 3 && [poisonresist] >= 4 //(獵頭人的榮耀)head hunter's glory
 [name] == ward && [quality] == unique && [flag] != ethereal # [fireresist] >= 4 && [toblock] >= 3 && [itemabsorbcold] >= 1 //(魂系結界)spirit ward

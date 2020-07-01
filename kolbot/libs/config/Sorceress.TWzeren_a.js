@@ -40,7 +40,7 @@ function LoadConfig() {
 	Scripts.Tristram = false; //崔斯特瑞姆
 		Config.Tristram.WalkClear = false; // (不傳送)Disable teleport while clearing to protect leechers
 		Config.Tristram.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Pit = false; //泰摩高地地穴
+	Scripts.Pit = true; //泰摩高地地穴
 		Config.Pit.ClearPit1 = true; //清理一層
 	Scripts.Treehead = false; //樹頭木拳/黑暗森林
 	Scripts.Smith = false;
@@ -97,12 +97,12 @@ function LoadConfig() {
 		Config.Pindleskin.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
 	Scripts.Nihlathak = false; //尼拉塞克/瓦特之廳
 		Config.Nihlathak.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
-	Scripts.Eldritch = false; //矯正者-怪異/冰凍高地
+	Scripts.Eldritch = true; //矯正者-怪異/冰凍高地
 		Config.Eldritch.OpenChest = true; //開寶相
 		Config.Eldritch.KillShenk = true;
 		Config.Eldritch.KillDacFarren = true;
 	Scripts.Eyeback = false; //狂暴者-眼魔/亞瑞特高原
-	Scripts.SharpTooth = false; //利牙殺手/冰凍高地
+	Scripts.SharpTooth = true; //利牙殺手/冰凍高地
 	Scripts.ThreshSocket = false; //剝殼凹槽/亞瑞特高原
 	Scripts.Abaddon = false;
 	Scripts.Frozenstein = false; //冰凍魔怪/冰河

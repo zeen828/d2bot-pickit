@@ -96,10 +96,10 @@
 //[name] == lightplatedboots && [quality] == set // vidala's fetlock
 
 // # (艾爾多的守衛)aldur's watchtower #
-[name] == hunter'sguise && [quality] == set // ()aldur's stony gaze
-[name] == battleboots && [quality] == set // ()aldur's advance
+//[name] == hunter'sguise && [quality] == set // (-頭)aldur's stony gaze
+//[name] == battleboots && [quality] == set // ()aldur's advance
 [name] == shadowplate && [quality] == set // ()aldur's deception
-[name] == jaggedstar && [quality] == set // ()aldur's rhythm
+//[name] == jaggedstar && [quality] == set // ()aldur's rhythm
 
 // # (布爾凱索的孩子)bul kathos' children #
 [name] == colossusblade && [quality] == set // bul-kathos' sacred charge
@@ -136,7 +136,7 @@
 //[name] == belt && [quality] == set # [lightmindam] == 3 && [lightmaxdam] == 33 // hwanin's blessing
 
 // # (不朽之王)immortal king #
-[name] == warbelt && [quality] == set // immortal king's detail
+//[name] == warbelt && [quality] == set // (-腰)immortal king's detail
 //[name] == avengerguard && [quality] == set // (不朽之王的意志-頭)immortal king's will
 //[name] == ogremaul && [quality] == set // (不朽之王的碎魂者-槌)immortal king's stone crusher
 [name] == sacredarmor && [quality] == set // immortal king's soul cage
@@ -147,14 +147,14 @@
 [name] == diadem && [quality] == set // m'avina's true sight
 [name] == grandmatronbow && [quality] == set // m'avina's caster
 [name] == krakenshell && [quality] == set // m'avina's embrace
-[name] == battlegauntlets && [quality] == set // m'avina's icy clutch
-[name] == sharkskinbelt && [quality] == set // m'avina's tenet
+//[name] == battlegauntlets && [quality] == set // (-手)m'avina's icy clutch
+//[name] == sharkskinbelt && [quality] == set // (-腰)m'avina's tenet
 
 // # (娜塔亞的非難)natalya's odium #
-[name] == grimhelm && [quality] == set // natalya's totem
+//[name] == grimhelm && [quality] == set // (-頭)natalya's totem
 [name] == scissorssuwayyah && [quality] == set // natalya's mark
 [name] == loricatedmail && [quality] == set // natalya's shadow
-[name] == meshboots && [quality] == set // natalya's soul
+//[name] == meshboots && [quality] == set // (-腳)natalya's soul
 
 // # (娜吉的古代遺跡)naj's ancient vestige #
 //[name] == circlet && [quality] == set // naj's circlet

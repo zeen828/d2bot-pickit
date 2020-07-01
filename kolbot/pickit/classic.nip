@@ -54,7 +54,7 @@
 
 //------ weapons ------
 
-([name] == lance || [name] == marteldefer || [name] == battlehammer || [name] == ancientsword || [name] == naga || [name] == ancientaxe) && [quality] == rare # [enhanceddamage] >= 160
+//([name] == lance || [name] == marteldefer || [name] == battlehammer || [name] == ancientsword || [name] == naga || [name] == ancientaxe) && [quality] == rare # [enhanceddamage] >= 160
 [name] == executionersword && [quality] == rare # [enhanceddamage] >= 160 && [itemreqpercent] < 0
 //[name] == grimscythe && [quality] == rare # [enhanceddamage] >= 160 && [itemreqpercent] < 0
 [name] == gothicbow && [quality] == rare # [enhanceddamage] >= 160 && [ias] >= 20
@@ -68,8 +68,8 @@
 
 //------ shields ------
 
-([name] == boneshield || [name] == grimshield) && [quality] == rare # ([fbr] >= 30 || [paladinskills] == 2) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 64 // temp
-[type] == shield && [name] != ancientshield && [name] != pavise && [quality] == rare # ([fbr] >= 30 || [paladinskills] == 2) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 64 && ([fhr] >= 17 || [itemdamagetomana] >= 7 || [itemattackertakesdamage] >= 4 || [enhanceddamage] >= 66 || [itempoisonlengthresist] == 75 || [itemlightradius] == 2)
+//([name] == boneshield || [name] == grimshield) && [quality] == rare # ([fbr] >= 30 || [paladinskills] == 2) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 64 // temp
+//[type] == shield && [name] != ancientshield && [name] != pavise && [quality] == rare # ([fbr] >= 30 || [paladinskills] == 2) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 64 && ([fhr] >= 17 || [itemdamagetomana] >= 7 || [itemattackertakesdamage] >= 4 || [enhanceddamage] >= 66 || [itempoisonlengthresist] == 75 || [itemlightradius] == 2)
 [type] == shield && [name] != ancientshield && [name] != pavise && [quality] == rare # [paladinskills] == 2 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 64
 [name] == pavise && [quality] == rare # [fbr] >= 30 && [enhanceddefense] >= 90 && ([itemreqpercent] < 0 || [strength] >= 9)
 [name] == grimshield && [quality] == rare # [enhanceddefense] >= 70 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 64
