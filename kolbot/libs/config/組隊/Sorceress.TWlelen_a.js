@@ -28,9 +28,9 @@ function LoadConfig() {
 	// Boss/area scripts
 
 	// *** (第一章)act 1 ***
-	Scripts.Corpsefire = true; //屍體發火/邪惡洞窟	
+	Scripts.Corpsefire = false; //屍體發火/邪惡洞窟	
 		Config.Corpsefire.ClearDen = true; //是否全清洞窟
-	Scripts.Mausoleum = true; //大陵墓
+	Scripts.Mausoleum = false; //大陵墓
 		Config.Mausoleum.KillBloodRaven = false; //血鳥/冰冷之原-埋骨之地
 		Config.Mausoleum.ClearCrypt = true; //是否清另一個墳墓
 	Scripts.Rakanishu = false; //尼拉卡修/石塊曠野
@@ -45,23 +45,23 @@ function LoadConfig() {
 	Scripts.Treehead = false; //樹頭木拳/黑暗森林
 	Scripts.Smith = false;
 	Scripts.BoneAsh = false; //骨灰/外側回廊-大教堂
-	Scripts.Countess = false; //女伯爵/黑暗森林-高塔地牢第五層
+	Scripts.Countess = true; //女伯爵/黑暗森林-高塔地牢第五層
 		Config.Countess.KillGhosts = true; //是否清路上的菁英怪
 	Scripts.Andariel = true; //安達利爾
 	Scripts.Cows = false; //母牛關
 
 	// *** (第二章)act 2 ***
-	Scripts.Radament = true; //羅達門特/下水道第三層
+	Scripts.Radament = false; //羅達門特/下水道第三層
 	Scripts.Coldworm = false;
 		Config.Coldworm.KillBeetleburst = false;
 		Config.Coldworm.ClearMaggotLair = false; // (清怪)Clear all 3 levels
-	Scripts.AncientTunnels = true; //古代通道
+	Scripts.AncientTunnels = false; //古代通道
 		Config.AncientTunnels.OpenChest = true; // (開特殊箱子)Open special chest in Lost City
 		Config.AncientTunnels.KillDarkElder = false; //黑暗長老/遺失的城市
 	Scripts.Summoner = true; //召喚者/神秘避難所
 		Config.Summoner.FireEye = false;
 	Scripts.Tombs = false; //古墓
-	Scripts.Duriel = false; //督瑞爾
+	Scripts.Duriel = true; //督瑞爾
 
 	// *** (第三章)act 3 ***
 	Scripts.Stormtree = false; //暴風之樹/進入庫拉斯特下層前
@@ -112,7 +112,7 @@ function LoadConfig() {
 	Scripts.Snapchip = false;
 		Config.Snapchip.ClearIcyCellar = true;
 	Scripts.Worldstone = false; //世界之石大殿
-	Scripts.Baal = false; //巴爾
+	Scripts.Baal = true; //巴爾
 		Config.Baal.HotTPMessage = "Hot TP!"; //到達王座開一個"危險的門"發送消息
 		Config.Baal.SafeTPMessage = "Safe TP!"; //到達王座開一個安全的門發送消息
 		Config.Baal.BaalMessage = "Baal!"; //等待巴爾時
@@ -427,7 +427,7 @@ function LoadConfig() {
 	Config.LocalChat.Toggle = false; // optional, set to KEY value to toggle through modes 0, 1, 2
 	Config.LocalChat.Mode = 0; // 0 = disabled, 1 = chat from 'say' (recommended), 2 = all chat (for manual play)
 	// If Config.Leader is set, the bot will only accept invites from leader. If Config.PublicMode is not 0, Baal and Diablo script will open Town Portals.
-	Config.PublicMode = 2; // (組隊設定)1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
+	Config.PublicMode = 1; // (組隊設定)1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
 	// Party message settings. Each setting represents an array of messages that will be randomly chosen.
 	// $name, $level, $class and $killer are replaced by the player's name, level, class and killer
 	Config.Greetings = []; // (組隊歡迎消息)Example: ["Hello, $name (level $level $class)"]
