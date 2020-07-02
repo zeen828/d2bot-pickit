@@ -35,7 +35,7 @@ function LoadConfig() {
 		Config.Mausoleum.ClearCrypt = true; //是否清另一個墳墓
 	Scripts.Rakanishu = false; //尼拉卡修/石塊曠野
 		Config.Rakanishu.KillGriswold = true;
-	Scripts.UndergroundPassage = false; //地底通道
+	Scripts.UndergroundPassage = true; //地底通道
 	Scripts.Coldcrow = false;
 	Scripts.Tristram = false; //崔斯特瑞姆
 		Config.Tristram.WalkClear = false; // (不傳送)Disable teleport while clearing to protect leechers
@@ -64,7 +64,7 @@ function LoadConfig() {
 	Scripts.Duriel = false; //督瑞爾
 
 	// *** (第三章)act 3 ***
-	Scripts.Stormtree = true; //暴風之樹/進入庫拉斯特下層前
+	Scripts.Stormtree = false; //暴風之樹/進入庫拉斯特下層前
 	Scripts.KurastTemples = false;
 	Scripts.Icehawk = false;
 	Scripts.Endugu = false;
@@ -77,7 +77,7 @@ function LoadConfig() {
 
 	// *** (第四章)act 4 ***
 	Scripts.OuterSteppes = false;
-	Scripts.Izual = true; //衣卒爾/絕望平原
+	Scripts.Izual = false; //衣卒爾/絕望平原
 	Scripts.Hephasto = false; //海法斯特盔甲製作者/火焰之河
 	Scripts.Vizier = false; // (非資料片專用)Intended for classic sorc, kills Vizier only.
 	Scripts.FastDiablo = false; //快速殺暗黑破壞神
@@ -91,7 +91,7 @@ function LoadConfig() {
 	Scripts.SealLeader = false; // (清理出一個安全的區域給小號吸經驗)Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
 
 	// *** (第五章)act 5 ***
-	Scripts.Pindleskin = true; //暴躁外皮/尼拉塞克的神殿
+	Scripts.Pindleskin = false; //暴躁外皮/尼拉塞克的神殿
 		Config.Pindleskin.UseWaypoint = false; //沒紅門用傳點
 		Config.Pindleskin.KillNihlathak = false; //殺尼拉薩克
 		Config.Pindleskin.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
@@ -101,9 +101,9 @@ function LoadConfig() {
 		Config.Eldritch.OpenChest = true; //開寶相
 		Config.Eldritch.KillShenk = true;
 		Config.Eldritch.KillDacFarren = true;
-	Scripts.Eyeback = true; //狂暴者-眼魔/亞瑞特高原
+	Scripts.Eyeback = false; //狂暴者-眼魔/亞瑞特高原
 	Scripts.SharpTooth = true; //利牙殺手/冰凍高地
-	Scripts.ThreshSocket = true; //剝殼凹槽/亞瑞特高原
+	Scripts.ThreshSocket = false; //剝殼凹槽/亞瑞特高原
 	Scripts.Abaddon = false;
 	Scripts.Frozenstein = false; //冰凍魔怪/冰河
 		Config.Frozenstein.ClearFrozenRiver = true; //全清冰河
@@ -111,8 +111,8 @@ function LoadConfig() {
 		Config.Bonesaw.ClearDrifterCavern = false;
 	Scripts.Snapchip = false;
 		Config.Snapchip.ClearIcyCellar = true;
-	Scripts.Worldstone = true; //世界之石大殿
-	Scripts.Baal = true; //巴爾
+	Scripts.Worldstone = false; //世界之石大殿
+	Scripts.Baal = false; //巴爾
 		Config.Baal.HotTPMessage = "Hot TP!"; //到達王座開一個"危險的門"發送消息
 		Config.Baal.SafeTPMessage = "Safe TP!"; //到達王座開一個安全的門發送消息
 		Config.Baal.BaalMessage = "Baal!"; //等待巴爾時
@@ -154,9 +154,9 @@ function LoadConfig() {
 		Config.BaalHelper.SkipTP = false; // Don't wait for a TP, go to WSK3 and wait for someone to go to throne. Anti PK measure.
 	Scripts.Follower = false; // Script that follows a manually played leader around like a merc. For a list of commands, see Follower.js
 
-	// *** special scripts ***
-	Scripts.WPGetter = false; // Get missing waypoints
-	Scripts.GetKeys = false;  // Hunt for T/H/D keys
+	// *** (特殊腳本)special scripts ***
+	Scripts.WPGetter = false; // (取得缺少的傳點)Get missing waypoints
+	Scripts.GetKeys = false;  // (獲取鑰匙)Hunt for T/H/D keys
 	Scripts.OrgTorch = false;
 		Config.OrgTorch.MakeTorch = true; // Convert organ sets to torches
 		Config.OrgTorch.WaitForKeys = true; // Enable Torch System to get keys from other profiles. See libs/TorchSystem.js for more info
@@ -229,7 +229,7 @@ function LoadConfig() {
 	Config.HealHP = 50; // Go to a healer if under designated percent of life.
 	Config.HealMP = 0; // Go to a healer if under designated percent of mana.
 	Config.HealStatus = true; // (解中毒詛咒)Go to a healer if poisoned or cursed
-	Config.UseMerc = true; // Use merc. This is ignored and always false in d2classic.
+	Config.UseMerc = true; // (使用傭兵)Use merc. This is ignored and always false in d2classic.
 	Config.MercWatch = false; // Instant merc revive during battle.
 
 	// (喝水設定)Potion settings
@@ -316,8 +316,8 @@ function LoadConfig() {
 	Config.ItemInfo = true; // Log stashed, skipped (due to no space) or sold items.
 	Config.ItemInfoQuality = []; // The quality of sold items to log. See NTItemAlias.dbl for values. Example: Config.ItemInfoQuality = [6, 7, 8];
 
-	// Item identification settings
-	Config.CainID.Enable = true; // Identify items at Cain
+	// (物品識別)Item identification settings
+	Config.CainID.Enable = false; // (在凱恩那辨識)Identify items at Cain
 	Config.CainID.MinGold = 2500000; // Minimum gold (stash + character) to have in order to use Cain.
 	Config.CainID.MinUnids = 3; // Minimum number of unid items in order to use Cain.
 	Config.FieldID = false; // Identify items in the field instead of going to town.

@@ -154,9 +154,9 @@ function LoadConfig() {
 		Config.BaalHelper.SkipTP = false; // Don't wait for a TP, go to WSK3 and wait for someone to go to throne. Anti PK measure.
 	Scripts.Follower = false; // Script that follows a manually played leader around like a merc. For a list of commands, see Follower.js
 
-	// *** special scripts ***
-	Scripts.WPGetter = false; // Get missing waypoints
-	Scripts.GetKeys = false;  // Hunt for T/H/D keys
+	// *** (特殊腳本)special scripts ***
+	Scripts.WPGetter = false; // (取得缺少的傳點)Get missing waypoints
+	Scripts.GetKeys = false;  // (獲取鑰匙)Hunt for T/H/D keys
 	Scripts.OrgTorch = false;
 		Config.OrgTorch.MakeTorch = true; // Convert organ sets to torches
 		Config.OrgTorch.WaitForKeys = true; // Enable Torch System to get keys from other profiles. See libs/TorchSystem.js for more info
@@ -229,7 +229,7 @@ function LoadConfig() {
 	Config.HealHP = 50; // Go to a healer if under designated percent of life.
 	Config.HealMP = 0; // Go to a healer if under designated percent of mana.
 	Config.HealStatus = true; // (解中毒詛咒)Go to a healer if poisoned or cursed
-	Config.UseMerc = true; // Use merc. This is ignored and always false in d2classic.
+	Config.UseMerc = true; // (使用傭兵)Use merc. This is ignored and always false in d2classic.
 	Config.MercWatch = false; // Instant merc revive during battle.
 
 	// (喝水設定)Potion settings
@@ -316,8 +316,8 @@ function LoadConfig() {
 	Config.ItemInfo = false; // Log stashed, skipped (due to no space) or sold items.
 	Config.ItemInfoQuality = []; // The quality of sold items to log. See NTItemAlias.dbl for values. Example: Config.ItemInfoQuality = [6, 7, 8];
 
-	// Item identification settings
-	Config.CainID.Enable = false; // Identify items at Cain
+	// (紀錄日誌)Item identification settings
+	Config.CainID.Enable = false; // (在凱恩那辨識)Identify items at Cain
 	Config.CainID.MinGold = 2500000; // Minimum gold (stash + character) to have in order to use Cain.
 	Config.CainID.MinUnids = 3; // Minimum number of unid items in order to use Cain.
 	Config.FieldID = false; // Identify items in the field instead of going to town.

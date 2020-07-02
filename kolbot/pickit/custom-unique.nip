@@ -62,8 +62,8 @@
 [name] == russetarmor && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(詩寇蒂的憤怒)skullder's ire
 [name] == russetarmor && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 //ethereal skullder's ire
 [name] == templarcoat && [quality] == unique # [enhanceddefense] >= 15 //(守護天使)guardian angel
-[name] == sharktootharmor && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 25 //(排齒)toothrow
-[name] == sharktootharmor && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 21 //ethereal toothrow
+//[name] == sharktootharmor && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 25 //(排齒)toothrow
+//[name] == sharktootharmor && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 21 //ethereal toothrow
 [name] == duskshroud && [quality] == unique # ([skillfirebolt] >= 0 || [skillfireball] >= 0 || [skillmeteor] >= 0) //(奧瑪斯的長袍)ormus' robes
 [name] == duskshroud && [quality] == unique # ([skillchainlightning] >= 0 || [skilllightning] >= 0 || [skillnova] >= 0 || [skillenergyshield] >= 0) //ormus' robes
 [name] == duskshroud && [quality] == unique # ([skillblizzard] >= 0 || [skillglacialspike] >= 0 || [skilliceblast] >= 0) //ormus' robes

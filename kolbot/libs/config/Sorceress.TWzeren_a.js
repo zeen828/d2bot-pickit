@@ -154,26 +154,26 @@ function LoadConfig() {
 		Config.BaalHelper.SkipTP = false; // Don't wait for a TP, go to WSK3 and wait for someone to go to throne. Anti PK measure.
 	Scripts.Follower = false; // Script that follows a manually played leader around like a merc. For a list of commands, see Follower.js
 
-	// *** special scripts ***
-	Scripts.WPGetter = false; // Get missing waypoints
-	Scripts.GetKeys = false;  // Hunt for T/H/D keys
+	// *** (特殊腳本)special scripts ***
+	Scripts.WPGetter = false; // (取得缺少的傳點)Get missing waypoints
+	Scripts.GetKeys = false;  // (獲取鑰匙)Hunt for T/H/D keys
 	Scripts.OrgTorch = false;
-		Config.OrgTorch.MakeTorch = true; // Convert organ sets to torches
+		Config.OrgTorch.MakeTorch = true; // (將器官轉為火炬)Convert organ sets to torches
 		Config.OrgTorch.WaitForKeys = true; // Enable Torch System to get keys from other profiles. See libs/TorchSystem.js for more info
 		Config.OrgTorch.WaitTimeout = 15; // Time in minutes to wait for keys before moving on
 		Config.OrgTorch.UseSalvation = true; // Use Salvation aura on Mephisto (if possible)
 		Config.OrgTorch.GetFade = false; // Get fade by standing in a fire. You MUST have Last Wish or Treachery on your character being worn.
 	Scripts.Rusher = false; // Rush bot. For a list of commands, see Rusher.js
-		Config.Rusher.WaitPlayerCount = 0; // Wait until game has a certain number of players (0 - don't wait, 8 - wait for full game).
+		Config.Rusher.WaitPlayerCount = 0; // (等待遊戲玩家數)Wait until game has a certain number of players (0 - don't wait, 8 - wait for full game).
 		Config.Rusher.Radament = false; // Do Radament quest.
-		Config.Rusher.LamEsen = false; // Do Lam Esen quest.
-		Config.Rusher.Izual = false; // Do Izual quest.
-		Config.Rusher.Shenk = false; // Do Shenk quest.
-		Config.Rusher.Anya = false; // Do Anya quest.
+		Config.Rusher.LamEsen = false; // (做藍伊森任務Act3書本)Do Lam Esen quest.
+		Config.Rusher.Izual = false; // (做依卒爾任務Act4)Do Izual quest.
+		Config.Rusher.Shenk = false; // (做督軍任務Act5)Do Shenk quest.
+		Config.Rusher.Anya = false; // (做安亞任務Act5)Do Anya quest.
 		Config.Rusher.LastRun = ""; // End rush after this run. List of runs: http://pastebin.com/Uez3nZ6g
-	Scripts.Rushee = false; // Automatic rushee, works with Rusher. Set Rusher's character name as Config.Leader
-		Config.Rushee.Quester = false; // Enter portals and get quest items.
-		Config.Rushee.Bumper = false; // Do Ancients and Baal. Minimum levels: 20 - norm, 40 - nightmare
+	Scripts.Rushee = false; // (自動帶過關,將帶關者設Config.Leader)Automatic rushee, works with Rusher. Set Rusher's character name as Config.Leader
+		Config.Rushee.Quester = false; // (獲取任務物品)Enter portals and get quest items.
+		Config.Rushee.Bumper = false; // (做古人和巴爾任務)Do Ancients and Baal. Minimum levels: 20 - norm, 40 - nightmare
 	Scripts.CrushTele = false; // classic rush teleporter. go to area of interest and press "-" numpad key
 	Scripts.Questing = false; // solves missing quests (skill/stat+shenk)
 	Scripts.Gamble = false; // Gambling system, other characters will mule gold into your game so you can gamble infinitely. See Gambling.js
@@ -183,11 +183,11 @@ function LoadConfig() {
 		Config.Enchant.Triggers = ["chant", "cows", "wps"]; // Chat commands for enchant, cow level and waypoint giving
 		Config.Enchant.GetLeg = false; // Get Wirt's Leg from Tristram. If set to false, it will check for the leg in town.
 		Config.Enchant.AutoChant = false; // Automatically enchant nearby players and their minions
-		Config.Enchant.GameLength = 20; // Game length in minutes
+		Config.Enchant.GameLength = 20; // (遊戲時間/分鐘)Game length in minutes
 	Scripts.IPHunter = false;
-		Config.IPHunter.IPList = []; // List of IPs to look for. example: [165, 201, 64]
-		Config.IPHunter.GameLength = 3; // Number of minutes to stay in game if ip wasn't found
-	Scripts.KillDclone = false; // Kill Diablo Clone by using Arcane Sanctuary waypoint. Diablo needs to walk the Earth in the game.
+		Config.IPHunter.IPList = []; // (要查的IP)List of IPs to look for. example: [165, 201, 64]
+		Config.IPHunter.GameLength = 3; // (不是目標IP在遊戲停留時間/分鐘)Number of minutes to stay in game if ip wasn't found
+	Scripts.KillDclone = false; // (使用避難所小頭目變身地表)Kill Diablo Clone by using Arcane Sanctuary waypoint. Diablo needs to walk the Earth in the game.
 	Scripts.ShopBot = false; // Shopbot script. Automatically uses shopbot.nip and ignores other pickits.
 		// Supported NPCs: Akara, Charsi, Gheed, Elzix, Fara, Drognan, Ormus, Asheara, Hratli, Jamella, Halbu, Anya. Multiple NPCs are also supported, example: [NPC.Elzix, NPC.Fara]
 		// Use common sense when combining NPCs. Shopping in different acts will probably lead to bugs.
@@ -196,7 +196,7 @@ function LoadConfig() {
 		Config.ShopBot.ScanIDs = [];
 		Config.ShopBot.CycleDelay = 0; // Delay between shopping cycles in milliseconds, might help with crashes.
 		Config.ShopBot.QuitOnMatch = false; // Leave game as soon as an item is shopped.
-	Scripts.ChestMania = false; // Open chests in configured areas. See sdk/areas.txt
+	Scripts.ChestMania = false; // (在配置區域打開箱子)Open chests in configured areas. See sdk/areas.txt
 		Config.ChestMania.Act1 = [13, 14, 15, 16, 18, 19]; // List of act 1 areas to open chests in
 		Config.ChestMania.Act2 = [55, 59, 65, 66, 67, 68, 69, 70, 71, 72]; // List of act 2 areas to open chests in
 		Config.ChestMania.Act3 = [79, 80, 81, 92, 93, 84, 85, 90]; // List of act 3 areas to open chests in
@@ -229,7 +229,7 @@ function LoadConfig() {
 	Config.HealHP = 50; // Go to a healer if under designated percent of life.
 	Config.HealMP = 0; // Go to a healer if under designated percent of mana.
 	Config.HealStatus = true; // (解中毒詛咒)Go to a healer if poisoned or cursed
-	Config.UseMerc = true; // Use merc. This is ignored and always false in d2classic.
+	Config.UseMerc = true; // (使用傭兵)Use merc. This is ignored and always false in d2classic.
 	Config.MercWatch = false; // Instant merc revive during battle.
 
 	// (喝水設定)Potion settings
@@ -316,8 +316,8 @@ function LoadConfig() {
 	Config.ItemInfo = true; // Log stashed, skipped (due to no space) or sold items.
 	Config.ItemInfoQuality = []; // The quality of sold items to log. See NTItemAlias.dbl for values. Example: Config.ItemInfoQuality = [6, 7, 8];
 
-	// Item identification settings
-	Config.CainID.Enable = true; // Identify items at Cain
+	// (物品識別)Item identification settings
+	Config.CainID.Enable = false; // (在凱恩那辨識)Identify items at Cain
 	Config.CainID.MinGold = 2500000; // Minimum gold (stash + character) to have in order to use Cain.
 	Config.CainID.MinUnids = 3; // Minimum number of unid items in order to use Cain.
 	Config.FieldID = false; // Identify items in the field instead of going to town.
