@@ -16,7 +16,7 @@ var StarterConfig = {
 	GameDoesNotExistTimeout: 30 // Seconds to wait before cancelling the 'Game does not exist.' screen
 };
 
-/* Join game settings
+/* (加入遊戲設定)Join game settings
 	Format: "leader's profile": ["leecher 1 profile", "leecher 2 profile", ...]
 	If you want everyone to join the same leader, use "leader's profile": ["all"]
 	NOTE: Use PROFILE names (profile matches window title), NOT character/account names
@@ -30,7 +30,9 @@ var StarterConfig = {
 
 var JoinSettings = {
 	//"Leader": ["Leecher"]
-	"zeren_leader": ["lelen_f"]
+	//外掛設定上profile名稱
+	//"組長": ["組員", "組員"]
+	"zeren_leader": ["lelen_follow"]
 };
 
 // Advanced config - you don't have to edit this unless you need some of the features provided

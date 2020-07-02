@@ -1,4 +1,4 @@
-// Sorceress config file
+// Amazon config file
 
 /* Brief instructions:
  * Notepad++ is HIGHLY recommended to use for editing these files. Visit http://notepad-plus-plus.org/
@@ -40,11 +40,11 @@ function LoadConfig() {
 	Scripts.Tristram = false; //崔斯特瑞姆
 		Config.Tristram.WalkClear = false; // (不傳送)Disable teleport while clearing to protect leechers
 		Config.Tristram.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Pit = true; //泰摩高地地穴
+	Scripts.Pit = false; //泰摩高地地穴
 		Config.Pit.ClearPit1 = true; //清理一層
 	Scripts.Treehead = false; //樹頭木拳/黑暗森林
 	Scripts.Smith = false;
-	Scripts.BoneAsh = true; //骨灰/外側回廊-大教堂
+	Scripts.BoneAsh = false; //骨灰/外側回廊-大教堂
 	Scripts.Countess = false; //女伯爵/黑暗森林-高塔地牢第五層
 		Config.Countess.KillGhosts = true; //是否清路上的菁英怪
 	Scripts.Andariel = true; //安達利爾
@@ -70,7 +70,7 @@ function LoadConfig() {
 	Scripts.Endugu = false;
 	Scripts.Travincal = false; //催凡克
 		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Mephisto = true; //墨菲斯托
+	Scripts.Mephisto = false; //墨菲斯托
 		Config.Mephisto.MoatTrick = true; //脆弱的法師用隔河殺BOSS
 		Config.Mephisto.KillCouncil = false; //殺議員
 		Config.Mephisto.TakeRedPortal = true; //走紅門道ACT4
@@ -97,12 +97,12 @@ function LoadConfig() {
 		Config.Pindleskin.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
 	Scripts.Nihlathak = false; //尼拉塞克/瓦特之廳
 		Config.Nihlathak.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
-	Scripts.Eldritch = true; //矯正者-怪異/冰凍高地
+	Scripts.Eldritch = false; //矯正者-怪異/冰凍高地
 		Config.Eldritch.OpenChest = true; //開寶相
 		Config.Eldritch.KillShenk = true;
 		Config.Eldritch.KillDacFarren = true;
 	Scripts.Eyeback = false; //狂暴者-眼魔/亞瑞特高原
-	Scripts.SharpTooth = true; //利牙殺手/冰凍高地
+	Scripts.SharpTooth = false; //利牙殺手/冰凍高地
 	Scripts.ThreshSocket = false; //剝殼凹槽/亞瑞特高原
 	Scripts.Abaddon = false;
 	Scripts.Frozenstein = false; //冰凍魔怪/冰河
@@ -256,9 +256,9 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [1,1,1,1,1,1,0,0,0,0];
-	Config.Inventory[1] = [1,1,1,1,1,0,0,0,0,0];
-	Config.Inventory[2] = [1,1,1,1,1,0,0,0,0,0];
+	Config.Inventory[0] = [1,1,1,1,0,0,0,0,0,0];
+	Config.Inventory[1] = [1,1,1,1,0,0,0,0,0,0];
+	Config.Inventory[2] = [1,1,1,1,0,0,0,0,0,0];
 	Config.Inventory[3] = [1,1,1,1,1,0,0,0,0,0];
 
 	Config.StashGold = 100000; // (滿額存錢)Minimum amount of gold to stash.
@@ -291,8 +291,8 @@ function LoadConfig() {
 	Config.PickitFiles.push("custom-runes.nip");//自訂符文
 	Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
 	Config.PickitFiles.push("test.nip");//測試
-	Config.PickRange = 40; // (撿取距離)Pick radius
-	Config.FastPick = true; // Check and pick items between attacks
+	Config.PickRange = 40; // Pick radius
+	Config.FastPick = false; // Check and pick items between attacks
 
 	/* Advanced automule settings
 	 * Trigger - Having an item that is on the list will initiate muling. Useful if you want to mule something immediately upon finding.
@@ -313,11 +313,11 @@ function LoadConfig() {
 	Config.AutoMule.Exclude = [];
 
 	// Additional item info log settings. All info goes to \logs\ItemLog.txt
-	Config.ItemInfo = true; // Log stashed, skipped (due to no space) or sold items.
+	Config.ItemInfo = false; // Log stashed, skipped (due to no space) or sold items.
 	Config.ItemInfoQuality = []; // The quality of sold items to log. See NTItemAlias.dbl for values. Example: Config.ItemInfoQuality = [6, 7, 8];
 
 	// Item identification settings
-	Config.CainID.Enable = true; // Identify items at Cain
+	Config.CainID.Enable = false; // Identify items at Cain
 	Config.CainID.MinGold = 2500000; // Minimum gold (stash + character) to have in order to use Cain.
 	Config.CainID.MinUnids = 3; // Minimum number of unid items in order to use Cain.
 	Config.FieldID = false; // Identify items in the field instead of going to town.
@@ -366,7 +366,7 @@ function LoadConfig() {
 	//Config.Recipes.push([Recipe.Gem, "Flawless Diamond"]); // Make Perfect Diamond
 	//Config.Recipes.push([Recipe.Gem, "Flawless Skull"]); // Make Perfect Skull
 
-	//Config.Recipes.push([Recipe.Token]); // (洗點勳章)Make Token of Absolution
+	//Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
 
 	//符文
 	//Config.Recipes.push([Recipe.Rune, "Pul Rune"]); // Upgrade Pul to Um
@@ -442,7 +442,7 @@ function LoadConfig() {
 	Config.MinGameTime = 420; // (最短遊戲時間/秒)Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
 	Config.MaxGameTime = 1800; // (最長遊戲時間/秒)Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
-	Config.OpenChests = true; // Open chests. Controls key buying.
+	Config.OpenChests = false; // Open chests. Controls key buying.
 	Config.MiniShopBot = true; // Scan items in NPC shops.
 	Config.PacketShopping = false; // Use packets to shop. Improves shopping speed.
 	Config.TownCheck = false; // Go to town if out of potions
@@ -454,25 +454,25 @@ function LoadConfig() {
 	Config.ScanShrines = [];
 
 	// MF Switch
-	Config.MFSwitchPercent = 0; // Boss life % to switch to secondary weapon slot. Set to 0 to disable.
+	Config.MFSwitchPercent = 0; // Boss life % to switch to non-primiary weapon slot. Set to 0 to disable.
 
 	// Primary Slot - Bot will try to determine primary slot if not used (non-cta slot that's not empty)
 	Config.PrimarySlot = -1; // Set to use specific weapon slot as primary weapon slot: -1 = disabled, 0 = slot I, 1 = slot II
 
-	// Speedup config. Full packet casting is not recommended for melee skills.
-	Config.FCR = 0; // 0 - disable, 1 to 255 - set value of Faster Cast Rate.
-	Config.FHR = 0; // 0 - disable, 1 to 255 - set value of Faster Hit Recovery.
-	Config.FBR = 0; // 0 - disable, 1 to 255 - set value of Faster Block Recovery.
-	Config.IAS = 0; // 0 - disable, 1 to 255 - set value of Increased Attack Speed.
+	// Fastmod config
+	Config.FCR = 0; // 0 - disable, 1 to 255 - set value of faster cast rate
+	Config.FHR = 0; // 0 - disable, 1 to 255 - set value of faster hit recovery
+	Config.FBR = 0; // 0 - disable, 1 to 255 - set value of faster block recovery
+	Config.IAS = 0; // 0 - disable, 1 to 255 - set value of increased attack speed
 	Config.PacketCasting = 0; // 0 = disable, 1 = packet teleport, 2 = full packet casting.
 	Config.WaypointMenu = true;
 
 	// (敵對設定)Anti-hostile config
-	Config.AntiHostile = false; // Enable anti-hostile.
-	Config.HostileAction = 0; // 0 - quit immediately, 1 - quit when hostile player is sighted, 2 - attack hostile.
-	Config.TownOnHostile = false; // Go to town instead of quitting when HostileAction is 0 or 1.
+	Config.AntiHostile = false; // Enable anti-hostile
+	Config.HostileAction = 0; // 0 - quit immediately, 1 - quit when hostile player is sighted, 2 - attack hostile
+	Config.TownOnHostile = false; // Go to town instead of quitting when HostileAction is 0 or 1
 	Config.RandomPrecast = false; // Anti-PK measure, only supported in Baal and BaalHelper and BaalAssisstant at the moment.
-	Config.ViperCheck = false; // Quit if revived Tomb Vipers are sighted.
+	Config.ViperCheck = false; // Quit if revived Tomb Vipers are sighted
 
 	// (地表暗黑檢測)DClone config
 	Config.StopOnDClone = true; // Go to town and idle as soon as Diablo walks the Earth
@@ -496,41 +496,40 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	//40冰封裝甲42靜態立場,47火球,55冰尖柱,56隕石,64冰封球
-	Config.AttackSkill[0] = 40; // Preattack skill.
-	Config.AttackSkill[1] = 56; // Primary skill to bosses.
-	Config.AttackSkill[2] = 47; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
-	Config.AttackSkill[3] = 64; // Primary skill to others.
-	Config.AttackSkill[4] = 55; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
-	Config.AttackSkill[5] = 64; // Secondary skill if monster is immune to primary.
+	//24充能一擊,34閃電攻擊,35閃電之怒
+	Config.AttackSkill[0] = -1; // Preattack skill.
+	Config.AttackSkill[1] = 35; // Primary skill to bosses.
+	Config.AttackSkill[2] = 34; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
+	Config.AttackSkill[3] = -1; // Primary skill to others.
+	Config.AttackSkill[4] = -1; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
 	// Low mana skills - these will be used if main skills can't be cast.
-	Config.LowManaSkill[0] = 40; // Timed low mana skill.
+	Config.LowManaSkill[0] = -1; // Timed low mana skill.
 	Config.LowManaSkill[1] = -1; // Untimed low mana skill.
 
 	/* Advanced Attack config. Allows custom skills to be used on custom monsters.
 	 *	Format: "Monster Name": [timed skill id, untimed skill id]
-	 *	Example: "Baal": [38, -1] to use charged bolt on Baal
 	 *	Multiple entries are separated by commas
 	 */
 	Config.CustomAttack = {
 		//"Monster Name": [-1, -1]
 	};
 
-	Config.Dodge = true; // (遠離怪物打怪)Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
+	Config.Dodge = false; // (遠離怪物打怪)Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
 	Config.DodgeRange = 10; // (與怪物保持距離)Distance to keep from monsters.
 	Config.DodgeHP = 100; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
-	Config.BossPriority = true; // Set to true to attack Unique/SuperUnique monsters first when clearing
+	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
 	Config.TeleStomp = false; // Use merc to attack bosses if they're immune to attacks, but not to physical damage
 
 	// Wereform setup. Make sure you read Templates/Attacks.txt for attack skill format.
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear
 
-	// (職業特定設定)Class specific config
-	Config.CastStatic = 60; // (靜態立場)Cast static until the target is at designated life percent. 100 = disabled.
-	Config.StaticList = ["Countess", "Andariel", "Radament", "Duriel", "Mephisto", "Izual", "Diablo", "Shenk", "Baal"]]; // List of monster NAMES or CLASSIDS to static. Example: Config.StaticList = ["Andariel", 243];
+	// Class specific config
+	Config.LightningFuryDelay = 10; // Lightning fury interval in seconds. LF is treated as timed skill.
+	Config.SummonValkyrie = true; // (招喚女武神)Summon Valkyrie
 
 	/* AutoSkill builds character based on array defined by the user and it replaces AutoBuild's skill system.
 	 * AutoSkill will automatically spend skill points and it can also allocate any prerequisite skills as required.

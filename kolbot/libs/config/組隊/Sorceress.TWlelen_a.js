@@ -325,13 +325,13 @@ function LoadConfig() {
 	Config.DroppedItemsAnnounce.Quality = []; // Quality of item to announce. See NTItemAlias.dbl for values. Example: Config.DroppedItemsAnnounce.Quality = [6, 7, 8];
 
 	// (紀錄日誌)Manager Item Log Screen
-	Config.LogKeys = true; // (鑰匙)Log keys on item viewer
+	Config.LogKeys = false; // (鑰匙)Log keys on item viewer
 	Config.LogOrgans = true; // (器官)Log organs on item viewer
-	Config.LogLowRunes = true; // (低符 艾爾1-多爾14)Log low runes (El - Dol) on item viewer
-	Config.LogMiddleRunes = true; // (中符 海爾15-馬爾23)Log middle runes (Hel - Mal) on item viewer
+	Config.LogLowRunes = false; // (低符 艾爾1-多爾14)Log low runes (El - Dol) on item viewer
+	Config.LogMiddleRunes = false; // (中符 海爾15-馬爾23)Log middle runes (Hel - Mal) on item viewer
 	Config.LogHighRunes = true; // (高符 伊斯特24-薩德33)Log high runes (Ist - Zod) on item viewer
-	Config.LogLowGems = true; // (低寶 碎裂-破裂-正常)Log low gems (chipped, flawed, normal) on item viewer
-	Config.LogHighGems = true; // (高寶 無暇-完美)Log high gems (flawless, perfect) on item viewer
+	Config.LogLowGems = false; // (低寶 碎裂-破裂-正常)Log low gems (chipped, flawed, normal) on item viewer
+	Config.LogHighGems = false; // (高寶 無暇-完美)Log high gems (flawless, perfect) on item viewer
 	Config.SkipLogging = []; // Custom log skip list. Set as three digit item code or classid. Example: ["tes", "ceh", 656, 657] will ignore logging of essences.
 	Config.ShowCubingInfo = true; // Show cubing messages on console
 
@@ -357,7 +357,7 @@ function LoadConfig() {
 
 	// Ingredients for the following recipes will be auto-picked, for classids check libs/NTItemAlias.dbl
 
-	//寶時
+	//寶石
 	//Config.Recipes.push([Recipe.Gem, "Flawless Amethyst"]); // Make Perfect Amethyst
 	//Config.Recipes.push([Recipe.Gem, "Flawless Topaz"]); // Make Perfect Topaz
 	//Config.Recipes.push([Recipe.Gem, "Flawless Sapphire"]); // Make Perfect Sapphire
@@ -446,7 +446,7 @@ function LoadConfig() {
 	Config.MiniShopBot = true; // Scan items in NPC shops.
 	Config.PacketShopping = false; // Use packets to shop. Improves shopping speed.
 	Config.TownCheck = false; // Go to town if out of potions
-	Config.LogExperience = true; // (經驗LOG)Print experience statistics in the manager.
+	Config.LogExperience = false; // (經驗LOG)Print experience statistics in the manager.
 	Config.PingQuit = [{Ping: 0, Duration: 0}]; // Quit if ping is over the given value for over the given time period in seconds.
 
 	// (自訂點神殿)Shrine Scanner - scan for shrines while moving.
@@ -476,7 +476,7 @@ function LoadConfig() {
 
 	// (地表暗黑檢測)DClone config
 	Config.StopOnDClone = true; // Go to town and idle as soon as Diablo walks the Earth
-	Config.SoJWaitTime = 5; // Time in minutes to wait for another SoJ sale before leaving game. 0 = disabled
+	Config.SoJWaitTime = 30; // Time in minutes to wait for another SoJ sale before leaving game. 0 = disabled
 	Config.KillDclone = false; // Go to Palace Cellar 3 and try to kill Diablo Clone. Pointless if you already have Annihilus.
 	Config.DCloneQuit = false; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
 
@@ -518,8 +518,8 @@ function LoadConfig() {
 		//"Monster Name": [-1, -1]
 	};
 
-	Config.Dodge = true; // Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
-	Config.DodgeRange = 10; // Distance to keep from monsters.
+	Config.Dodge = true; // (遠離怪物打怪)Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
+	Config.DodgeRange = 10; // (與怪物保持距離)Distance to keep from monsters.
 	Config.DodgeHP = 100; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
 	Config.BossPriority = true; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
@@ -528,9 +528,9 @@ function LoadConfig() {
 	// Wereform setup. Make sure you read Templates/Attacks.txt for attack skill format.
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear
 
-	// Class specific config
-	Config.CastStatic = 60; // Cast static until the target is at designated life percent. 100 = disabled.
-	Config.StaticList = []; // List of monster NAMES or CLASSIDS to static. Example: Config.StaticList = ["Andariel", 243];
+	// (職業特定設定)Class specific config
+	Config.CastStatic = 60; // (靜態立場)Cast static until the target is at designated life percent. 100 = disabled.
+	Config.StaticList = ["Countess", "Andariel", "Radament", "Duriel", "Mephisto", "Izual", "Diablo", "Shenk", "Baal"]]; // List of monster NAMES or CLASSIDS to static. Example: Config.StaticList = ["Andariel", 243];
 
 	/* AutoSkill builds character based on array defined by the user and it replaces AutoBuild's skill system.
 	 * AutoSkill will automatically spend skill points and it can also allocate any prerequisite skills as required.
