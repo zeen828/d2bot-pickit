@@ -446,7 +446,7 @@ function LoadConfig() {
 	Config.MiniShopBot = true; // Scan items in NPC shops.
 	Config.PacketShopping = false; // Use packets to shop. Improves shopping speed.
 	Config.TownCheck = false; // Go to town if out of potions
-	Config.LogExperience = false; // (經驗LOG)Print experience statistics in the manager.
+	Config.LogExperience = true; // (經驗LOG)Print experience statistics in the manager.
 	Config.PingQuit = [{Ping: 0, Duration: 0}]; // Quit if ping is over the given value for over the given time period in seconds.
 
 	// (自訂點神殿)Shrine Scanner - scan for shrines while moving.

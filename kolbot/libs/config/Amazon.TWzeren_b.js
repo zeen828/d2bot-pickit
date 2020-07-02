@@ -446,7 +446,7 @@ function LoadConfig() {
 	Config.MiniShopBot = true; // Scan items in NPC shops.
 	Config.PacketShopping = false; // Use packets to shop. Improves shopping speed.
 	Config.TownCheck = false; // Go to town if out of potions
-	Config.LogExperience = false; // (經驗LOG)Print experience statistics in the manager.
+	Config.LogExperience = true; // (經驗LOG)Print experience statistics in the manager.
 	Config.PingQuit = [{Ping: 0, Duration: 0}]; // Quit if ping is over the given value for over the given time period in seconds.
 
 	// (自訂點神殿)Shrine Scanner - scan for shrines while moving.
@@ -496,12 +496,12 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	//24充能一擊,34閃電攻擊,35閃電之怒
-	Config.AttackSkill[0] = -1; // Preattack skill.
+	//10戳刺,24充能一擊,34閃電攻擊,35閃電之怒
+	Config.AttackSkill[0] = 24; // Preattack skill.
 	Config.AttackSkill[1] = 35; // Primary skill to bosses.
-	Config.AttackSkill[2] = 34; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
-	Config.AttackSkill[3] = -1; // Primary skill to others.
-	Config.AttackSkill[4] = -1; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	Config.AttackSkill[2] = 24; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
+	Config.AttackSkill[3] = 35; // Primary skill to others.
+	Config.AttackSkill[4] = 10; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
 	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
@@ -527,7 +527,7 @@ function LoadConfig() {
 	// Wereform setup. Make sure you read Templates/Attacks.txt for attack skill format.
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear
 
-	// Class specific config
+	// (職業特定設定)Class specific config
 	Config.LightningFuryDelay = 10; // Lightning fury interval in seconds. LF is treated as timed skill.
 	Config.SummonValkyrie = true; // (招喚女武神)Summon Valkyrie
 
