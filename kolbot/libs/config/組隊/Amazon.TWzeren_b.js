@@ -259,7 +259,7 @@ function LoadConfig() {
 	Config.Inventory[0] = [1,1,1,1,0,0,0,0,0,0];
 	Config.Inventory[1] = [1,1,1,1,0,0,0,0,0,0];
 	Config.Inventory[2] = [1,1,1,1,0,0,0,0,0,0];
-	Config.Inventory[3] = [1,1,1,1,1,0,0,0,0,0];
+	Config.Inventory[3] = [1,1,1,1,0,0,0,0,0,0];
 
 	Config.StashGold = 100000; // (滿額存錢)Minimum amount of gold to stash.
 
