@@ -29,13 +29,13 @@ function LoadConfig() {
 
 	// *** (第一章)act 1 ***
 	Scripts.Corpsefire = false; //屍體發火/邪惡洞窟	
-		Config.Corpsefire.ClearDen = true; //是否全清洞窟
-	Scripts.Mausoleum = false; //大陵墓
+		Config.Corpsefire.ClearDen = false; //是否全清洞窟
+	Scripts.Mausoleum = true; //大陵墓
 		Config.Mausoleum.KillBloodRaven = false; //血鳥/冰冷之原-埋骨之地
 		Config.Mausoleum.ClearCrypt = true; //是否清另一個墳墓
 	Scripts.Rakanishu = false; //尼拉卡修/石塊曠野
 		Config.Rakanishu.KillGriswold = true;
-	Scripts.UndergroundPassage = true; //地底通道
+	Scripts.UndergroundPassage = false; //地底通道
 	Scripts.Coldcrow = false;
 	Scripts.Tristram = false; //崔斯特瑞姆
 		Config.Tristram.WalkClear = false; // (不傳送)Disable teleport while clearing to protect leechers
@@ -45,34 +45,34 @@ function LoadConfig() {
 	Scripts.Treehead = false; //樹頭木拳/黑暗森林
 	Scripts.Smith = false;
 	Scripts.BoneAsh = false; //骨灰/外側回廊-大教堂
-	Scripts.Countess = true; //女伯爵/黑暗森林-高塔地牢第五層
-		Config.Countess.KillGhosts = true; //是否清路上的菁英怪
+	Scripts.Countess = false; //女伯爵/黑暗森林-高塔地牢第五層
+		Config.Countess.KillGhosts = false; //是否清路上的菁英怪
 	Scripts.Andariel = true; //安達利爾
 	Scripts.Cows = false; //母牛關
 
 	// *** (第二章)act 2 ***
-	Scripts.Radament = false; //羅達門特/下水道第三層
+	Scripts.Radament = true; //羅達門特/下水道第三層
 	Scripts.Coldworm = false;
 		Config.Coldworm.KillBeetleburst = false;
-		Config.Coldworm.ClearMaggotLair = false; // (清怪)Clear all 3 levels
+		Config.Coldworm.ClearMaggotLair = true; // (清怪)Clear all 3 levels
 	Scripts.AncientTunnels = false; //古代通道
-		Config.AncientTunnels.OpenChest = true; // (開特殊箱子)Open special chest in Lost City
+		Config.AncientTunnels.OpenChest = false; // (開特殊箱子)Open special chest in Lost City
 		Config.AncientTunnels.KillDarkElder = false; //黑暗長老/遺失的城市
 	Scripts.Summoner = true; //召喚者/神秘避難所
 		Config.Summoner.FireEye = false;
 	Scripts.Tombs = false; //古墓
-	Scripts.Duriel = true; //督瑞爾
+	Scripts.Duriel = false; //督瑞爾
 
 	// *** (第三章)act 3 ***
 	Scripts.Stormtree = false; //暴風之樹/進入庫拉斯特下層前
-	Scripts.KurastTemples = false;
-	Scripts.Icehawk = false;
-	Scripts.Endugu = false;
+	Scripts.KurastTemples = false; //戰場處子-沙利娜/庫拉斯特商場-殘破神殿
+	Scripts.Icehawk = false; //裂縫之翼-冰鷹/庫拉斯特-下水道第一層
+	Scripts.Endugu = false; //古巫醫-印都/剝皮地窖第三層
 	Scripts.Travincal = false; //催凡克
 		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
 	Scripts.Mephisto = true; //墨菲斯托
 		Config.Mephisto.MoatTrick = true; //脆弱的法師用隔河殺BOSS
-		Config.Mephisto.KillCouncil = false; //殺議員
+		Config.Mephisto.KillCouncil = false; //殺議會員
 		Config.Mephisto.TakeRedPortal = true; //走紅門道ACT4
 
 	// *** (第四章)act 4 ***
@@ -91,9 +91,9 @@ function LoadConfig() {
 	Scripts.SealLeader = false; // (清理出一個安全的區域給小號吸經驗)Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
 
 	// *** (第五章)act 5 ***
-	Scripts.Pindleskin = false; //暴躁外皮/尼拉塞克的神殿
+	Scripts.Pindleskin = true; //暴躁外皮/尼拉塞克的神殿
 		Config.Pindleskin.UseWaypoint = false; //沒紅門用傳點
-		Config.Pindleskin.KillNihlathak = false; //殺尼拉薩克
+		Config.Pindleskin.KillNihlathak = true; //殺尼拉薩克
 		Config.Pindleskin.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
 	Scripts.Nihlathak = false; //尼拉塞克/瓦特之廳
 		Config.Nihlathak.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
@@ -112,12 +112,12 @@ function LoadConfig() {
 	Scripts.Snapchip = false;
 		Config.Snapchip.ClearIcyCellar = true;
 	Scripts.Worldstone = false; //世界之石大殿
-	Scripts.Baal = true; //巴爾
+	Scripts.Baal = false; //巴爾
 		Config.Baal.HotTPMessage = "Hot TP!"; //到達王座開一個"危險的門"發送消息
 		Config.Baal.SafeTPMessage = "Safe TP!"; //到達王座開一個安全的門發送消息
 		Config.Baal.BaalMessage = "Baal!"; //等待巴爾時
-		Config.Baal.SoulQuit = true; // (避開亡靈靈魂殺手)End script if Souls (Burning Souls) are found.
-		Config.Baal.DollQuit = true; // (避開燃燒靈魂)End script if Dolls (Undead Soul Killers) are found.
+		Config.Baal.SoulQuit = false; // (避開亡靈靈魂殺手)End script if Souls (Burning Souls) are found.
+		Config.Baal.DollQuit = false; // (避開燃燒靈魂)End script if Dolls (Undead Soul Killers) are found.
 		Config.Baal.KillBaal = true; // (是否殺巴爾)Kill Baal. Leaves game after wave 5 if false.
 
 	/* ### (吸經驗用)leeching section ###
@@ -530,7 +530,7 @@ function LoadConfig() {
 
 	// (職業特定設定)Class specific config
 	Config.CastStatic = 60; // (靜態立場)Cast static until the target is at designated life percent. 100 = disabled.
-	Config.StaticList = ["Countess", "Andariel", "Radament", "Duriel", "Mephisto", "Izual", "Diablo", "Shenk", "Baal"]; // List of monster NAMES or CLASSIDS to static. Example: Config.StaticList = ["Andariel", 243];
+	Config.StaticList = [156, 229, 221, 242, 256, 243, "Baal"]; // List of monster NAMES or CLASSIDS to static. Example: Config.StaticList = ["Andariel", 243];
 
 	/* AutoSkill builds character based on array defined by the user and it replaces AutoBuild's skill system.
 	 * AutoSkill will automatically spend skill points and it can also allocate any prerequisite skills as required.

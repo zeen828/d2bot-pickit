@@ -65,14 +65,14 @@ function LoadConfig() {
 
 	// *** (第三章)act 3 ***
 	Scripts.Stormtree = false; //暴風之樹/進入庫拉斯特下層前
-	Scripts.KurastTemples = false;
-	Scripts.Icehawk = false;
-	Scripts.Endugu = false;
+	Scripts.KurastTemples = false; //戰場處子-沙利娜/庫拉斯特商場-殘破神殿
+	Scripts.Icehawk = false; //裂縫之翼-冰鷹/庫拉斯特-下水道第一層
+	Scripts.Endugu = false; //古巫醫-印都/剝皮地窖第三層
 	Scripts.Travincal = false; //催凡克
 		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
 	Scripts.Mephisto = false; //墨菲斯托
 		Config.Mephisto.MoatTrick = false; //脆弱的法師用隔河殺BOSS
-		Config.Mephisto.KillCouncil = false; //殺議員
+		Config.Mephisto.KillCouncil = false; //殺議會員
 		Config.Mephisto.TakeRedPortal = true; //走紅門道ACT4
 
 	// *** (第四章)act 4 ***
