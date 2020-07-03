@@ -289,7 +289,7 @@ function LoadConfig() {
 	Config.PickitFiles.push("custom-unique.nip");//自訂獨特裝備
 	Config.PickitFiles.push("custom-charms.nip");//自訂護符
 	Config.PickitFiles.push("custom-runes.nip");//自訂符文
-	//Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
+	Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
 	Config.PickitFiles.push("test.nip");//測試
 	Config.PickRange = 40; // (撿取距離)Pick radius
 	Config.FastPick = true; // Check and pick items between attacks
@@ -530,7 +530,7 @@ function LoadConfig() {
 
 	// (職業特定設定)Class specific config
 	Config.CastStatic = 60; // (靜態立場)Cast static until the target is at designated life percent. 100 = disabled.
-	Config.StaticList = [156, 229, 221, 242, 256, 243, "Baal"]; // List of monster NAMES or CLASSIDS to static. Example: Config.StaticList = ["Andariel", 243];
+	Config.StaticList = [156, 229, 221, 242, 256, 243, 544]; // List of monster NAMES or CLASSIDS to static. Example: Config.StaticList = ["Andariel", 243];
 
 	/* AutoSkill builds character based on array defined by the user and it replaces AutoBuild's skill system.
 	 * AutoSkill will automatically spend skill points and it can also allocate any prerequisite skills as required.

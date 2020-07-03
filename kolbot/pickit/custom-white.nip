@@ -3,10 +3,10 @@
 //-----------------------------------------------------------------------------------------------------
 
 // ##### (盔甲)armor = perfect superior ###################################################################
-[name] == breastplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3) 
-[name] == mageplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3) 
-[name] == duskshroud && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
-[name] == wyrmhide && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
+//[name] == breastplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3) 
+//[name] == mageplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3) 
+//[name] == duskshroud && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
+//[name] == wyrmhide && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
 //[name] == scarabhusk && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
 //[name] == wirefleece && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
 //[name] == diamondmail && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
@@ -14,7 +14,7 @@
 //[name] == greathauberk && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
 //[name] == boneweave && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
 //[name] == balrogskin && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
-[name] == archonplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
+//[name] == archonplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
 //[name] == krakenshell && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
 //[name] == hellforgeplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
 //[name] == lacqueredplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
@@ -22,10 +22,10 @@
 //[name] == sacredarmor && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 && ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
 
 // ##### (盔甲)armor = good superior ###################################################################### 
-[name] == breastplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && [sockets] == 3 
-[name] == mageplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && [sockets] == 3 
-[name] == duskshroud && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4) 
-[name] == wyrmhide && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4) 
+//[name] == breastplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && [sockets] == 3 
+//[name] == mageplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && [sockets] == 3 
+//[name] == duskshroud && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4) 
+//[name] == wyrmhide && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4) 
 //[name] == scarabhusk && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4) 
 //[name] == wirefleece && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4) 
 //[name] == diamondmail && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4)
@@ -33,7 +33,7 @@
 //[name] == greathauberk && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4)
 //[name] == boneweave && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4)
 //[name] == balrogskin && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4)
-[name] == archonplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4) 
+//[name] == archonplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4) 
 //[name] == krakenshell && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4)
 //[name] == hellforgeplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4)
 //[name] == lacqueredplate && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4)
@@ -61,39 +61,39 @@
 
 // ##### (盔甲)armor for bugging = perfect ethereal ####################################################### 
 //[name] == mageplate && [quality] == normal && [flag] == ethereal # [defense] >= 391 && [sockets] == 0 
-[name] == duskshroud && [quality] == normal && [flag] == ethereal # [defense] >= 700 && [sockets] == 0 
-[name] == wyrmhide && [quality] == normal && [flag] == ethereal # [defense] >= 705 && [sockets] == 0 
-[name] == scarabhusk && [quality] == normal && [flag] == ethereal # [defense] >= 711 && [sockets] == 0 
-[name] == wirefleece && [quality] == normal && [flag] == ethereal # [defense] >= 721 && [sockets] == 0 
-[name] == diamondmail && [quality] == normal && [flag] == ethereal # [defense] >= 733 && [sockets] == 0
-[name] == loricatedmail && [quality] == normal && [flag] == ethereal # [defense] >= 744 && [sockets] == 0
-[name] == greathauberk && [quality] == normal && [flag] == ethereal # [defense] >= 751 && [sockets] == 0
-[name] == boneweave && [quality] == normal && [flag] == ethereal # [defense] >= 757 && [sockets] == 0
-[name] == balrogskin && [quality] == normal && [flag] == ethereal # [defense] >= 775 && [sockets] == 0
-[name] == archonplate && [quality] == normal && [flag] == ethereal # [defense] >= 786 && [sockets] == 0 
-[name] == krakenshell && [quality] == normal && [flag] == ethereal # [defense] >= 784 && [sockets] == 0
-[name] == hellforgeplate && [quality] == normal && [flag] == ethereal # [defense] >= 795 && [sockets] == 0
-[name] == lacqueredplate && [quality] == normal && [flag] == ethereal # [defense] >= 811 && [sockets] == 0 
-[name] == shadowplate && [quality] == normal && [flag] == ethereal # [defense] >= 835 && [sockets] == 0
-[name] == sacredarmor && [quality] == normal && [flag] == ethereal # [defense] >= 900 && [sockets] == 0
+//[name] == duskshroud && [quality] == normal && [flag] == ethereal # [defense] >= 700 && [sockets] == 0 
+//[name] == wyrmhide && [quality] == normal && [flag] == ethereal # [defense] >= 705 && [sockets] == 0 
+//[name] == scarabhusk && [quality] == normal && [flag] == ethereal # [defense] >= 711 && [sockets] == 0 
+//[name] == wirefleece && [quality] == normal && [flag] == ethereal # [defense] >= 721 && [sockets] == 0 
+//[name] == diamondmail && [quality] == normal && [flag] == ethereal # [defense] >= 733 && [sockets] == 0
+//[name] == loricatedmail && [quality] == normal && [flag] == ethereal # [defense] >= 744 && [sockets] == 0
+//[name] == greathauberk && [quality] == normal && [flag] == ethereal # [defense] >= 751 && [sockets] == 0
+//[name] == boneweave && [quality] == normal && [flag] == ethereal # [defense] >= 757 && [sockets] == 0
+//[name] == balrogskin && [quality] == normal && [flag] == ethereal # [defense] >= 775 && [sockets] == 0
+//[name] == archonplate && [quality] == normal && [flag] == ethereal # [defense] >= 786 && [sockets] == 0 
+//[name] == krakenshell && [quality] == normal && [flag] == ethereal # [defense] >= 784 && [sockets] == 0
+//[name] == hellforgeplate && [quality] == normal && [flag] == ethereal # [defense] >= 795 && [sockets] == 0
+//[name] == lacqueredplate && [quality] == normal && [flag] == ethereal # [defense] >= 811 && [sockets] == 0 
+//[name] == shadowplate && [quality] == normal && [flag] == ethereal # [defense] >= 835 && [sockets] == 0
+//[name] == sacredarmor && [quality] == normal && [flag] == ethereal # [defense] >= 900 && [sockets] == 0
 
 // ##### (盔甲)armor for bugging = good ethereal ########################################################## 
 //[name] == mageplate && [quality] == normal && [flag] == ethereal # [defense] >= 361 && [sockets] == 0 
-[name] == duskshroud && [quality] == normal && [flag] == ethereal # [defense] >= 670 && [sockets] == 0 
-[name] == wyrmhide && [quality] == normal && [flag] == ethereal # [defense] >= 675 && [sockets] == 0 
+//[name] == duskshroud && [quality] == normal && [flag] == ethereal # [defense] >= 670 && [sockets] == 0 
+//[name] == wyrmhide && [quality] == normal && [flag] == ethereal # [defense] >= 675 && [sockets] == 0 
 //[name] == scarabhusk && [quality] == normal && [flag] == ethereal # [defense] >= 681 && [sockets] == 0 
-[name] == wirefleece && [quality] == normal && [flag] == ethereal # [defense] >= 691 && [sockets] == 0 
-[name] == diamondmail && [quality] == normal && [flag] == ethereal # [defense] >= 703 && [sockets] == 0
-[name] == loricatedmail && [quality] == normal && [flag] == ethereal # [defense] >= 714 && [sockets] == 0
-[name] == greathauberk && [quality] == normal && [flag] == ethereal # [defense] >= 721 && [sockets] == 0
-[name] == boneweave && [quality] == normal && [flag] == ethereal # [defense] >= 727 && [sockets] == 0
-[name] == balrogskin && [quality] == normal && [flag] == ethereal # [defense] >= 745 && [sockets] == 0
-[name] == archonplate && [quality] == normal && [flag] == ethereal # [defense] >= 756 && [sockets] == 0 
-[name] == krakenshell && [quality] == normal && [flag] == ethereal # [defense] >= 754 && [sockets] == 0
-[name] == hellforgeplate && [quality] == normal && [flag] == ethereal # [defense] >= 765 && [sockets] == 0
-[name] == lacqueredplate && [quality] == normal && [flag] == ethereal # [defense] >= 781 && [sockets] == 0 
-[name] == shadowplate && [quality] == normal && [flag] == ethereal # [defense] >= 805 && [sockets] == 0
-[name] == sacredarmor && [quality] == normal && [flag] == ethereal # [defense] >= 870 && [sockets] == 0
+//[name] == wirefleece && [quality] == normal && [flag] == ethereal # [defense] >= 691 && [sockets] == 0 
+//[name] == diamondmail && [quality] == normal && [flag] == ethereal # [defense] >= 703 && [sockets] == 0
+//[name] == loricatedmail && [quality] == normal && [flag] == ethereal # [defense] >= 714 && [sockets] == 0
+//[name] == greathauberk && [quality] == normal && [flag] == ethereal # [defense] >= 721 && [sockets] == 0
+//[name] == boneweave && [quality] == normal && [flag] == ethereal # [defense] >= 727 && [sockets] == 0
+//[name] == balrogskin && [quality] == normal && [flag] == ethereal # [defense] >= 745 && [sockets] == 0
+//[name] == archonplate && [quality] == normal && [flag] == ethereal # [defense] >= 756 && [sockets] == 0 
+//[name] == krakenshell && [quality] == normal && [flag] == ethereal # [defense] >= 754 && [sockets] == 0
+//[name] == hellforgeplate && [quality] == normal && [flag] == ethereal # [defense] >= 765 && [sockets] == 0
+//[name] == lacqueredplate && [quality] == normal && [flag] == ethereal # [defense] >= 781 && [sockets] == 0 
+//[name] == shadowplate && [quality] == normal && [flag] == ethereal # [defense] >= 805 && [sockets] == 0
+//[name] == sacredarmor && [quality] == normal && [flag] == ethereal # [defense] >= 870 && [sockets] == 0
 
 // ##### (盔甲)armor for bugging = normal ################################################################# 
 //[name] == mageplate && [quality] == normal && [flag] == ethereal # [defense] >= 1 && [sockets] == 0 
@@ -114,30 +114,30 @@
 //[name] == sacredarmor && [quality] == normal && [flag] == ethereal # [defense] >= 1 && [sockets] == 0
 
 // ##### (釘頭錘)maces = perfect superior ################################################################### 
-[name] == flail && [quality] == superior && [flag] == ethereal # [sockets] == 4 && [itemmaxdurabilitypercent] >= 15 && [tohit] >= 3 // heart of the oak 
-[name] == flail && [quality] == superior && [flag] == ethereal # [sockets] == 5 && [itemmaxdurabilitypercent] >= 15 && [tohit] >= 3 // call to arms
+//[name] == flail && [quality] == superior && [flag] == ethereal # [sockets] == 4 && [itemmaxdurabilitypercent] >= 15 && [tohit] >= 3 // heart of the oak 
+//[name] == flail && [quality] == superior && [flag] == ethereal # [sockets] == 5 && [itemmaxdurabilitypercent] >= 15 && [tohit] >= 3 // call to arms
 //[name] == flail && [quality] == superior && [flag] != ethereal # [sockets] == 4 && [itemmaxdurabilitypercent] >= 15 && [tohit] >= 3 // heart of the oak 
 //[name] == flail && [quality] == superior && [flag] != ethereal # [sockets] == 5 && [itemmaxdurabilitypercent] >= 15 && [tohit] >= 3 // call to arms
 
 // ##### (釘頭錘)maces = good superior ###################################################################### 
-[name] == flail && [quality] == superior && [flag] == ethereal # [sockets] == 4 && [itemmaxdurabilitypercent] >= 10 && [tohit] >= 1 // heart of the oak 
-[name] == flail && [quality] == superior && [flag] == ethereal # [sockets] == 5 && [itemmaxdurabilitypercent] >= 10 && [tohit] >= 1 // call to arms
+//[name] == flail && [quality] == superior && [flag] == ethereal # [sockets] == 4 && [itemmaxdurabilitypercent] >= 10 && [tohit] >= 1 // heart of the oak 
+//[name] == flail && [quality] == superior && [flag] == ethereal # [sockets] == 5 && [itemmaxdurabilitypercent] >= 10 && [tohit] >= 1 // call to arms
 //[name] == flail && [quality] == superior && [flag] != ethereal # [sockets] == 4 && [itemmaxdurabilitypercent] >= 10 && [tohit] >= 1 // heart of the oak 
 //[name] == flail && [quality] == superior && [flag] != ethereal # [sockets] == 5 && [itemmaxdurabilitypercent] >= 10 && [tohit] >= 1 // call to arms
 
 // ##### (釘頭錘)maces = normal ############################################################################# 
-[name] == flail && [quality] == normal # [sockets] == 5 // call to arms
+//[name] == flail && [quality] == normal # [sockets] == 5 // call to arms
 //[name] == flail && [quality] == normal # [sockets] == 4 // (連枷)heart of the oak
 //[name] == flail && [quality] == normal && [flag] != ethereal # [sockets] == 5 // call to arms
 //[name] == flail && [quality] == normal && [flag] != ethereal # [sockets] == 4 // heart of the oak
 
 // ##### (刀劍)swords = perfect superior ################################################################## 
-[name] == crystalsword && [quality] == superior && [flag] != ethereal # [sockets] == 4 && [enhanceddamage] >= 15 && ([itemmaxdurabilitypercent] >= 15 || [tohit] >= 3) // spirit
-[name] == crystalsword && [quality] == superior && [flag] == ethereal # [sockets] == 5 && [enhanceddamage] >= 15 && ([itemmaxdurabilitypercent] >= 15 || [tohit] >= 3) // call to arms
-[name] == crystalsword && [quality] == superior && [flag] != ethereal # [sockets] == 5 && [enhanceddamage] >= 15 && ([itemmaxdurabilitypercent] >= 15 || [tohit] >= 3) // call to arms
-[name] == colossusblade && [quality] == superior && [flag] != ethereal # [sockets] == 5 && [enhanceddamage] >= 15 && ([itemmaxdurabilitypercent] >= 15 || [tohit] >= 3) // grief 
-[name] == colossusblade && [quality] == superior && [flag] == ethereal # ([sockets] == 0 || [sockets] == 6) && [enhanceddamage] >= 15 && [tohit] >= 3 // breath of the dying
-[name] == phaseblade && [quality] == superior && [flag] != ethereal # ([sockets] == 0 || [sockets] == 5 || [sockets] == 6) && [enhanceddamage] >= 15 && [tohit] >= 3 // last wish/grief
+//[name] == crystalsword && [quality] == superior && [flag] != ethereal # [sockets] == 4 && [enhanceddamage] >= 15 && ([itemmaxdurabilitypercent] >= 15 || [tohit] >= 3) // spirit
+//[name] == crystalsword && [quality] == superior && [flag] == ethereal # [sockets] == 5 && [enhanceddamage] >= 15 && ([itemmaxdurabilitypercent] >= 15 || [tohit] >= 3) // call to arms
+//[name] == crystalsword && [quality] == superior && [flag] != ethereal # [sockets] == 5 && [enhanceddamage] >= 15 && ([itemmaxdurabilitypercent] >= 15 || [tohit] >= 3) // call to arms
+//[name] == colossusblade && [quality] == superior && [flag] != ethereal # [sockets] == 5 && [enhanceddamage] >= 15 && ([itemmaxdurabilitypercent] >= 15 || [tohit] >= 3) // grief 
+//[name] == colossusblade && [quality] == superior && [flag] == ethereal # ([sockets] == 0 || [sockets] == 6) && [enhanceddamage] >= 15 && [tohit] >= 3 // breath of the dying
+//[name] == phaseblade && [quality] == superior && [flag] != ethereal # ([sockets] == 0 || [sockets] == 5 || [sockets] == 6) && [enhanceddamage] >= 15 && [tohit] >= 3 // last wish/grief
 
 // ##### (刀劍)swords = good superior ##################################################################### 
 //[name] == crystalsword && [quality] == superior && [flag] != ethereal # [sockets] == 4 && [enhanced damage] >= 10 && ([itemmaxdurabilitypercent] >= 10 || [tohit] >= 1) // spirit
@@ -156,10 +156,10 @@
 //[name] == phaseblade && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 5 || [sockets] == 6) // last wish/grief
 
 // ##### (斧頭)axes = perfect superior #################################################################### 
-[name] == berserkeraxe && [quality] == superior && [flag] != ethereal # [sockets] >= 3 && [enhanceddamage] >= 15 && [tohit] == 3 // grief, fury, passion, hoj 
-[name] == berserkeraxe && [quality] == superior && [flag] != ethereal # [sockets] >= 3 && [enhanceddamage] >= 15 && [itemmaxdurabilitypercent] == 15 // grief, fury, passion, hoj
-[name] == berserkeraxe && [quality] == superior && [flag] == ethereal # ([sockets] == 0 || [sockets] == 6) && [enhanceddamage] >= 15 && [tohit] == 3 // breath of the dying
-[name] == berserkeraxe && [quality] == superior && [flag] == ethereal # ([sockets] == 0 || [sockets] == 6) && [enhanceddamage] >= 15 && [itemmaxdurabilitypercent] == 15 // breath of the dying
+//[name] == berserkeraxe && [quality] == superior && [flag] != ethereal # [sockets] >= 3 && [enhanceddamage] >= 15 && [tohit] == 3 // grief, fury, passion, hoj 
+//[name] == berserkeraxe && [quality] == superior && [flag] != ethereal # [sockets] >= 3 && [enhanceddamage] >= 15 && [itemmaxdurabilitypercent] == 15 // grief, fury, passion, hoj
+//[name] == berserkeraxe && [quality] == superior && [flag] == ethereal # ([sockets] == 0 || [sockets] == 6) && [enhanceddamage] >= 15 && [tohit] == 3 // breath of the dying
+//[name] == berserkeraxe && [quality] == superior && [flag] == ethereal # ([sockets] == 0 || [sockets] == 6) && [enhanceddamage] >= 15 && [itemmaxdurabilitypercent] == 15 // breath of the dying
 
 // ##### (斧頭)axes = good superior ####################################################################### 
 //[name] == berserkeraxe && [quality] == superior && [flag] != ethereal # [sockets] >= 3 && [enhanceddamage] >= 10 && [tohit] == 1 // grief, fury, passion, hoj 
@@ -174,21 +174,21 @@
 //[name] == berserkeraxe && [quality] == normal && [flag] == ethereal # ([sockets] == 0 || [sockets] == 6)  // breath of the dying
 
 // ##### (盾牌)shields = perfect superior ################################################################# 
-[type] == shield && [class] == elite && [quality] == superior && [flag] != ethereal # [sockets] == 3 && [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 // dream 
+//[type] == shield && [class] == elite && [quality] == superior && [flag] != ethereal # [sockets] == 3 && [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 // dream 
 [name] == monarch && [quality] == superior && [flag] != ethereal # ([sockets] == 0 || [sockets] == 4) && [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 // phoenix or spirit 
 
 // ##### (盾牌)shields = good superior #################################################################### 
 //[type] == shield && [class] == elite && [quality] == superior && [flag] != ethereal # [sockets] == 3 && [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 // dream 
-//[name] == monarch && [quality] == superior && [flag] != ethereal # ([sockets] == 0 || [sockets] == 4) && [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 // phoenix or spirit 
+[name] == monarch && [quality] == superior && [flag] != ethereal # ([sockets] == 0 || [sockets] == 4) && [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 // phoenix or spirit 
 
 // ##### (盾牌)shields = normal ########################################################################### 
 //[type] == shield && [class] == elite && [quality] == normal && [flag] != ethereal # [sockets] == 3 // dream 
-//[name] == monarch && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 4) // phoenix or spirit
+[name] == monarch && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 4) // phoenix or spirit
 
 // ##### (野蠻人)barbarian helms ############################################################################
-[type] == primalhelm && [class] == elite && [quality] <= superior && [flag] != ethereal # [sockets] == 3 && [skillbattleorders]+[skillbattlecommand] >= 6 // delirium
-[type] == primalhelm && [class] == elite && [quality] <= superior && [flag] != ethereal # [sockets] == 3 && [skillbattleorders]+[skillfinditem] >= 6 // delirium
-[type] == primalhelm && [class] == elite && [quality] <= superior && [flag] != ethereal # [sockets] == 3 && [skillbattleorders]+[skillshout] >= 6 // delirium
+//[type] == primalhelm && [class] == elite && [quality] <= superior && [flag] != ethereal # [sockets] == 3 && [skillbattleorders]+[skillbattlecommand] >= 6 // delirium
+//[type] == primalhelm && [class] == elite && [quality] <= superior && [flag] != ethereal # [sockets] == 3 && [skillbattleorders]+[skillfinditem] >= 6 // delirium
+//[type] == primalhelm && [class] == elite && [quality] <= superior && [flag] != ethereal # [sockets] == 3 && [skillbattleorders]+[skillshout] >= 6 // delirium
 
 // ##### (聖騎士)paladin shields = perfect superior ######################################################### 
 ([name] == vortexshield || [name] == akarantarge || [name] == sacredrondache || [name] == sacredtarge) && [quality] == superior && [flag] != ethereal # [fireresist] >= 45 && [sockets] == 3 && [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15  // sanctuary 
@@ -248,16 +248,16 @@
 //[type] == amazonbow && [class] == elite && [quality] == normal # [bowandcrossbowskilltab] == 3 && [sockets] >= 4 // faith 
 
 // ##### (德魯伊)druid pelts ################################################################################ 
-[type] == pelt && [quality] <= superior && [flag] != ethereal # [skillhurricane]+[skilltornado] >= 4 // delirium 
+//[type] == pelt && [quality] <= superior && [flag] != ethereal # [skillhurricane]+[skilltornado] >= 4 // delirium 
 
 // ##### (死靈法師)necromancer shrunken heads ################################################################# 
-[type] == voodooheads && [class] == elite && [quality] <= superior && [flag] != ethereal # [sockets] == 2 && [skillbonespear]+[skillbonespirit] >= 6 // splender 
-[type] == voodooheads && [class] == elite && [quality] <= superior && [flag] != ethereal # [sockets] == 2 && [skillpoisonexplosion]+[skillpoisonnova] >= 6 // splender 
+//[type] == voodooheads && [class] == elite && [quality] <= superior && [flag] != ethereal # [sockets] == 2 && [skillbonespear]+[skillbonespirit] >= 6 // splender 
+//[type] == voodooheads && [class] == elite && [quality] <= superior && [flag] != ethereal # [sockets] == 2 && [skillpoisonexplosion]+[skillpoisonnova] >= 6 // splender 
 
 // ##### (權杖)scepters ################################################################################### 
-([name] == caduceus || [name] == divinescepter || [name] == warscepter) && [quality] <= superior # [skillholyshield] >= 3 && ([sockets] == 0 || [sockets] == 5)   // call to arms 
-([name] == caduceus || [name] == divinescepter || [name] == warscepter) && [quality] <= superior # [skillfistoftheheavens] >= 3 && ([sockets] == 0 || [sockets] == 5)   // call to arms, foh stick 
-([name] == caduceus || [name] == divinescepter || [name] == warscepter) && [quality] <= superior # [skillfistoftheheavens]+[skillconviction] >= 4 && ([sockets] == 0 || [sockets] == 5)  // call to arms, foh stick 
+//([name] == caduceus || [name] == divinescepter || [name] == warscepter) && [quality] <= superior # [skillholyshield] >= 3 && ([sockets] == 0 || [sockets] == 5)   // call to arms 
+//([name] == caduceus || [name] == divinescepter || [name] == warscepter) && [quality] <= superior # [skillfistoftheheavens] >= 3 && ([sockets] == 0 || [sockets] == 5)   // call to arms, foh stick 
+//([name] == caduceus || [name] == divinescepter || [name] == warscepter) && [quality] <= superior # [skillfistoftheheavens]+[skillconviction] >= 4 && ([sockets] == 0 || [sockets] == 5)  // call to arms, foh stick 
 
 // ##### (刺客)assassin katars ############################################################################ 
 //[type] == assassinclaw && [class] == elite && [quality] <= superior && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) && ([skilllightningsentry] >= 3 || [skilldeathsentry] >= 3) // chaos 
@@ -266,7 +266,7 @@
 //[type] == assassinclaw && [class] == elite && [quality] <= superior && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) && [skillweaponblock] >= 3 && ([skillclawmastery] >= 2 || [skillfade] >= 2 || [skillvenom] >= 2 || [skillbladeshield] >= 2 || [skilldragonflight] >=2 || [skillmindblast] >= 1)  // chaos 
 
 // ##### (死靈法師)necro wand #################################################################################
-[type] == wand && [name] != wand && [name] != burntwand && [name] != yewwand && [quality] <= superior # [sockets] != 1 && [skillbonespear] == 3 && ([skillbonearmor] >= 2 || [skillbonespirit] >= 2 || [skillteeth] >=2 || [skillbonewall] >=1) 
+//[type] == wand && [name] != wand && [name] != burntwand && [name] != yewwand && [quality] <= superior # [sockets] != 1 && [skillbonespear] == 3 && ([skillbonearmor] >= 2 || [skillbonespirit] >= 2 || [skillteeth] >=2 || [skillbonewall] >=1) 
 
 // ##### soso skill staffs ##########################################################################
 //[name] == gnarledstaff && [quality] <= superior # [skillenergyshield] == 3 && [skillchillingarmor] >= 1
