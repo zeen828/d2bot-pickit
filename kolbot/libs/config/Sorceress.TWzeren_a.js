@@ -28,11 +28,11 @@ function LoadConfig() {
 	// Boss/area scripts
 
 	// *** (第一章)act 1 ***
-	Scripts.Corpsefire = true; //屍體發火/邪惡洞窟	
-		Config.Corpsefire.ClearDen = true; //是否全清洞窟
-	Scripts.Mausoleum = true; //大陵墓
+	Scripts.Corpsefire = false; //屍體發火/邪惡洞窟	
+		Config.Corpsefire.ClearDen = false; //是否全清洞窟
+	Scripts.Mausoleum = false; //大陵墓
 		Config.Mausoleum.KillBloodRaven = false; //血鳥/冰冷之原-埋骨之地
-		Config.Mausoleum.ClearCrypt = true; //是否清另一個墳墓
+		Config.Mausoleum.ClearCrypt = false; //是否清另一個墳墓
 	Scripts.Rakanishu = false; //尼拉卡修/石塊曠野
 		Config.Rakanishu.KillGriswold = true;
 	Scripts.UndergroundPassage = false; //地底通道
@@ -44,9 +44,9 @@ function LoadConfig() {
 		Config.Pit.ClearPit1 = true; //清理一層
 	Scripts.Treehead = false; //樹頭木拳/黑暗森林
 	Scripts.Smith = false;
-	Scripts.BoneAsh = true; //骨灰/外側回廊-大教堂
+	Scripts.BoneAsh = false; //骨灰/外側回廊-大教堂
 	Scripts.Countess = false; //女伯爵/黑暗森林-高塔地牢第五層
-		Config.Countess.KillGhosts = true; //是否清路上的菁英怪
+		Config.Countess.KillGhosts = false; //是否清路上的菁英怪
 	Scripts.Andariel = true; //安達利爾
 	Scripts.Cows = false; //母牛關
 
@@ -58,21 +58,21 @@ function LoadConfig() {
 	Scripts.AncientTunnels = false; //古代通道
 		Config.AncientTunnels.OpenChest = false; // (開特殊箱子)Open special chest in Lost City
 		Config.AncientTunnels.KillDarkElder = false; //黑暗長老/遺失的城市
-	Scripts.Summoner = false; //召喚者/神秘避難所
+	Scripts.Summoner = true; //召喚者/神秘避難所
 		Config.Summoner.FireEye = false;
 	Scripts.Tombs = false; //古墓
 	Scripts.Duriel = false; //督瑞爾
 
 	// *** (第三章)act 3 ***
 	Scripts.Stormtree = false; //暴風之樹/進入庫拉斯特下層前
-	Scripts.KurastTemples = false;
-	Scripts.Icehawk = false;
-	Scripts.Endugu = false;
+	Scripts.KurastTemples = false; //戰場處子-沙利娜/庫拉斯特商場-殘破神殿
+	Scripts.Icehawk = false; //裂縫之翼-冰鷹/庫拉斯特-下水道第一層
+	Scripts.Endugu = false; //古巫醫-印都/剝皮地窖第三層
 	Scripts.Travincal = false; //催凡克
 		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Mephisto = true; //墨菲斯托
-		Config.Mephisto.MoatTrick = true; //脆弱的法師用隔河殺BOSS
-		Config.Mephisto.KillCouncil = false; //殺議員
+	Scripts.Mephisto = false; //墨菲斯托
+		Config.Mephisto.MoatTrick = false; //脆弱的法師用隔河殺BOSS
+		Config.Mephisto.KillCouncil = false; //殺議會員
 		Config.Mephisto.TakeRedPortal = true; //走紅門道ACT4
 
 	// *** (第四章)act 4 ***
@@ -92,11 +92,11 @@ function LoadConfig() {
 
 	// *** (第五章)act 5 ***
 	Scripts.Pindleskin = true; //暴躁外皮/尼拉塞克的神殿
-		Config.Pindleskin.UseWaypoint = false; //沒紅門用傳點
-		Config.Pindleskin.KillNihlathak = false; //殺尼拉薩克
-		Config.Pindleskin.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
-	Scripts.Nihlathak = false; //尼拉塞克/瓦特之廳
-		Config.Nihlathak.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
+		Config.Pindleskin.UseWaypoint = true; //沒紅門用傳點
+		Config.Pindleskin.KillNihlathak = true; //殺尼拉薩克
+		Config.Pindleskin.ViperQuit = true; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
+	Scripts.Nihlathak = true; //尼拉塞克/瓦特之廳
+		Config.Nihlathak.ViperQuit = true; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
 	Scripts.Eldritch = true; //矯正者-怪異/冰凍高地
 		Config.Eldritch.OpenChest = true; //開寶相
 		Config.Eldritch.KillShenk = true;
@@ -116,8 +116,8 @@ function LoadConfig() {
 		Config.Baal.HotTPMessage = "Hot TP!"; //到達王座開一個"危險的門"發送消息
 		Config.Baal.SafeTPMessage = "Safe TP!"; //到達王座開一個安全的門發送消息
 		Config.Baal.BaalMessage = "Baal!"; //等待巴爾時
-		Config.Baal.SoulQuit = true; // (避開亡靈靈魂殺手)End script if Souls (Burning Souls) are found.
-		Config.Baal.DollQuit = true; // (避開燃燒靈魂)End script if Dolls (Undead Soul Killers) are found.
+		Config.Baal.SoulQuit = false; // (避開亡靈靈魂殺手)End script if Souls (Burning Souls) are found.
+		Config.Baal.DollQuit = false; // (避開燃燒靈魂)End script if Dolls (Undead Soul Killers) are found.
 		Config.Baal.KillBaal = true; // (是否殺巴爾)Kill Baal. Leaves game after wave 5 if false.
 
 	/* ### (吸經驗用)leeching section ###
