@@ -289,7 +289,7 @@ function LoadConfig() {
 	Config.PickitFiles.push("custom-unique.nip");//自訂獨特裝備
 	Config.PickitFiles.push("custom-charms.nip");//自訂護符
 	Config.PickitFiles.push("custom-runes.nip");//自訂符文
-	Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
+	//Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
 	Config.PickitFiles.push("test.nip");//測試
 	Config.PickRange = 40; // Pick radius
 	Config.FastPick = false; // Check and pick items between attacks
