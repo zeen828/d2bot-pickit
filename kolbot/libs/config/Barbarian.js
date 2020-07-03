@@ -27,98 +27,98 @@ function LoadConfig() {
 
 	// Boss/area scripts
 
-	// *** act 1 ***
-	Scripts.Corpsefire = false;
-		Config.Corpsefire.ClearDen = false;
-	Scripts.Mausoleum = false;
-		Config.Mausoleum.KillBloodRaven = false;
-		Config.Mausoleum.ClearCrypt = false;
-	Scripts.Rakanishu = false;
+	// *** (第一章)act 1 ***
+	Scripts.Corpsefire = false; //屍體發火/邪惡洞窟	
+		Config.Corpsefire.ClearDen = false; //是否全清洞窟
+	Scripts.Mausoleum = false; //大陵墓
+		Config.Mausoleum.KillBloodRaven = false; //血鳥/冰冷之原-埋骨之地
+		Config.Mausoleum.ClearCrypt = false; //是否清另一個墳墓
+	Scripts.Rakanishu = false; //尼拉卡修/石塊曠野
 		Config.Rakanishu.KillGriswold = true;
-	Scripts.UndergroundPassage = false;
+	Scripts.UndergroundPassage = false; //地底通道
 	Scripts.Coldcrow = false;
-	Scripts.Tristram = false;
-		Config.Tristram.WalkClear = false; // Disable teleport while clearing to protect leechers
-		Config.Tristram.PortalLeech = false; // Set to true to open a portal for leechers.
-	Scripts.Pit = false;
-		Config.Pit.ClearPit1 = true;
-	Scripts.Treehead = false;
+	Scripts.Tristram = false; //崔斯特瑞姆
+		Config.Tristram.WalkClear = false; // (不傳送)Disable teleport while clearing to protect leechers
+		Config.Tristram.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
+	Scripts.Pit = false; //泰摩高地地穴
+		Config.Pit.ClearPit1 = true; //清理一層
+	Scripts.Treehead = false; //樹頭木拳/黑暗森林
 	Scripts.Smith = false;
-	Scripts.BoneAsh = false;
-	Scripts.Countess = false;
-		Config.Countess.KillGhosts = false;
-	Scripts.Andariel = false;
-	Scripts.Cows = false;
+	Scripts.BoneAsh = false; //骨灰/外側回廊-大教堂
+	Scripts.Countess = false; //女伯爵/黑暗森林-高塔地牢第五層
+		Config.Countess.KillGhosts = false; //是否清路上的菁英怪
+	Scripts.Andariel = false; //安達利爾
+	Scripts.Cows = false; //母牛關
 
-	// *** act 2 ***
-	Scripts.Radament = false;
+	// *** (第二章)act 2 ***
+	Scripts.Radament = false; //羅達門特/下水道第三層
 	Scripts.Coldworm = false;
 		Config.Coldworm.KillBeetleburst = false;
-		Config.Coldworm.ClearMaggotLair = false; // Clear all 3 levels
-	Scripts.AncientTunnels = false;
-		Config.AncientTunnels.OpenChest = false; // Open special chest in Lost City
-		Config.AncientTunnels.KillDarkElder = false;
-	Scripts.Summoner = false;
+		Config.Coldworm.ClearMaggotLair = false; // (清怪)Clear all 3 levels
+	Scripts.AncientTunnels = false; //古代通道
+		Config.AncientTunnels.OpenChest = false; // (開特殊箱子)Open special chest in Lost City
+		Config.AncientTunnels.KillDarkElder = false; //黑暗長老/遺失的城市
+	Scripts.Summoner = false; //召喚者/神秘避難所
 		Config.Summoner.FireEye = false;
-	Scripts.Tombs = false;
-	Scripts.Duriel = false;
+	Scripts.Tombs = false; //古墓
+	Scripts.Duriel = false; //督瑞爾
 
-	// *** act 3 ***
-	Scripts.Stormtree = false;
+	// *** (第三章)act 3 ***
+	Scripts.Stormtree = false; //暴風之樹/進入庫拉斯特下層前
 	Scripts.KurastTemples = false;
 	Scripts.Icehawk = false;
 	Scripts.Endugu = false;
-	Scripts.Travincal = false;
-		Config.Travincal.PortalLeech = false; // Set to true to open a portal for leechers.
-	Scripts.Mephisto = false;
-		Config.Mephisto.MoatTrick = false;
-		Config.Mephisto.KillCouncil = false;
-		Config.Mephisto.TakeRedPortal = true;
+	Scripts.Travincal = false; //催凡克
+		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
+	Scripts.Mephisto = false; //墨菲斯托
+		Config.Mephisto.MoatTrick = false; //脆弱的法師用隔河殺BOSS
+		Config.Mephisto.KillCouncil = false; //殺議員
+		Config.Mephisto.TakeRedPortal = true; //走紅門道ACT4
 
-	// *** act 4 ***
+	// *** (第四章)act 4 ***
 	Scripts.OuterSteppes = false;
-	Scripts.Izual = false;
-	Scripts.Hephasto = false;
-	Scripts.Vizier = false; // Intended for classic sorc, kills Vizier only.
-	Scripts.FastDiablo = false;
-	Scripts.Diablo = false;
-		Config.Diablo.WalkClear = false; // Disable teleport while clearing to protect leechers
-		Config.Diablo.Entrance = true; // Start from entrance
-		Config.Diablo.SealWarning = "Leave the seals alone!";
-		Config.Diablo.EntranceTP = "Entrance TP up";
-		Config.Diablo.StarTP = "Star TP up";
-		Config.Diablo.DiabloMsg = "Diablo";
-	Scripts.SealLeader = false; // Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
+	Scripts.Izual = false; //衣卒爾/絕望平原
+	Scripts.Hephasto = false; //海法斯特盔甲製作者/火焰之河
+	Scripts.Vizier = false; // (非資料片專用)Intended for classic sorc, kills Vizier only.
+	Scripts.FastDiablo = false; //快速殺暗黑破壞神
+	Scripts.Diablo = false; //暗黑破壞神
+		Config.Diablo.WalkClear = false; // (是否從進門開始清除,false從五星開始)Disable teleport while clearing to protect leechers
+		Config.Diablo.Entrance = true; // (發送消息)Start from entrance
+		Config.Diablo.SealWarning = "Leave the seals alone!"; //
+		Config.Diablo.EntranceTP = "Entrance TP up"; //入口開門
+		Config.Diablo.StarTP = "Star TP up"; //五星開門
+		Config.Diablo.DiabloMsg = "Diablo"; //等diablo時
+	Scripts.SealLeader = false; // (清理出一個安全的區域給小號吸經驗)Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
 
-	// *** act 5 ***
-	Scripts.Pindleskin = false;
-		Config.Pindleskin.UseWaypoint = false;
-		Config.Pindleskin.KillNihlathak = true;
-		Config.Pindleskin.ViperQuit = false; // End script if Tomb Vipers are found.
-	Scripts.Nihlathak = false;
-		Config.Nihlathak.ViperQuit = false; // End script if Tomb Vipers are found.
-	Scripts.Eldritch = false;
-		Config.Eldritch.OpenChest = true;
+	// *** (第五章)act 5 ***
+	Scripts.Pindleskin = false; //暴躁外皮/尼拉塞克的神殿
+		Config.Pindleskin.UseWaypoint = false; //沒紅門用傳點
+		Config.Pindleskin.KillNihlathak = true; //殺尼拉薩克
+		Config.Pindleskin.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
+	Scripts.Nihlathak = false; //尼拉塞克/瓦特之廳
+		Config.Nihlathak.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
+	Scripts.Eldritch = false; //矯正者-怪異/冰凍高地
+		Config.Eldritch.OpenChest = true; //開寶相
 		Config.Eldritch.KillShenk = true;
 		Config.Eldritch.KillDacFarren = true;
-	Scripts.Eyeback = false;
-	Scripts.SharpTooth = false;
-	Scripts.ThreshSocket = false;
+	Scripts.Eyeback = false; //狂暴者-眼魔/亞瑞特高原
+	Scripts.SharpTooth = false; //利牙殺手/冰凍高地
+	Scripts.ThreshSocket = false; //剝殼凹槽/亞瑞特高原
 	Scripts.Abaddon = false;
-	Scripts.Frozenstein = false;
-		Config.Frozenstein.ClearFrozenRiver = true;
-	Scripts.Bonesaw = false;
+	Scripts.Frozenstein = false; //冰凍魔怪/冰河
+		Config.Frozenstein.ClearFrozenRiver = true; //全清冰河
+	Scripts.Bonesaw = false; //骨碎破壞者/冰河路徑
 		Config.Bonesaw.ClearDrifterCavern = false;
 	Scripts.Snapchip = false;
 		Config.Snapchip.ClearIcyCellar = true;
-	Scripts.Worldstone = false;
-	Scripts.Baal = false;
-		Config.Baal.HotTPMessage = "Hot TP!";
-		Config.Baal.SafeTPMessage = "Safe TP!";
-		Config.Baal.BaalMessage = "Baal!";
-		Config.Baal.SoulQuit = false; // End script if Souls (Burning Souls) are found.
-		Config.Baal.DollQuit = false; // End script if Dolls (Undead Soul Killers) are found.
-		Config.Baal.KillBaal = true; // Kill Baal. Leaves game after wave 5 if false.
+	Scripts.Worldstone = false; //世界之石大殿
+	Scripts.Baal = false; //巴爾
+		Config.Baal.HotTPMessage = "Hot TP!"; //到達王座開一個"危險的門"發送消息
+		Config.Baal.SafeTPMessage = "Safe TP!"; //到達王座開一個安全的門發送消息
+		Config.Baal.BaalMessage = "Baal!"; //等待巴爾時
+		Config.Baal.SoulQuit = false; // (避開亡靈靈魂殺手)End script if Souls (Burning Souls) are found.
+		Config.Baal.DollQuit = false; // (避開燃燒靈魂)End script if Dolls (Undead Soul Killers) are found.
+		Config.Baal.KillBaal = true; // (是否殺巴爾)Kill Baal. Leaves game after wave 5 if false.
 
 	/* ### leeching section ###
 	* Unless stated otherwise, leader's character name isn't needed on order to run.

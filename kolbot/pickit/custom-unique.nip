@@ -159,6 +159,7 @@
 
 //(獨特亞馬遜)unique amazon
 //[name] == ceremonialbow && [quality] == unique # [enhanceddamage] >= 190 //(雷山德的指標)lycander's aim
+[name] == ceremonialjavelin && [quality] == unique //(泰坦的復仇)titan's revenge
 [name] == ceremonialjavelin && [quality] == unique && [flag] != ethereal # [enhanceddamage] >= 200 && [lifeleech] >= 8 //(泰坦的復仇)titan's revenge
 [name] == ceremonialjavelin && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 150 && [lifeleech] >= 5 //ethereal titan's revenge
 [name] == matriarchalbow && [quality] == unique # [enhanceddamage] >= 220 //(血鳥的襲擊)bloodraven's charge
