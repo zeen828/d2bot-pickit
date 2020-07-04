@@ -28,11 +28,11 @@ function LoadConfig() {
 	// Boss/area scripts
 
 	// *** (第一章)act 1 ***
-	Scripts.Corpsefire = false; //屍體發火/邪惡洞窟	
-		Config.Corpsefire.ClearDen = false; //是否全清洞窟
+	Scripts.Corpsefire = true; //屍體發火/邪惡洞窟	
+		Config.Corpsefire.ClearDen = true; //是否全清洞窟
 	Scripts.Mausoleum = false; //大陵墓
 		Config.Mausoleum.KillBloodRaven = false; //血鳥/冰冷之原-埋骨之地
-		Config.Mausoleum.ClearCrypt = false; //是否清另一個墳墓
+		Config.Mausoleum.ClearCrypt = true; //是否清另一個墳墓
 	Scripts.Rakanishu = false; //尼拉卡修/石塊曠野
 		Config.Rakanishu.KillGriswold = true;
 	Scripts.UndergroundPassage = false; //地底通道
@@ -45,8 +45,8 @@ function LoadConfig() {
 	Scripts.Treehead = false; //樹頭木拳/黑暗森林
 	Scripts.Smith = false;
 	Scripts.BoneAsh = false; //骨灰/外側回廊-大教堂
-	Scripts.Countess = false; //女伯爵/黑暗森林-高塔地牢第五層
-		Config.Countess.KillGhosts = false; //是否清路上的菁英怪
+	Scripts.Countess = true; //女伯爵/黑暗森林-高塔地牢第五層
+		Config.Countess.KillGhosts = true; //是否清路上的菁英怪
 	Scripts.Andariel = false; //安達利爾
 	Scripts.Cows = false; //母牛關
 
@@ -496,12 +496,12 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	//10戳刺,24充能一擊,34閃電攻擊,35閃電之怒
-	Config.AttackSkill[0] = 24; // Preattack skill.
-	Config.AttackSkill[1] = 35; // Primary skill to bosses.
-	Config.AttackSkill[2] = 24; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
+	//10戳刺,24充能一擊,28誘餌,34閃電攻擊,35閃電之怒
+	Config.AttackSkill[0] = 35; // Preattack skill.
+	Config.AttackSkill[1] = 34; // Primary skill to bosses.
+	Config.AttackSkill[2] = -1; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
 	Config.AttackSkill[3] = 35; // Primary skill to others.
-	Config.AttackSkill[4] = 10; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	Config.AttackSkill[4] = -1; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
 	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
