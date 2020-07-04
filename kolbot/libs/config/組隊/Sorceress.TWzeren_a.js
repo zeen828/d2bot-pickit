@@ -30,9 +30,9 @@ function LoadConfig() {
 	// *** (第一章)act 1 ***
 	Scripts.Corpsefire = false; //屍體發火/邪惡洞窟	
 		Config.Corpsefire.ClearDen = false; //是否全清洞窟
-	Scripts.Mausoleum = false; //大陵墓
+	Scripts.Mausoleum = true; //大陵墓
 		Config.Mausoleum.KillBloodRaven = false; //血鳥/冰冷之原-埋骨之地
-		Config.Mausoleum.ClearCrypt = false; //是否清另一個墳墓
+		Config.Mausoleum.ClearCrypt = true; //是否清另一個墳墓
 	Scripts.Rakanishu = false; //尼拉卡修/石塊曠野
 		Config.Rakanishu.KillGriswold = true;
 	Scripts.UndergroundPassage = false; //地底通道
@@ -40,7 +40,7 @@ function LoadConfig() {
 	Scripts.Tristram = false; //崔斯特瑞姆
 		Config.Tristram.WalkClear = false; // (不傳送)Disable teleport while clearing to protect leechers
 		Config.Tristram.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Pit = false; //泰摩高地地穴
+	Scripts.Pit = true; //泰摩高地地穴
 		Config.Pit.ClearPit1 = true; //清理一層
 	Scripts.Treehead = false; //樹頭木拳/黑暗森林
 	Scripts.Smith = false;
@@ -51,14 +51,14 @@ function LoadConfig() {
 	Scripts.Cows = false; //母牛關
 
 	// *** (第二章)act 2 ***
-	Scripts.Radament = false; //羅達門特/下水道第三層
+	Scripts.Radament = true; //羅達門特/下水道第三層
 	Scripts.Coldworm = false;
 		Config.Coldworm.KillBeetleburst = false;
 		Config.Coldworm.ClearMaggotLair = false; // (清怪)Clear all 3 levels
 	Scripts.AncientTunnels = false; //古代通道
 		Config.AncientTunnels.OpenChest = false; // (開特殊箱子)Open special chest in Lost City
 		Config.AncientTunnels.KillDarkElder = false; //黑暗長老/遺失的城市
-	Scripts.Summoner = false; //召喚者/神秘避難所
+	Scripts.Summoner = true; //召喚者/神秘避難所
 		Config.Summoner.FireEye = false;
 	Scripts.Tombs = false; //古墓
 	Scripts.Duriel = false; //督瑞爾
@@ -91,18 +91,18 @@ function LoadConfig() {
 	Scripts.SealLeader = false; // (清理出一個安全的區域給小號吸經驗)Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
 
 	// *** (第五章)act 5 ***
-	Scripts.Pindleskin = false; //暴躁外皮/尼拉塞克的神殿
+	Scripts.Pindleskin = true; //暴躁外皮/尼拉塞克的神殿
 		Config.Pindleskin.UseWaypoint = false; //沒紅門用傳點
 		Config.Pindleskin.KillNihlathak = true; //殺尼拉薩克
 		Config.Pindleskin.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
 	Scripts.Nihlathak = false; //尼拉塞克/瓦特之廳
 		Config.Nihlathak.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
-	Scripts.Eldritch = false; //矯正者-怪異/冰凍高地
+	Scripts.Eldritch = true; //矯正者-怪異/冰凍高地
 		Config.Eldritch.OpenChest = true; //開寶相
 		Config.Eldritch.KillShenk = true;
 		Config.Eldritch.KillDacFarren = true;
 	Scripts.Eyeback = false; //狂暴者-眼魔/亞瑞特高原
-	Scripts.SharpTooth = false; //利牙殺手/冰凍高地
+	Scripts.SharpTooth = true; //利牙殺手/冰凍高地
 	Scripts.ThreshSocket = false; //剝殼凹槽/亞瑞特高原
 	Scripts.Abaddon = false;
 	Scripts.Frozenstein = false; //冰凍魔怪/冰河

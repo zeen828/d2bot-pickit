@@ -47,7 +47,7 @@ function LoadConfig() {
 	Scripts.BoneAsh = false; //骨灰/外側回廊-大教堂
 	Scripts.Countess = false; //女伯爵/黑暗森林-高塔地牢第五層
 		Config.Countess.KillGhosts = false; //是否清路上的菁英怪
-	Scripts.Andariel = true; //安達利爾
+	Scripts.Andariel = false; //安達利爾
 	Scripts.Cows = false; //母牛關
 
 	// *** (第二章)act 2 ***
@@ -70,7 +70,7 @@ function LoadConfig() {
 	Scripts.Endugu = false; //古巫醫-印都/剝皮地窖第三層
 	Scripts.Travincal = false; //催凡克
 		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Mephisto = true; //墨菲斯托
+	Scripts.Mephisto = false; //墨菲斯托
 		Config.Mephisto.MoatTrick = true; //脆弱的法師用隔河殺BOSS
 		Config.Mephisto.KillCouncil = false; //殺議會員
 		Config.Mephisto.TakeRedPortal = true; //走紅門道ACT4
