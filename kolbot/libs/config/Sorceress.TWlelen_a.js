@@ -256,8 +256,8 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [1,1,1,1,1,1,1,0,1,0];
-	Config.Inventory[1] = [1,1,1,1,1,1,1,0,1,0];
+	Config.Inventory[0] = [1,1,1,1,1,1,1,0,0,0];
+	Config.Inventory[1] = [1,1,1,1,1,1,1,0,0,0];
 	Config.Inventory[2] = [1,1,1,1,1,1,1,0,0,0];
 	Config.Inventory[3] = [1,1,1,1,1,1,1,1,0,0];
 

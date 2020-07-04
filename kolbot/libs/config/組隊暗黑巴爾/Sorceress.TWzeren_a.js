@@ -1,4 +1,4 @@
-// Amazon config file
+// Sorceress config file
 
 /* Brief instructions:
  * Notepad++ is HIGHLY recommended to use for editing these files. Visit http://notepad-plus-plus.org/
@@ -23,7 +23,7 @@ function LoadConfig() {
 		Config.BattleOrders.Getters = []; // List of players to wait for before casting Battle Orders (mode 0). All players must be in the same area as the BOer.
 
 	// Team MF system
-	Config.MFLeader = false; // Set to true if you have one or more MFHelpers. Opens TP and gives commands when doing normal MF runs.
+	Config.MFLeader = true; // Set to true if you have one or more MFHelpers. Opens TP and gives commands when doing normal MF runs.
 
 	// Boss/area scripts
 
@@ -47,7 +47,7 @@ function LoadConfig() {
 	Scripts.BoneAsh = false; //骨灰/外側回廊-大教堂
 	Scripts.Countess = false; //女伯爵/黑暗森林-高塔地牢第五層
 		Config.Countess.KillGhosts = false; //是否清路上的菁英怪
-	Scripts.Andariel = false; //安達利爾
+	Scripts.Andariel = true; //安達利爾
 	Scripts.Cows = false; //母牛關
 
 	// *** (第二章)act 2 ***
@@ -65,14 +65,14 @@ function LoadConfig() {
 
 	// *** (第三章)act 3 ***
 	Scripts.Stormtree = false; //暴風之樹/進入庫拉斯特下層前
-	Scripts.KurastTemples = false;
-	Scripts.Icehawk = false;
-	Scripts.Endugu = false;
+	Scripts.KurastTemples = false; //戰場處子-沙利娜/庫拉斯特商場-殘破神殿
+	Scripts.Icehawk = false; //裂縫之翼-冰鷹/庫拉斯特-下水道第一層
+	Scripts.Endugu = false; //古巫醫-印都/剝皮地窖第三層
 	Scripts.Travincal = false; //催凡克
 		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Mephisto = false; //墨菲斯托
-		Config.Mephisto.MoatTrick = false; //脆弱的法師用隔河殺BOSS
-		Config.Mephisto.KillCouncil = false; //殺議員
+	Scripts.Mephisto = true; //墨菲斯托
+		Config.Mephisto.MoatTrick = true; //脆弱的法師用隔河殺BOSS
+		Config.Mephisto.KillCouncil = false; //殺議會員
 		Config.Mephisto.TakeRedPortal = true; //走紅門道ACT4
 
 	// *** (第四章)act 4 ***
@@ -81,7 +81,7 @@ function LoadConfig() {
 	Scripts.Hephasto = false; //海法斯特盔甲製作者/火焰之河
 	Scripts.Vizier = false; // (非資料片專用)Intended for classic sorc, kills Vizier only.
 	Scripts.FastDiablo = false; //快速殺暗黑破壞神
-	Scripts.Diablo = false; //暗黑破壞神
+	Scripts.Diablo = true; //暗黑破壞神
 		Config.Diablo.WalkClear = false; // (是否從進門開始清除,false從五星開始)Disable teleport while clearing to protect leechers
 		Config.Diablo.Entrance = true; // (發送消息)Start from entrance
 		Config.Diablo.SealWarning = "Leave the seals alone!"; //
@@ -112,7 +112,7 @@ function LoadConfig() {
 	Scripts.Snapchip = false;
 		Config.Snapchip.ClearIcyCellar = true;
 	Scripts.Worldstone = false; //世界之石大殿
-	Scripts.Baal = false; //巴爾
+	Scripts.Baal = true; //巴爾
 		Config.Baal.HotTPMessage = "Hot TP!"; //到達王座開一個"危險的門"發送消息
 		Config.Baal.SafeTPMessage = "Safe TP!"; //到達王座開一個安全的門發送消息
 		Config.Baal.BaalMessage = "Baal!"; //等待巴爾時
@@ -125,7 +125,7 @@ function LoadConfig() {
 	* Don't use more scripts of the same type! (Run AutoBaal OR BaalHelper, not both)
 	*/
 
-	Config.Leader = "TWzeren_a"; // Leader's ingame character name. Leave blank to try auto-detection (works in AutoBaal, Wakka, MFHelper)
+	Config.Leader = ""; // Leader's ingame character name. Leave blank to try auto-detection (works in AutoBaal, Wakka, MFHelper)
 	Config.QuitList = [""]; // List of character names to quit with. Example: Config.QuitList = ["MySorc", "MyDin"];
 	Config.QuitListMode = 0; // 0 = use character names; 1 = use profile names (all profiles must run on the same computer).
 	Config.QuitListDelay = []; // Quit the game with random delay in case of using Config.QuitList. Example: Config.QuitListDelay = [1, 10]; will exit with random delay between 1 and 10 seconds.
@@ -136,8 +136,8 @@ function LoadConfig() {
 	Scripts.MFHelper = false; // Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
 	Scripts.Wakka = false; // Walking chaos leecher with auto leader assignment, stays at safe distance from the leader
 	Scripts.SealLeecher = false; // Enter safe portals to Chaos. Leader should run SealLeader.
-	Scripts.DiabloHelper = true; // Chaos helper, kills monsters and doesn't open seals on its own.
-		Config.DiabloHelper.Wait = 720; // Seconds to wait for a runner to be in Chaos. If Config.Leader is set, it will wait only for the leader.
+	Scripts.DiabloHelper = false; // Chaos helper, kills monsters and doesn't open seals on its own.
+		Config.DiabloHelper.Wait = 120; // Seconds to wait for a runner to be in Chaos. If Config.Leader is set, it will wait only for the leader.
 		Config.DiabloHelper.Entrance = true; // Start from entrance. Set to false to start from star.
 		Config.DiabloHelper.SkipTP = false; // Don't wait for town portal and directly head to chaos. It will clear monsters around chaos entrance and wait for the runner.
 		Config.DiabloHelper.SkipIfBaal = false; // End script if there are party members in a Baal run.
@@ -145,8 +145,8 @@ function LoadConfig() {
 		Config.AutoBaal.FindShrine = false; // false = disabled, 1 = search after hot tp message, 2 = search as soon as leader is found
 		Config.AutoBaal.LeechSpot = [15115, 5050]; // X, Y coords of Throne Room leech spot
 		Config.AutoBaal.LongRangeSupport = false; // Cast long distance skills from a safe spot
-	Scripts.BaalHelper = true;
-		Config.BaalHelper.Wait = 720; // Seconds to wait for a runner to be in Throne
+	Scripts.BaalHelper = false;
+		Config.BaalHelper.Wait = 120; // Seconds to wait for a runner to be in Throne
 		Config.BaalHelper.KillNihlathak = false; // Kill Nihlathak before going to Throne
 		Config.BaalHelper.FastChaos = false; // Kill Diablo before going to Throne
 		Config.BaalHelper.DollQuit = false;  // End script if Dolls (Undead Soul Killers) are found.
@@ -256,10 +256,10 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [1,1,1,1,0,0,0,0,0,0];
-	Config.Inventory[1] = [1,1,1,1,0,0,0,0,0,0];
-	Config.Inventory[2] = [1,1,1,1,0,0,0,0,0,0];
-	Config.Inventory[3] = [1,1,1,1,0,0,0,0,0,0];
+	Config.Inventory[0] = [1,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[1] = [1,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[2] = [1,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[3] = [1,1,1,1,1,1,0,0,0,0];
 
 	Config.StashGold = 100000; // (滿額存錢)Minimum amount of gold to stash.
 
@@ -291,8 +291,8 @@ function LoadConfig() {
 	Config.PickitFiles.push("custom-runes.nip");//自訂符文
 	Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
 	Config.PickitFiles.push("test.nip");//測試
-	Config.PickRange = 40; // Pick radius
-	Config.FastPick = false; // Check and pick items between attacks
+	Config.PickRange = 40; // (撿取距離)Pick radius
+	Config.FastPick = true; // Check and pick items between attacks
 
 	/* Advanced automule settings
 	 * Trigger - Having an item that is on the list will initiate muling. Useful if you want to mule something immediately upon finding.
@@ -313,10 +313,10 @@ function LoadConfig() {
 	Config.AutoMule.Exclude = [];
 
 	// Additional item info log settings. All info goes to \logs\ItemLog.txt
-	Config.ItemInfo = false; // Log stashed, skipped (due to no space) or sold items.
+	Config.ItemInfo = true; // Log stashed, skipped (due to no space) or sold items.
 	Config.ItemInfoQuality = []; // The quality of sold items to log. See NTItemAlias.dbl for values. Example: Config.ItemInfoQuality = [6, 7, 8];
 
-	// (紀錄日誌)Item identification settings
+	// (物品識別)Item identification settings
 	Config.CainID.Enable = false; // (在凱恩那辨識)Identify items at Cain
 	Config.CainID.MinGold = 2500000; // Minimum gold (stash + character) to have in order to use Cain.
 	Config.CainID.MinUnids = 3; // Minimum number of unid items in order to use Cain.
@@ -366,7 +366,7 @@ function LoadConfig() {
 	//Config.Recipes.push([Recipe.Gem, "Flawless Diamond"]); // Make Perfect Diamond
 	//Config.Recipes.push([Recipe.Gem, "Flawless Skull"]); // Make Perfect Skull
 
-	//Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
+	//Config.Recipes.push([Recipe.Token]); // (洗點勳章)Make Token of Absolution
 
 	//符文
 	//Config.Recipes.push([Recipe.Rune, "Pul Rune"]); // Upgrade Pul to Um
@@ -442,7 +442,7 @@ function LoadConfig() {
 	Config.MinGameTime = 420; // (最短遊戲時間/秒)Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
 	Config.MaxGameTime = 1800; // (最長遊戲時間/秒)Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
-	Config.OpenChests = false; // Open chests. Controls key buying.
+	Config.OpenChests = true; // Open chests. Controls key buying.
 	Config.MiniShopBot = true; // Scan items in NPC shops.
 	Config.PacketShopping = false; // Use packets to shop. Improves shopping speed.
 	Config.TownCheck = false; // Go to town if out of potions
@@ -454,25 +454,25 @@ function LoadConfig() {
 	Config.ScanShrines = [];
 
 	// MF Switch
-	Config.MFSwitchPercent = 0; // Boss life % to switch to non-primiary weapon slot. Set to 0 to disable.
+	Config.MFSwitchPercent = 0; // Boss life % to switch to secondary weapon slot. Set to 0 to disable.
 
 	// Primary Slot - Bot will try to determine primary slot if not used (non-cta slot that's not empty)
 	Config.PrimarySlot = -1; // Set to use specific weapon slot as primary weapon slot: -1 = disabled, 0 = slot I, 1 = slot II
 
-	// Fastmod config
-	Config.FCR = 0; // 0 - disable, 1 to 255 - set value of faster cast rate
-	Config.FHR = 0; // 0 - disable, 1 to 255 - set value of faster hit recovery
-	Config.FBR = 0; // 0 - disable, 1 to 255 - set value of faster block recovery
-	Config.IAS = 0; // 0 - disable, 1 to 255 - set value of increased attack speed
+	// Speedup config. Full packet casting is not recommended for melee skills.
+	Config.FCR = 0; // 0 - disable, 1 to 255 - set value of Faster Cast Rate.
+	Config.FHR = 0; // 0 - disable, 1 to 255 - set value of Faster Hit Recovery.
+	Config.FBR = 0; // 0 - disable, 1 to 255 - set value of Faster Block Recovery.
+	Config.IAS = 0; // 0 - disable, 1 to 255 - set value of Increased Attack Speed.
 	Config.PacketCasting = 0; // 0 = disable, 1 = packet teleport, 2 = full packet casting.
 	Config.WaypointMenu = true;
 
 	// (敵對設定)Anti-hostile config
-	Config.AntiHostile = false; // Enable anti-hostile
-	Config.HostileAction = 0; // 0 - quit immediately, 1 - quit when hostile player is sighted, 2 - attack hostile
-	Config.TownOnHostile = false; // Go to town instead of quitting when HostileAction is 0 or 1
+	Config.AntiHostile = false; // Enable anti-hostile.
+	Config.HostileAction = 0; // 0 - quit immediately, 1 - quit when hostile player is sighted, 2 - attack hostile.
+	Config.TownOnHostile = false; // Go to town instead of quitting when HostileAction is 0 or 1.
 	Config.RandomPrecast = false; // Anti-PK measure, only supported in Baal and BaalHelper and BaalAssisstant at the moment.
-	Config.ViperCheck = false; // Quit if revived Tomb Vipers are sighted
+	Config.ViperCheck = false; // Quit if revived Tomb Vipers are sighted.
 
 	// (地表暗黑檢測)DClone config
 	Config.StopOnDClone = true; // Go to town and idle as soon as Diablo walks the Earth
@@ -496,31 +496,32 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	//10戳刺,24充能一擊,34閃電攻擊,35閃電之怒
-	Config.AttackSkill[0] = 35; // Preattack skill.
-	Config.AttackSkill[1] = 35; // Primary skill to bosses.
-	Config.AttackSkill[2] = 35; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
-	Config.AttackSkill[3] = 24; // Primary skill to others.
-	Config.AttackSkill[4] = 24; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
-	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
+	//40冰封裝甲42靜態立場,47火球,55冰尖柱,56隕石,64冰封球
+	Config.AttackSkill[0] = 40; // Preattack skill.
+	Config.AttackSkill[1] = 56; // Primary skill to bosses.
+	Config.AttackSkill[2] = 47; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
+	Config.AttackSkill[3] = 64; // Primary skill to others.
+	Config.AttackSkill[4] = 55; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	Config.AttackSkill[5] = 64; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
 	// Low mana skills - these will be used if main skills can't be cast.
-	Config.LowManaSkill[0] = -1; // Timed low mana skill.
+	Config.LowManaSkill[0] = 40; // Timed low mana skill.
 	Config.LowManaSkill[1] = -1; // Untimed low mana skill.
 
 	/* Advanced Attack config. Allows custom skills to be used on custom monsters.
 	 *	Format: "Monster Name": [timed skill id, untimed skill id]
+	 *	Example: "Baal": [38, -1] to use charged bolt on Baal
 	 *	Multiple entries are separated by commas
 	 */
 	Config.CustomAttack = {
 		//"Monster Name": [-1, -1]
 	};
 
-	Config.Dodge = false; // (遠離怪物打怪)Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
+	Config.Dodge = true; // (遠離怪物打怪)Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
 	Config.DodgeRange = 10; // (與怪物保持距離)Distance to keep from monsters.
 	Config.DodgeHP = 100; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
-	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
+	Config.BossPriority = true; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
 	Config.TeleStomp = false; // Use merc to attack bosses if they're immune to attacks, but not to physical damage
 
@@ -528,8 +529,8 @@ function LoadConfig() {
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear
 
 	// (職業特定設定)Class specific config
-	Config.LightningFuryDelay = 10; // Lightning fury interval in seconds. LF is treated as timed skill.
-	Config.SummonValkyrie = true; // (招喚女武神)Summon Valkyrie
+	Config.CastStatic = 60; // (靜態立場)Cast static until the target is at designated life percent. 100 = disabled.
+	Config.StaticList = [156, 229, 221, 242, 256, 243, 544]; // List of monster NAMES or CLASSIDS to static. Example: Config.StaticList = ["Andariel", 243];
 
 	/* AutoSkill builds character based on array defined by the user and it replaces AutoBuild's skill system.
 	 * AutoSkill will automatically spend skill points and it can also allocate any prerequisite skills as required.
