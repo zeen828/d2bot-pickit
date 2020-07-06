@@ -44,34 +44,34 @@ function LoadConfig() {
 		Config.Pit.ClearPit1 = true; //清理一層
 	Scripts.Treehead = false; //樹頭木拳/黑暗森林
 	Scripts.Smith = false;
-	Scripts.BoneAsh = false; //骨灰/外側回廊-大教堂
+	Scripts.BoneAsh = true; //骨灰/外側回廊-大教堂
 	Scripts.Countess = false; //女伯爵/黑暗森林-高塔地牢第五層
 		Config.Countess.KillGhosts = false; //是否清路上的菁英怪
 	Scripts.Andariel = true; //安達利爾
 	Scripts.Cows = false; //母牛關
 
 	// *** (第二章)act 2 ***
-	Scripts.Radament = true; //羅達門特/下水道第三層
+	Scripts.Radament = false; //羅達門特/下水道第三層
 	Scripts.Coldworm = false;
 		Config.Coldworm.KillBeetleburst = false;
 		Config.Coldworm.ClearMaggotLair = false; // (清怪)Clear all 3 levels
-	Scripts.AncientTunnels = false; //古代通道
+	Scripts.AncientTunnels = true; //古代通道
 		Config.AncientTunnels.OpenChest = false; // (開特殊箱子)Open special chest in Lost City
 		Config.AncientTunnels.KillDarkElder = false; //黑暗長老/遺失的城市
-	Scripts.Summoner = true; //召喚者/神秘避難所
+	Scripts.Summoner = false; //召喚者/神秘避難所
 		Config.Summoner.FireEye = false;
 	Scripts.Tombs = false; //古墓
 	Scripts.Duriel = false; //督瑞爾
 
 	// *** (第三章)act 3 ***
-	Scripts.Stormtree = false; //暴風之樹/進入庫拉斯特下層前
+	Scripts.Stormtree = true; //暴風之樹/進入庫拉斯特下層前
 	Scripts.KurastTemples = false; //戰場處子-沙利娜/庫拉斯特商場-殘破神殿
 	Scripts.Icehawk = false; //裂縫之翼-冰鷹/庫拉斯特-下水道第一層
 	Scripts.Endugu = false; //古巫醫-印都/剝皮地窖第三層
 	Scripts.Travincal = false; //催凡克
 		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
 	Scripts.Mephisto = true; //墨菲斯托
-		Config.Mephisto.MoatTrick = true; //脆弱的法師用隔河殺BOSS
+		Config.Mephisto.MoatTrick = false; //脆弱的法師用隔河殺BOSS
 		Config.Mephisto.KillCouncil = false; //殺議會員
 		Config.Mephisto.TakeRedPortal = true; //走紅門道ACT4
 
@@ -93,7 +93,7 @@ function LoadConfig() {
 	// *** (第五章)act 5 ***
 	Scripts.Pindleskin = true; //暴躁外皮/尼拉塞克的神殿
 		Config.Pindleskin.UseWaypoint = false; //沒紅門用傳點
-		Config.Pindleskin.KillNihlathak = true; //殺尼拉薩克
+		Config.Pindleskin.KillNihlathak = true; //殺尼拉塞克
 		Config.Pindleskin.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
 	Scripts.Nihlathak = false; //尼拉塞克/瓦特之廳
 		Config.Nihlathak.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
@@ -496,13 +496,13 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	//40冰封裝甲42靜態立場,47火球,55冰尖柱,56隕石,64冰封球
-	Config.AttackSkill[0] = 40; // Preattack skill.
-	Config.AttackSkill[1] = 56; // Primary skill to bosses.
-	Config.AttackSkill[2] = 47; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
-	Config.AttackSkill[3] = 64; // Primary skill to others.
-	Config.AttackSkill[4] = 55; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
-	Config.AttackSkill[5] = 64; // Secondary skill if monster is immune to primary.
+	//38充能彈,53連鎖閃電,57雷雲風暴
+	Config.AttackSkill[0] = 57; // Preattack skill.
+	Config.AttackSkill[1] = 53; // Primary skill to bosses.
+	Config.AttackSkill[2] = 38; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
+	Config.AttackSkill[3] = 53; // Primary skill to others.
+	Config.AttackSkill[4] = 38; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
 	// Low mana skills - these will be used if main skills can't be cast.

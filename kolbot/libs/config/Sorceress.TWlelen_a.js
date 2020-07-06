@@ -496,13 +496,13 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	//40冰封裝甲42靜態立場,47火球,55冰尖柱,56隕石,64冰封球
-	Config.AttackSkill[0] = 40; // Preattack skill.
-	Config.AttackSkill[1] = 56; // Primary skill to bosses.
-	Config.AttackSkill[2] = 47; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
-	Config.AttackSkill[3] = 64; // Primary skill to others.
-	Config.AttackSkill[4] = 55; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
-	Config.AttackSkill[5] = 64; // Secondary skill if monster is immune to primary.
+	//38充能彈,53連鎖閃電,57雷雲風暴
+	Config.AttackSkill[0] = 57; // Preattack skill.
+	Config.AttackSkill[1] = 53; // Primary skill to bosses.
+	Config.AttackSkill[2] = 38; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
+	Config.AttackSkill[3] = 53; // Primary skill to others.
+	Config.AttackSkill[4] = 38; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
 	// Low mana skills - these will be used if main skills can't be cast.

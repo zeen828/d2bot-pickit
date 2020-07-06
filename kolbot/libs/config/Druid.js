@@ -1,4 +1,4 @@
-// Druid config file
+// (德魯伊)Druid config file
 
 /* Brief instructions:
  * Notepad++ is HIGHLY recommended to use for editing these files. Visit http://notepad-plus-plus.org/

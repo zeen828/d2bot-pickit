@@ -1,4 +1,4 @@
-// Paladin config file
+// (聖騎士)Paladin config file
 
 /* Brief instructions:
  * Notepad++ is HIGHLY recommended to use for editing these files. Visit http://notepad-plus-plus.org/

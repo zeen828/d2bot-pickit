@@ -1,4 +1,4 @@
-// Sorceress config file
+// (法師)Sorceress config file
 
 /* Brief instructions:
  * Notepad++ is HIGHLY recommended to use for editing these files. Visit http://notepad-plus-plus.org/
@@ -93,7 +93,7 @@ function LoadConfig() {
 	// *** (第五章)act 5 ***
 	Scripts.Pindleskin = false; //暴躁外皮/尼拉塞克的神殿
 		Config.Pindleskin.UseWaypoint = false; //沒紅門用傳點
-		Config.Pindleskin.KillNihlathak = true; //殺尼拉薩克
+		Config.Pindleskin.KillNihlathak = true; //殺尼拉塞克
 		Config.Pindleskin.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
 	Scripts.Nihlathak = false; //尼拉塞克/瓦特之廳
 		Config.Nihlathak.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
