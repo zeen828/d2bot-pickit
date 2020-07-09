@@ -65,14 +65,14 @@ function LoadConfig() {
 
 	// *** (第三章)act 3 ***
 	Scripts.Stormtree = false; //暴風之樹/進入庫拉斯特下層前
-	Scripts.KurastTemples = false;
-	Scripts.Icehawk = false;
-	Scripts.Endugu = false;
+	Scripts.KurastTemples = false; //戰場處子-沙利娜/庫拉斯特商場-殘破神殿
+	Scripts.Icehawk = false; //裂縫之翼-冰鷹/庫拉斯特-下水道第一層
+	Scripts.Endugu = false; //古巫醫-印都/剝皮地窖第三層
 	Scripts.Travincal = false; //催凡克
 		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
 	Scripts.Mephisto = false; //墨菲斯托
 		Config.Mephisto.MoatTrick = false; //脆弱的法師用隔河殺BOSS
-		Config.Mephisto.KillCouncil = false; //殺議員
+		Config.Mephisto.KillCouncil = false; //殺議會員
 		Config.Mephisto.TakeRedPortal = true; //走紅門道ACT4
 
 	// *** (第四章)act 4 ***
@@ -93,7 +93,7 @@ function LoadConfig() {
 	// *** (第五章)act 5 ***
 	Scripts.Pindleskin = false; //暴躁外皮/尼拉塞克的神殿
 		Config.Pindleskin.UseWaypoint = false; //沒紅門用傳點
-		Config.Pindleskin.KillNihlathak = true; //殺尼拉薩克
+		Config.Pindleskin.KillNihlathak = true; //殺尼拉塞克
 		Config.Pindleskin.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
 	Scripts.Nihlathak = false; //尼拉塞克/瓦特之廳
 		Config.Nihlathak.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
@@ -126,14 +126,14 @@ function LoadConfig() {
 	*/
 
 	Config.Leader = "TWzeren_a"; // Leader's ingame character name. Leave blank to try auto-detection (works in AutoBaal, Wakka, MFHelper)
-	Config.QuitList = [""]; // List of character names to quit with. Example: Config.QuitList = ["MySorc", "MyDin"];
+	Config.QuitList = ["EXIT"]; // List of character names to quit with. Example: Config.QuitList = ["MySorc", "MyDin"];
 	Config.QuitListMode = 0; // 0 = use character names; 1 = use profile names (all profiles must run on the same computer).
-	Config.QuitListDelay = []; // Quit the game with random delay in case of using Config.QuitList. Example: Config.QuitListDelay = [1, 10]; will exit with random delay between 1 and 10 seconds.
+	Config.QuitListDelay = [1, 5]; // Quit the game with random delay in case of using Config.QuitList. Example: Config.QuitListDelay = [1, 10]; will exit with random delay between 1 and 10 seconds.
 
 	Scripts.TristramLeech = false; // Enters Tristram, attempts to stay close to the leader and will try and help kill.
 	Scripts.TravincalLeech = false; // Enters portal at back of Travincal.
 		Config.TravincalLeech.Helper = true; // If set to true the character will teleport to the stairs and help attack.
-	Scripts.MFHelper = false; // Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
+	Scripts.MFHelper = true; // (運行與領隊一樣的)Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
 	Scripts.Wakka = false; // Walking chaos leecher with auto leader assignment, stays at safe distance from the leader
 	Scripts.SealLeecher = false; // Enter safe portals to Chaos. Leader should run SealLeader.
 	Scripts.DiabloHelper = true; // Chaos helper, kills monsters and doesn't open seals on its own.
@@ -152,7 +152,7 @@ function LoadConfig() {
 		Config.BaalHelper.DollQuit = false;  // End script if Dolls (Undead Soul Killers) are found.
 		Config.BaalHelper.KillBaal = true; // Kill Baal. If set to false, you must configure Config.QuitList or the bot will wait indefinitely.
 		Config.BaalHelper.SkipTP = false; // Don't wait for a TP, go to WSK3 and wait for someone to go to throne. Anti PK measure.
-	Scripts.Follower = false; // Script that follows a manually played leader around like a merc. For a list of commands, see Follower.js
+	Scripts.Follower = true; // Script that follows a manually played leader around like a merc. For a list of commands, see Follower.js
 
 	// *** (特殊腳本)special scripts ***
 	Scripts.WPGetter = false; // (取得缺少的傳點)Get missing waypoints
@@ -427,7 +427,7 @@ function LoadConfig() {
 	Config.LocalChat.Toggle = false; // optional, set to KEY value to toggle through modes 0, 1, 2
 	Config.LocalChat.Mode = 0; // 0 = disabled, 1 = chat from 'say' (recommended), 2 = all chat (for manual play)
 	// If Config.Leader is set, the bot will only accept invites from leader. If Config.PublicMode is not 0, Baal and Diablo script will open Town Portals.
-	Config.PublicMode = 1; // (組隊設定)1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
+	Config.PublicMode = 2; // (組隊設定)1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
 	// Party message settings. Each setting represents an array of messages that will be randomly chosen.
 	// $name, $level, $class and $killer are replaced by the player's name, level, class and killer
 	Config.Greetings = []; // (組隊歡迎消息)Example: ["Hello, $name (level $level $class)"]
@@ -439,7 +439,7 @@ function LoadConfig() {
 	// (遊戲配置)General config
 	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
 	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
-	Config.MinGameTime = 420; // (最短遊戲時間/秒)Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
+	Config.MinGameTime = 480; // (最短遊戲時間/秒)Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
 	Config.MaxGameTime = 1800; // (最長遊戲時間/秒)Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
 	Config.OpenChests = false; // Open chests. Controls key buying.
@@ -500,8 +500,8 @@ function LoadConfig() {
 	Config.AttackSkill[0] = 35; // Preattack skill.
 	Config.AttackSkill[1] = 35; // Primary skill to bosses.
 	Config.AttackSkill[2] = 35; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
-	Config.AttackSkill[3] = 24; // Primary skill to others.
-	Config.AttackSkill[4] = 24; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	Config.AttackSkill[3] = 35; // Primary skill to others.
+	Config.AttackSkill[4] = 35; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
 	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 

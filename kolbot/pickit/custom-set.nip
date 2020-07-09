@@ -187,8 +187,8 @@
 [name] == meshbelt && [quality] == set # [itemmagicbonus] >= 10 //10-15 tal rasha's fine-spun cloth
 
 // # (塔格奧的化身)trang-oul's avatar #
-[name] == bonevisage && [quality] == set // trang-oul's guise
-[name] == chaosarmor && [quality] == set // trang-oul's scales
-[name] == cantortrophy && [quality] == set // trang-oul's wing
-[name] == trollbelt && [quality] == set // trang-oul's girth
-[name] == heavybracers && [quality] == set // trang-oul's claws
+[name] == bonevisage && [quality] == set // (-頭)trang-oul's guise
+//[name] == chaosarmor && [quality] == set // (-甲)trang-oul's scales
+[name] == cantortrophy && [quality] == set // (-副手)trang-oul's wing
+[name] == trollbelt && [quality] == set // (-腰)trang-oul's girth
+//[name] == heavybracers && [quality] == set // (-手)trang-oul's claws

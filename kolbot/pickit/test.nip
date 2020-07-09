@@ -1,10 +1,10 @@
 // # 獨特飾品 #
-[type] == ring && [quality] == unique // (獨特戒指)
-[type] == amulet && [quality] == unique // (獨特項鍊)
+//[type] == ring && [quality] == unique // (獨特戒指)
+//[type] == amulet && [quality] == unique // (獨特項鍊)
 
 // # 套裝飾品 #
 //[type] == ring && [quality] == set // (套裝戒指)
-[type] == amulet && [quality] == set // (套裝項鍊)
+//[type] == amulet && [quality] == set // (套裝項鍊)
 
 //[quality] == set // (套裝)
 //[quality] == unique // (獨特)

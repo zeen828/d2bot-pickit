@@ -44,9 +44,9 @@
 //[name] == solrune # # [maxquantity] == 3
 //[name] == shaelrune # # [maxquantity] == 3
 //[name] == dolrune # # [maxquantity] == 3
-[name] == helrune # # [maxquantity] == 3
-[name] == iorune # # [maxquantity] == 3
-[name] == lumrune # # [maxquantity] == 3
+//[name] == helrune # # [maxquantity] == 3
+//[name] == iorune # # [maxquantity] == 3
+//[name] == lumrune # # [maxquantity] == 3
 [name] == korune # # [maxquantity] == 3
 [name] == falrune # # [maxquantity] == 3
 [name] == lemrune # # [maxquantity] == 3

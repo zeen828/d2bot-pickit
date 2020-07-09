@@ -30,9 +30,9 @@ function LoadConfig() {
 	// *** (第一章)act 1 ***
 	Scripts.Corpsefire = false; //屍體發火/邪惡洞窟	
 		Config.Corpsefire.ClearDen = false; //是否全清洞窟
-	Scripts.Mausoleum = true; //大陵墓
+	Scripts.Mausoleum = false; //大陵墓
 		Config.Mausoleum.KillBloodRaven = false; //血鳥/冰冷之原-埋骨之地
-		Config.Mausoleum.ClearCrypt = true; //是否清另一個墳墓
+		Config.Mausoleum.ClearCrypt = false; //是否清另一個墳墓
 	Scripts.Rakanishu = false; //尼拉卡修/石塊曠野
 		Config.Rakanishu.KillGriswold = true;
 	Scripts.UndergroundPassage = false; //地底通道
@@ -40,14 +40,14 @@ function LoadConfig() {
 	Scripts.Tristram = false; //崔斯特瑞姆
 		Config.Tristram.WalkClear = false; // (不傳送)Disable teleport while clearing to protect leechers
 		Config.Tristram.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Pit = true; //泰摩高地地穴
+	Scripts.Pit = false; //泰摩高地地穴
 		Config.Pit.ClearPit1 = true; //清理一層
 	Scripts.Treehead = false; //樹頭木拳/黑暗森林
 	Scripts.Smith = false;
-	Scripts.BoneAsh = true; //骨灰/外側回廊-大教堂
+	Scripts.BoneAsh = false; //骨灰/外側回廊-大教堂
 	Scripts.Countess = false; //女伯爵/黑暗森林-高塔地牢第五層
 		Config.Countess.KillGhosts = false; //是否清路上的菁英怪
-	Scripts.Andariel = true; //安達利爾
+	Scripts.Andariel = false; //安達利爾
 	Scripts.Cows = false; //母牛關
 
 	// *** (第二章)act 2 ***
@@ -55,7 +55,7 @@ function LoadConfig() {
 	Scripts.Coldworm = false;
 		Config.Coldworm.KillBeetleburst = false;
 		Config.Coldworm.ClearMaggotLair = false; // (清怪)Clear all 3 levels
-	Scripts.AncientTunnels = true; //古代通道
+	Scripts.AncientTunnels = false; //古代通道
 		Config.AncientTunnels.OpenChest = false; // (開特殊箱子)Open special chest in Lost City
 		Config.AncientTunnels.KillDarkElder = false; //黑暗長老/遺失的城市
 	Scripts.Summoner = false; //召喚者/神秘避難所
@@ -64,13 +64,13 @@ function LoadConfig() {
 	Scripts.Duriel = false; //督瑞爾
 
 	// *** (第三章)act 3 ***
-	Scripts.Stormtree = true; //暴風之樹/進入庫拉斯特下層前
+	Scripts.Stormtree = false; //暴風之樹/進入庫拉斯特下層前
 	Scripts.KurastTemples = false; //戰場處子-沙利娜/庫拉斯特商場-殘破神殿
 	Scripts.Icehawk = false; //裂縫之翼-冰鷹/庫拉斯特-下水道第一層
 	Scripts.Endugu = false; //古巫醫-印都/剝皮地窖第三層
 	Scripts.Travincal = false; //催凡克
 		Config.Travincal.PortalLeech = false; // (開門)Set to true to open a portal for leechers.
-	Scripts.Mephisto = true; //墨菲斯托
+	Scripts.Mephisto = false; //墨菲斯托
 		Config.Mephisto.MoatTrick = false; //脆弱的法師用隔河殺BOSS
 		Config.Mephisto.KillCouncil = false; //殺議會員
 		Config.Mephisto.TakeRedPortal = true; //走紅門道ACT4
@@ -91,18 +91,18 @@ function LoadConfig() {
 	Scripts.SealLeader = false; // (清理出一個安全的區域給小號吸經驗)Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
 
 	// *** (第五章)act 5 ***
-	Scripts.Pindleskin = true; //暴躁外皮/尼拉塞克的神殿
+	Scripts.Pindleskin = false; //暴躁外皮/尼拉塞克的神殿
 		Config.Pindleskin.UseWaypoint = false; //沒紅門用傳點
 		Config.Pindleskin.KillNihlathak = true; //殺尼拉塞克
 		Config.Pindleskin.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
 	Scripts.Nihlathak = false; //尼拉塞克/瓦特之廳
 		Config.Nihlathak.ViperQuit = false; // (遇到BUG蛇結束)End script if Tomb Vipers are found.
-	Scripts.Eldritch = true; //矯正者-怪異/冰凍高地
+	Scripts.Eldritch = false; //矯正者-怪異/冰凍高地
 		Config.Eldritch.OpenChest = true; //開寶相
 		Config.Eldritch.KillShenk = true;
 		Config.Eldritch.KillDacFarren = true;
 	Scripts.Eyeback = false; //狂暴者-眼魔/亞瑞特高原
-	Scripts.SharpTooth = true; //利牙殺手/冰凍高地
+	Scripts.SharpTooth = false; //利牙殺手/冰凍高地
 	Scripts.ThreshSocket = false; //剝殼凹槽/亞瑞特高原
 	Scripts.Abaddon = false;
 	Scripts.Frozenstein = false; //冰凍魔怪/冰河
@@ -126,14 +126,14 @@ function LoadConfig() {
 	*/
 
 	Config.Leader = "TWzeren_a"; // Leader's ingame character name. Leave blank to try auto-detection (works in AutoBaal, Wakka, MFHelper)
-	Config.QuitList = [""]; // List of character names to quit with. Example: Config.QuitList = ["MySorc", "MyDin"];
+	Config.QuitList = ["EXIT"]; // List of character names to quit with. Example: Config.QuitList = ["MySorc", "MyDin"];
 	Config.QuitListMode = 0; // 0 = use character names; 1 = use profile names (all profiles must run on the same computer).
-	Config.QuitListDelay = []; // Quit the game with random delay in case of using Config.QuitList. Example: Config.QuitListDelay = [1, 10]; will exit with random delay between 1 and 10 seconds.
+	Config.QuitListDelay = [1, 5]; // Quit the game with random delay in case of using Config.QuitList. Example: Config.QuitListDelay = [1, 10]; will exit with random delay between 1 and 10 seconds.
 
 	Scripts.TristramLeech = false; // Enters Tristram, attempts to stay close to the leader and will try and help kill.
 	Scripts.TravincalLeech = false; // Enters portal at back of Travincal.
 		Config.TravincalLeech.Helper = true; // If set to true the character will teleport to the stairs and help attack.
-	Scripts.MFHelper = false; // Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
+	Scripts.MFHelper = true; // Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
 	Scripts.Wakka = false; // Walking chaos leecher with auto leader assignment, stays at safe distance from the leader
 	Scripts.SealLeecher = false; // Enter safe portals to Chaos. Leader should run SealLeader.
 	Scripts.DiabloHelper = false; // Chaos helper, kills monsters and doesn't open seals on its own.
@@ -145,7 +145,7 @@ function LoadConfig() {
 		Config.AutoBaal.FindShrine = false; // false = disabled, 1 = search after hot tp message, 2 = search as soon as leader is found
 		Config.AutoBaal.LeechSpot = [15115, 5050]; // X, Y coords of Throne Room leech spot
 		Config.AutoBaal.LongRangeSupport = false; // Cast long distance skills from a safe spot
-	Scripts.BaalHelper = false;
+	Scripts.BaalHelper = true;
 		Config.BaalHelper.Wait = 720; // Seconds to wait for a runner to be in Throne
 		Config.BaalHelper.KillNihlathak = false; // Kill Nihlathak before going to Throne
 		Config.BaalHelper.FastChaos = false; // Kill Diablo before going to Throne
@@ -427,7 +427,7 @@ function LoadConfig() {
 	Config.LocalChat.Toggle = false; // optional, set to KEY value to toggle through modes 0, 1, 2
 	Config.LocalChat.Mode = 0; // 0 = disabled, 1 = chat from 'say' (recommended), 2 = all chat (for manual play)
 	// If Config.Leader is set, the bot will only accept invites from leader. If Config.PublicMode is not 0, Baal and Diablo script will open Town Portals.
-	Config.PublicMode = 1; // (組隊設定)1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
+	Config.PublicMode = 2; // (組隊設定)1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
 	// Party message settings. Each setting represents an array of messages that will be randomly chosen.
 	// $name, $level, $class and $killer are replaced by the player's name, level, class and killer
 	Config.Greetings = []; // (組隊歡迎消息)Example: ["Hello, $name (level $level $class)"]
@@ -439,7 +439,7 @@ function LoadConfig() {
 	// (遊戲配置)General config
 	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
 	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
-	Config.MinGameTime = 420; // (最短遊戲時間/秒)Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
+	Config.MinGameTime = 480; // (最短遊戲時間/秒)Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
 	Config.MaxGameTime = 1800; // (最長遊戲時間/秒)Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
 	Config.OpenChests = true; // Open chests. Controls key buying.
