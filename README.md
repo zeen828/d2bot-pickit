@@ -10,6 +10,7 @@
 
 ## B. 組隊設定
 #### 1. 組隊隊長(法師)
+```js
 17: Scripts.UserAddon = true;
 
 26: Config.MFLeader = true;
@@ -27,8 +28,10 @@
 443: Config.MaxGameTime = 1800;
 
 449: Config.LogExperience = true;
+```
 
 #### 2. 組隊隊員
+```js
 17: Scripts.UserAddon = false;
 
 128: Config.Leader = "TWzeren_a";
@@ -50,6 +53,7 @@
 443: Config.MaxGameTime = 1800;
 
 449: Config.LogExperience = true;
+```
 
 ##### 外掛下載
 https://github.com/kolton/d2bot-with-kolbot
