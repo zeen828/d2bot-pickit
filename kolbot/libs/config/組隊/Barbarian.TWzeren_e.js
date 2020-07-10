@@ -145,14 +145,14 @@ function LoadConfig() {
 		Config.AutoBaal.FindShrine = false; // false = disabled, 1 = search after hot tp message, 2 = search as soon as leader is found
 		Config.AutoBaal.LeechSpot = [15115, 5050]; // X, Y coords of Throne Room leech spot
 		Config.AutoBaal.LongRangeSupport = false; // Cast long distance skills from a safe spot
-	Scripts.BaalHelper = true;
+	Scripts.BaalHelper = false;
 		Config.BaalHelper.Wait = 120; // Seconds to wait for a runner to be in Throne
 		Config.BaalHelper.KillNihlathak = false; // Kill Nihlathak before going to Throne
 		Config.BaalHelper.FastChaos = false; // Kill Diablo before going to Throne
 		Config.BaalHelper.DollQuit = false;  // End script if Dolls (Undead Soul Killers) are found.
 		Config.BaalHelper.KillBaal = true; // Kill Baal. If set to false, you must configure Config.QuitList or the bot will wait indefinitely.
 		Config.BaalHelper.SkipTP = false; // Don't wait for a TP, go to WSK3 and wait for someone to go to throne. Anti PK measure.
-	Scripts.Follower = true; // Script that follows a manually played leader around like a merc. For a list of commands, see Follower.js
+	Scripts.Follower = false; // Script that follows a manually played leader around like a merc. For a list of commands, see Follower.js
 
 	// *** special scripts ***
 	Scripts.WPGetter = false; // Get missing waypoints
@@ -207,16 +207,16 @@ function LoadConfig() {
 
 	// *** Guest scripts ***
 
-	// Baal Assistant by YourGreatestMember
-	Scripts.BaalAssistant = false; // Used to leech or help in baal runs.
+	// (巴爾跟班的打手腳本)Baal Assistant by YourGreatestMember
+	Scripts.BaalAssistant = true; // Used to leech or help in baal runs.
 		Config.BaalAssistant.Wait = 120; // Seconds to wait for a runner to be in the throne / portal wait / safe TP wait / hot TP wait...
 		Config.BaalAssistant.KillNihlathak = false; // Kill Nihlathak before going to Throne
 		Config.BaalAssistant.FastChaos = false; // Kill Diablo before going to Throne
-		Config.BaalAssistant.Helper = true; // Set to true to help attack, set false to to leech.
+		Config.BaalAssistant.Helper = false; // (協助攻擊)Set to true to help attack, set false to to leech.
 		Config.BaalAssistant.GetShrine = false; // Set to true to get a experience shrine at the start of the run.
 		Config.BaalAssistant.GetShrineWaitForHotTP = false; // Set to true to get a experience shrine after leader shouts the hot tp message as defined in Config.BaalAssistant.HotTPMessage
 		Config.BaalAssistant.SkipTP = false; // Set to true to enable the helper to skip the TP and teleport down to the throne room.
-		Config.BaalAssistant.WaitForSafeTP = false; // Set to true to wait for a safe TP message (defined in SafeTPMessage)
+		Config.BaalAssistant.WaitForSafeTP = true; // (等待安全門)Set to true to wait for a safe TP message (defined in SafeTPMessage)
 		Config.BaalAssistant.DollQuit = false; // Quit on dolls. (Hardcore players?)
 		Config.BaalAssistant.SoulQuit = false; // Quit on Souls. (Hardcore players?)
 		Config.BaalAssistant.KillBaal = true; // Set to true to kill baal, if you set to false you MUST configure Config.QuitList or Config.BaalAssistant.NextGameMessage or the bot will wait indefinitely.
@@ -492,10 +492,10 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	//138大叫149戰鬥體制155戰鬥指揮
-	Config.AttackSkill[0] = 155; // Preattack skill.
-	Config.AttackSkill[1] = 149; // Primary skill for bosses.
-	Config.AttackSkill[2] = 138; // Backup/Immune skill for bosses.
+	//138大叫149戰鬥體制154戰鬥狂梟155戰鬥指揮
+	Config.AttackSkill[0] = 154; // Preattack skill.
+	Config.AttackSkill[1] = 154; // Primary skill for bosses.
+	Config.AttackSkill[2] = -1; // Backup/Immune skill for bosses.
 	Config.AttackSkill[3] = -1; // Primary skill for others.
 	Config.AttackSkill[4] = -1; // Backup/Immune skill for others.
 

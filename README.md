@@ -9,7 +9,7 @@
 #### 4. 開心掛機
 
 ## B. 組隊設定
-#### 1. 組隊隊長(法師)
+#### 1. 組隊隊長Leader(法師範例)
 ```js
 17: Scripts.UserAddon = true;
 
@@ -30,11 +30,11 @@
 449: Config.LogExperience = true;
 ```
 
-#### 2. 組隊隊員
+#### 2. 組隊隊員(法師範例)
 ```js
 17: Scripts.UserAddon = false;
 
-128: Config.Leader = "TWzeren_a";
+128: Config.Leader = "User";//隊長人物名稱大小寫最好一樣
 129: Config.QuitList = ["EXIT"];
 130: Config.QuitListMode = 0;
 131: Config.QuitListDelay = [1, 5];
@@ -54,6 +54,11 @@
 
 449: Config.LogExperience = true;
 ```
+
+#### 3. 補充說明
+Scripts.MFHelper = true;
+這個設定只針對暗黑巴爾除外的任務
+暗黑跟巴爾還是要配置在牠專屬的區域
 
 ##### 外掛下載
 https://github.com/kolton/d2bot-with-kolbot

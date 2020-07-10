@@ -32,7 +32,7 @@ var JoinSettings = {
 	//"Leader": ["Leecher"]
 	//外掛設定上profile名稱
 	//"組長": ["組員", "組員"]
-	"zeren_a_leader": ["lelen_a_follow", "zeren_b_follow"]
+	"zeren_a_leader": ["lelen_a_follow", "zeren_b_follow", "zeren_e_follow"]
 };
 
 // Advanced config - you don't have to edit this unless you need some of the features provided
