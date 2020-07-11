@@ -258,8 +258,8 @@ function LoadConfig() {
 	 */
 	Config.Inventory[0] = [1,1,1,1,1,1,0,0,0,0];
 	Config.Inventory[1] = [1,1,1,1,1,1,0,0,0,0];
-	Config.Inventory[2] = [1,1,1,1,1,1,0,0,0,1];
-	Config.Inventory[3] = [1,1,1,1,1,1,1,1,0,1];
+	Config.Inventory[2] = [1,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[3] = [1,1,1,1,1,1,1,1,0,0];
 
 	Config.StashGold = 100000; // Minimum amount of gold to stash.
 
@@ -495,9 +495,9 @@ function LoadConfig() {
 	//138大叫149戰鬥體制154戰鬥狂梟155戰鬥指揮
 	Config.AttackSkill[0] = 154; // Preattack skill.
 	Config.AttackSkill[1] = 154; // Primary skill for bosses.
-	Config.AttackSkill[2] = -1; // Backup/Immune skill for bosses.
-	Config.AttackSkill[3] = -1; // Primary skill for others.
-	Config.AttackSkill[4] = -1; // Backup/Immune skill for others.
+	Config.AttackSkill[2] = 154; // Backup/Immune skill for bosses.
+	Config.AttackSkill[3] = 154; // Primary skill for others.
+	Config.AttackSkill[4] = 154; // Backup/Immune skill for others.
 
 	// Low mana skills - these will be used if main skills can't be cast.
 	Config.LowManaSkill[0] = -1; // Low mana skill.
