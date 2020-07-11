@@ -81,7 +81,7 @@ function LoadConfig() {
 	Scripts.Hephasto = false; //海法斯特盔甲製作者/火焰之河
 	Scripts.Vizier = false; // (非資料片專用)Intended for classic sorc, kills Vizier only.
 	Scripts.FastDiablo = false; //快速殺暗黑破壞神
-	Scripts.Diablo = false; //暗黑破壞神
+	Scripts.Diablo = true; //暗黑破壞神
 		Config.Diablo.WalkClear = false; // (是否從進門開始清除,false從五星開始)Disable teleport while clearing to protect leechers
 		Config.Diablo.Entrance = true; // (發送消息)Start from entrance
 		Config.Diablo.SealWarning = "Leave the seals alone!"; //

@@ -133,10 +133,10 @@ function LoadConfig() {
 	Scripts.TristramLeech = false; // Enters Tristram, attempts to stay close to the leader and will try and help kill.
 	Scripts.TravincalLeech = false; // Enters portal at back of Travincal.
 		Config.TravincalLeech.Helper = true; // If set to true the character will teleport to the stairs and help attack.
-	Scripts.MFHelper = false; // Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
+	Scripts.MFHelper = true; // Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
 	Scripts.Wakka = false; // Walking chaos leecher with auto leader assignment, stays at safe distance from the leader
 	Scripts.SealLeecher = false; // Enter safe portals to Chaos. Leader should run SealLeader.
-	Scripts.DiabloHelper = false; // Chaos helper, kills monsters and doesn't open seals on its own.
+	Scripts.DiabloHelper = true; // Chaos helper, kills monsters and doesn't open seals on its own.
 		Config.DiabloHelper.Wait = 120; // Seconds to wait for a runner to be in Chaos. If Config.Leader is set, it will wait only for the leader.
 		Config.DiabloHelper.Entrance = true; // Start from entrance. Set to false to start from star.
 		Config.DiabloHelper.SkipTP = false; // Don't wait for town portal and directly head to chaos. It will clear monsters around chaos entrance and wait for the runner.
@@ -145,14 +145,14 @@ function LoadConfig() {
 		Config.AutoBaal.FindShrine = false; // false = disabled, 1 = search after hot tp message, 2 = search as soon as leader is found
 		Config.AutoBaal.LeechSpot = [15115, 5050]; // X, Y coords of Throne Room leech spot
 		Config.AutoBaal.LongRangeSupport = false; // Cast long distance skills from a safe spot
-	Scripts.BaalHelper = false;
+	Scripts.BaalHelper = true;
 		Config.BaalHelper.Wait = 120; // Seconds to wait for a runner to be in Throne
 		Config.BaalHelper.KillNihlathak = false; // Kill Nihlathak before going to Throne
 		Config.BaalHelper.FastChaos = false; // Kill Diablo before going to Throne
 		Config.BaalHelper.DollQuit = false;  // End script if Dolls (Undead Soul Killers) are found.
 		Config.BaalHelper.KillBaal = true; // Kill Baal. If set to false, you must configure Config.QuitList or the bot will wait indefinitely.
 		Config.BaalHelper.SkipTP = false; // Don't wait for a TP, go to WSK3 and wait for someone to go to throne. Anti PK measure.
-	Scripts.Follower = false; // Script that follows a manually played leader around like a merc. For a list of commands, see Follower.js
+	Scripts.Follower = true; // Script that follows a manually played leader around like a merc. For a list of commands, see Follower.js
 
 	// *** special scripts ***
 	Scripts.WPGetter = false; // Get missing waypoints
@@ -208,7 +208,7 @@ function LoadConfig() {
 	// *** Guest scripts ***
 
 	// (巴爾跟班的打手腳本)Baal Assistant by YourGreatestMember
-	Scripts.BaalAssistant = true; // Used to leech or help in baal runs.
+	Scripts.BaalAssistant = false; // Used to leech or help in baal runs.
 		Config.BaalAssistant.Wait = 120; // Seconds to wait for a runner to be in the throne / portal wait / safe TP wait / hot TP wait...
 		Config.BaalAssistant.KillNihlathak = false; // Kill Nihlathak before going to Throne
 		Config.BaalAssistant.FastChaos = false; // Kill Diablo before going to Throne

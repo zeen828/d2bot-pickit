@@ -56,8 +56,23 @@
 ```
 
 #### 3. 補充說明
+
+遊戲指令
+-w 視窗
+-ns 無聲音
+-lq 低畫質
+-direct 資源包
+
+腳本類型
+D2BotLead.dbj 一般打寶,隊長
+D2BotFollow.dbj 跟隨者
+D2BotMuleLog.dbj 掃描倉庫用
+D2BotMule.dbj 自動註冊
+D2BotBlank.dbj
+D2BotMap.dbj
+
 Scripts.MFHelper = true;
-這個設定只針對暗黑巴爾除外的任務
+這個設定只針對暗黑&巴爾除外的任務
 暗黑跟巴爾還是要配置在牠專屬的區域
 
 ##### 外掛下載
