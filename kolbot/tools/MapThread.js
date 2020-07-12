@@ -340,32 +340,32 @@ var Hooks = {
 			switch (me.area) {
 			case 4: // Stony Field
 				unit = getPresetUnit(me.area, 1, 737);
-				name = "Cairn Stones";
+				name = "(任務) - Cairn Stones";
 
 				break;
 			case 5: // Dark Wood
 				unit = getPresetUnit(me.area, 2, 30);
-				name = "Tree";
+				name = "(任務) - Tree";
 
 				break;
 			case 49: // Sewers 3
 				unit = getPresetUnit(me.area, 2, 355);
-				name = "Radament";
+				name = "(任務) - Radament";
 
 				break;
 			case 60: // Halls of the Dead 3
 				unit = getPresetUnit(me.area, 2, 354);
-				name = "Cube";
+				name = "(任務) - Cube";
 
 				break;
 			case 74: // Arcane Sanctuary
 				unit = getPresetUnit(me.area, 2, 357);
-				name = "Summoner";
+				name = "(任務) - Summoner";
 
 				break;
 			case 64: // Maggot Lair 3
 				unit = getPresetUnit(me.area, 1, 749);
-				name = "Fat Worm";
+				name = "(任務) - Fat Worm";
 
 				break;
 			case 66: // Tal Rasha's Tombs
@@ -376,12 +376,12 @@ var Hooks = {
 			case 71:
 			case 72:
 				unit = getPresetUnit(me.area, 2, 152);
-				name = "Orifice";
+				name = "(任務) - Orifice";
 
 				break;
 			case 78: // Flayer Jungle
 				unit = getPresetUnit(me.area, 2, 252);
-				name = "Gidbinn";
+				name = "(任務) - Gidbinn";
 
 				break;
 			case 102: // Durance of Hate 3
@@ -389,39 +389,39 @@ var Hooks = {
 					x: 17588,
 					y: 8069
 				};
-				name = "Mephisto";
+				name = "(任務) - Mephisto";
 
 				break;
 			case 105: // Plains of Despair
 				unit = getPresetUnit(me.area, 1, 256);
-				name = "Izual";
+				name = "(任務) - Izual";
 
 				break;
 			case 107: // River of Flame
 				unit = getPresetUnit(me.area, 2, 376);
-				name = "Hephasto";
+				name = "(任務) - Hephasto";
 
 				break;
 			case 108: // Chaos Sanctuary
 				unit = getPresetUnit(me.area, 2, 255);
-				name = "Star";
+				name = "(任務) - Star";
 
 				break;
 			case 111: // Frigid Highlands
 			case 112: // Arreat Plateau
 			case 117: // Frozen Tundra
 				unit = getPresetUnit(me.area, 2, 60);
-				name = "Hell Entrance";
+				name = "(任務) - Hell Entrance";
 
 				break;
 			case 114: // Frozen River
 				unit = getPresetUnit(me.area, 2, 460);
-				name = "Frozen Anya";
+				name = "(任務) - Frozen Anya";
 
 				break;
 			case 124: // Halls of Vaught
 				unit = getPresetUnit(me.area, 2, 462);
-				name = "Nihlathak";
+				name = "(任務) - Nihlathak";
 
 				break;
 			}
