@@ -1,4 +1,4 @@
-// (聖騎士)Paladin config file
+// (德魯伊)Druid config file
 
 /* Brief instructions:
  * Notepad++ is HIGHLY recommended to use for editing these files. Visit http://notepad-plus-plus.org/
@@ -256,10 +256,10 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [1,1,1,1,1,1,1,1,0,0];
-	Config.Inventory[1] = [1,1,1,1,1,1,1,1,0,0];
-	Config.Inventory[2] = [1,1,1,1,1,1,1,1,0,0];
-	Config.Inventory[3] = [1,1,1,1,1,1,1,1,0,0];
+	Config.Inventory[0] = [0,0,0,0,0,0,0,0,0,0];
+	Config.Inventory[1] = [0,0,0,0,0,0,0,0,0,0];
+	Config.Inventory[2] = [0,0,0,0,0,0,0,0,0,0];
+	Config.Inventory[3] = [0,0,0,0,0,0,0,0,0,0];
 
 	Config.StashGold = 100000; // Minimum amount of gold to stash.
 
@@ -268,8 +268,8 @@ function LoadConfig() {
 	 * Supported potions - Healing ("hp"), Mana ("mp") and Rejuvenation ("rv")
 	 */
 	Config.BeltColumn[0] = "hp";
-	Config.BeltColumn[1] = "hp";
-	Config.BeltColumn[2] = "mp";
+	Config.BeltColumn[1] = "mp";
+	Config.BeltColumn[2] = "rv";
 	Config.BeltColumn[3] = "rv";
 
 	/* Minimum amount of potions. If we have less, go to vendor to purchase more.
@@ -277,20 +277,12 @@ function LoadConfig() {
 	 */
 	Config.MinColumn[0] = 3;
 	Config.MinColumn[1] = 3;
-	Config.MinColumn[2] = 3;
+	Config.MinColumn[2] = 0;
 	Config.MinColumn[3] = 0;
 
-	// (撿寶設定)Pickit config. Default folder is kolbot/pickit.
-	Config.PickitFiles.push("kolton.nip");//暗金裝備
-	Config.PickitFiles.push("LLD.nip");//白,藍,黃裝備
-	Config.PickitFiles.push("classic.nip");//橘色手工藝
-	Config.PickitFiles.push("gold.nip");//金幣
-	Config.PickitFiles.push("custom-set.nip");//自訂成套裝備
-	Config.PickitFiles.push("custom-unique.nip");//自訂獨特裝備
-	Config.PickitFiles.push("custom-charms.nip");//自訂護符
-	Config.PickitFiles.push("custom-runes.nip");//自訂符文
-	Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
-	Config.PickitFiles.push("test.nip");//測試
+	// Pickit config. Default folder is kolbot/pickit.
+	Config.PickitFiles.push("kolton.nip");
+	Config.PickitFiles.push("LLD.nip");
 	Config.PickRange = 40; // Pick radius
 	Config.FastPick = false; // Check and pick items between attacks
 
@@ -494,18 +486,18 @@ function LoadConfig() {
 	 */
 	Config.AttackSkill[0] = -1; // Preattack skill.
 	Config.AttackSkill[1] = -1; // Primary skill to bosses.
-	Config.AttackSkill[2] = -1; // Primary aura to bosses
+	Config.AttackSkill[2] = -1; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
 	Config.AttackSkill[3] = -1; // Primary skill to others.
-	Config.AttackSkill[4] = -1; // Primary aura to others.
+	Config.AttackSkill[4] = -1; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
 	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
-	Config.AttackSkill[6] = -1; // Secondary aura.
+	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
 	// Low mana skills - these will be used if main skills can't be cast.
-	Config.LowManaSkill[0] = -1; // Low mana skill.
-	Config.LowManaSkill[1] = -1; // Low mana aura.
+	Config.LowManaSkill[0] = -1; // Timed low mana skill.
+	Config.LowManaSkill[1] = -1; // Untimed low mana skill.
 
 	/* Advanced Attack config. Allows custom skills to be used on custom monsters.
-	 *	Format: "Monster Name": [attack skill id, aura skill id]
+	 *	Format: "Monster Name": [timed skill id, untimed skill id]
 	 *	Multiple entries are separated by commas
 	 */
 	Config.CustomAttack = {
@@ -514,15 +506,16 @@ function LoadConfig() {
 
 	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
+	Config.TeleStomp = false; // Use merc to attack bosses if they're immune to attacks, but not to physical damage
 
 	// Wereform setup. Make sure you read Templates/Attacks.txt for attack skill format.
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear
 
 	// Class specific config
-	Config.AvoidDolls = false; // Try to attack dolls from a greater distance with hammerdins.
-	Config.Vigor = true; // Swith to Vigor when running
-	Config.Charge = true; // Use Charge when running
-	Config.Redemption = [50, 50]; // Switch to Redemption after clearing an area if under designated life or mana. Format: [lifepercent, manapercent]
+	Config.SummonRaven = false;
+	Config.SummonAnimal = "Grizzly"; // 0 = disabled, 1 or "Spirit Wolf" = summon spirit wolf, 2 or "Dire Wolf" = summon dire wolf, 3 or "Grizzly" = summon grizzly
+	Config.SummonSpirit = "Oak Sage"; // 0 = disabled, 1 / "Oak Sage", 2 / "Heart of Wolverine", 3 / "Spirit of Barbs"
+	Config.SummonVine = "Poison Creeper"; // 0 = disabled, 1 / "Poison Creeper", 2 / "Carrion Vine", 3 / "Solar Creeper"
 
 	/* AutoSkill builds character based on array defined by the user and it replaces AutoBuild's skill system.
 	 * AutoSkill will automatically spend skill points and it can also allocate any prerequisite skills as required.
