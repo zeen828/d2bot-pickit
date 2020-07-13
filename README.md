@@ -5,8 +5,41 @@
 ## A. 安裝步驟
 #### 1. 安裝暗黑破壞神準備序號(要掛機最好準備4組以上)
 #### 2. 安裝外掛相依套件
+
+##### 外掛相依套件下載
+https://www.microsoft.com/zh-TW/download/details.aspx?id=5555
+
+https://dotnet.microsoft.com/download
+
 #### 3. 下載配置外掛
+
+##### 外掛下載
+https://github.com/kolton/d2bot-with-kolbot
+
+##### 編輯器下載
+https://notepad-plus-plus.org/
+
 #### 4. 開心掛機
+
+#### 5. 補充說明
+
+##### 遊戲指令
+```
+-w 視窗
+-ns 無聲音
+-lq 低畫質
+-direct 資源包
+```
+
+##### 腳本類型(Entry Script)
+```
+D2BotLead.dbj 一般打寶,隊長
+D2BotFollow.dbj 跟隨者
+D2BotMuleLog.dbj 掃描倉庫用
+D2BotMule.dbj 自動註冊
+D2BotBlank.dbj
+D2BotMap.dbj 地圖全開,自動尋路
+```
 
 ## B. 組隊設定
 #### 1. 
@@ -20,7 +53,7 @@ D2BotFollow.dbj
 #### 2. 外掛設定
 要組隊需要有一位隊長(Entry Script選D2BotLead.dbj)一位以上組員(Entry Script選D2BotFollow.dbj)
 
-#### 2. 組隊隊長Leader(法師範例)
+#### 3. 組隊隊長Leader(法師範例)
 ```js
 Sorceress.leader.js(隊長配置檔)
 
@@ -43,7 +76,7 @@ Sorceress.leader.js(隊長配置檔)
 449: Config.LogExperience = true;
 ```
 
-#### 2. 組隊隊員(法師範例)
+#### 4. 組隊隊員(法師範例)
 ```js
 Sorceress.follow.js(隊員配置檔)
 
@@ -70,37 +103,14 @@ Sorceress.follow.js(隊員配置檔)
 449: Config.LogExperience = true;
 ```
 
-#### 3. 補充說明
-
-##### 遊戲指令
-```
--w 視窗
--ns 無聲音
--lq 低畫質
--direct 資源包
-```
-
-##### 腳本類型(Entry Script)
-```
-D2BotLead.dbj 一般打寶,隊長
-D2BotFollow.dbj 跟隨者
-D2BotMuleLog.dbj 掃描倉庫用
-D2BotMule.dbj 自動註冊
-D2BotBlank.dbj
-D2BotMap.dbj 地圖全開,自動尋路
-```
-
+#### 5. 補充說明
 Scripts.MFHelper = true;
 這個設定只針對暗黑&巴爾除外的任務
 暗黑跟巴爾還是要配置在牠專屬的區域
 
-##### 外掛下載
-https://github.com/kolton/d2bot-with-kolbot
-
-##### 編輯器下載
-https://notepad-plus-plus.org/
-
-##### 外掛相依套件下載
-https://www.microsoft.com/zh-TW/download/details.aspx?id=5555
-
-https://dotnet.microsoft.com/download
+## C. 地圖全開
+語系翻譯包含
+地圖名稱
+kolbot/libs/common/Pather.js
+任務名稱
+kolbot/tools/MapThread.js
