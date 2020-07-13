@@ -3,14 +3,27 @@
 
 ##### 只是單純自己在玩做個紀錄碰壁好多次一直一直慢慢測試出來的
 ## A. 安裝步驟
-#### 1. 安裝暗黑破壞神準備序號
+#### 1. 安裝暗黑破壞神準備序號(要掛機最好準備4組以上)
 #### 2. 安裝外掛相依套件
 #### 3. 下載配置外掛
 #### 4. 開心掛機
 
 ## B. 組隊設定
-#### 1. 組隊隊長Leader(法師範例)
+#### 1. 
 ```js
+D2BotFollow.dbj
+
+31: "組長": ["組員", "組員"]
+
+填的是外掛配置的Profile Name
+```
+#### 2. 外掛設定
+要組隊需要有一位隊長(Entry Script選D2BotLead.dbj)一位以上組員(Entry Script選D2BotFollow.dbj)
+
+#### 2. 組隊隊長Leader(法師範例)
+```js
+Sorceress.leader.js(隊長配置檔)
+
 17: Scripts.UserAddon = true;
 
 26: Config.MFLeader = true;
@@ -32,6 +45,8 @@
 
 #### 2. 組隊隊員(法師範例)
 ```js
+Sorceress.follow.js(隊員配置檔)
+
 17: Scripts.UserAddon = false;
 
 128: Config.Leader = "User";//隊長人物名稱大小寫最好一樣
@@ -57,19 +72,23 @@
 
 #### 3. 補充說明
 
-遊戲指令
+##### 遊戲指令
+```
 -w 視窗
 -ns 無聲音
 -lq 低畫質
 -direct 資源包
+```
 
-腳本類型
+##### 腳本類型(Entry Script)
+```
 D2BotLead.dbj 一般打寶,隊長
 D2BotFollow.dbj 跟隨者
 D2BotMuleLog.dbj 掃描倉庫用
 D2BotMule.dbj 自動註冊
 D2BotBlank.dbj
-D2BotMap.dbj
+D2BotMap.dbj 地圖全開,自動尋路
+```
 
 Scripts.MFHelper = true;
 這個設定只針對暗黑&巴爾除外的任務
@@ -85,5 +104,3 @@ https://notepad-plus-plus.org/
 https://www.microsoft.com/zh-TW/download/details.aspx?id=5555
 
 https://dotnet.microsoft.com/download
-
-@ Markdown
