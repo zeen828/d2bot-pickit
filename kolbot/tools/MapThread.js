@@ -173,14 +173,14 @@ var Hooks = {
 			case "monsterStatus":
 				this.hooks.push({
 					name: "monsterStatus",
-					hook: new Text("Num 7: Disable Monsters", 525, 515)
+					hook: new Text("Num 7: 關閉怪物 - Disable Monsters", 525, 515)
 				});
 
 				break;
 			case "vectorStatus":
 				this.hooks.push({
 					name: "vectorStatus",
-					hook: new Text("Num 8: Disable Vectors", 525, 525)
+					hook: new Text("Num 8: 關閉方向 - Disable Vectors", 525, 525)
 				});
 
 				break;
@@ -817,20 +817,20 @@ function main() {
 		case 103: // Numpad 7
 			if (Hooks.monsters.enabled) {
 				Hooks.monsters.enabled = false;
-				Hooks.text.getHook("monsterStatus").hook.text = "Num 7: Enable Monsters";
+				Hooks.text.getHook("monsterStatus").hook.text = "Num 7: 開啟怪物 - Enable Monsters";
 			} else {
 				Hooks.monsters.enabled = true;
-				Hooks.text.getHook("monsterStatus").hook.text = "Num 7: Disable Monsters";
+				Hooks.text.getHook("monsterStatus").hook.text = "Num 7: 關閉怪物 - Disable Monsters";
 			}
 
 			break;
 		case 104: // Numpad 8
 			if (Hooks.vector.enabled) {
 				Hooks.vector.enabled = false;
-				Hooks.text.getHook("vectorStatus").hook.text = "Num 8: Enable Vectors";
+				Hooks.text.getHook("vectorStatus").hook.text = "Num 8: 開啟方向 - Enable Vectors";
 			} else {
 				Hooks.vector.enabled = true;
-				Hooks.text.getHook("vectorStatus").hook.text = "Num 8: Disable Vectors";
+				Hooks.text.getHook("vectorStatus").hook.text = "Num 8: 關閉方向 - Disable Vectors";
 			}
 
 			break;
