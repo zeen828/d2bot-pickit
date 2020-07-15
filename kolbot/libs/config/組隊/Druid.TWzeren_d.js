@@ -268,8 +268,8 @@ function LoadConfig() {
 	 * Supported potions - Healing ("hp"), Mana ("mp") and Rejuvenation ("rv")
 	 */
 	Config.BeltColumn[0] = "hp";
-	Config.BeltColumn[1] = "mp";
-	Config.BeltColumn[2] = "rv";
+	Config.BeltColumn[1] = "hp";
+	Config.BeltColumn[2] = "mp";
 	Config.BeltColumn[3] = "rv";
 
 	/* Minimum amount of potions. If we have less, go to vendor to purchase more.
@@ -277,7 +277,7 @@ function LoadConfig() {
 	 */
 	Config.MinColumn[0] = 3;
 	Config.MinColumn[1] = 3;
-	Config.MinColumn[2] = 0;
+	Config.MinColumn[2] = 3;
 	Config.MinColumn[3] = 0;
 
 	// Pickit config. Default folder is kolbot/pickit.
