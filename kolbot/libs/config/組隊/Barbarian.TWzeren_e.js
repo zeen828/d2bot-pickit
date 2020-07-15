@@ -495,9 +495,9 @@ function LoadConfig() {
 	//138大叫149戰鬥體制154戰鬥狂梟155戰鬥指揮
 	Config.AttackSkill[0] = 154; // Preattack skill.
 	Config.AttackSkill[1] = 154; // Primary skill for bosses.
-	Config.AttackSkill[2] = 154; // Backup/Immune skill for bosses.
+	Config.AttackSkill[2] = 149; // Backup/Immune skill for bosses.
 	Config.AttackSkill[3] = 154; // Primary skill for others.
-	Config.AttackSkill[4] = 154; // Backup/Immune skill for others.
+	Config.AttackSkill[4] = 155; // Backup/Immune skill for others.
 
 	// Low mana skills - these will be used if main skills can't be cast.
 	Config.LowManaSkill[0] = -1; // Low mana skill.

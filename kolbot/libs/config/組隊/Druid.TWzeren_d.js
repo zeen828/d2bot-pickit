@@ -133,11 +133,11 @@ function LoadConfig() {
 	Scripts.TristramLeech = false; // Enters Tristram, attempts to stay close to the leader and will try and help kill.
 	Scripts.TravincalLeech = false; // Enters portal at back of Travincal.
 		Config.TravincalLeech.Helper = true; // If set to true the character will teleport to the stairs and help attack.
-	Scripts.MFHelper = false; // Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
+	Scripts.MFHelper = true; // Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
 	Scripts.Wakka = false; // Walking chaos leecher with auto leader assignment, stays at safe distance from the leader
 	Scripts.SealLeecher = false; // Enter safe portals to Chaos. Leader should run SealLeader.
-	Scripts.DiabloHelper = false; // Chaos helper, kills monsters and doesn't open seals on its own.
-		Config.DiabloHelper.Wait = 120; // Seconds to wait for a runner to be in Chaos. If Config.Leader is set, it will wait only for the leader.
+	Scripts.DiabloHelper = true; // Chaos helper, kills monsters and doesn't open seals on its own.
+		Config.DiabloHelper.Wait = 720; // Seconds to wait for a runner to be in Chaos. If Config.Leader is set, it will wait only for the leader.
 		Config.DiabloHelper.Entrance = true; // Start from entrance. Set to false to start from star.
 		Config.DiabloHelper.SkipTP = false; // Don't wait for town portal and directly head to chaos. It will clear monsters around chaos entrance and wait for the runner.
 		Config.DiabloHelper.SkipIfBaal = false; // End script if there are party members in a Baal run.
@@ -145,8 +145,8 @@ function LoadConfig() {
 		Config.AutoBaal.FindShrine = false; // false = disabled, 1 = search after hot tp message, 2 = search as soon as leader is found
 		Config.AutoBaal.LeechSpot = [15115, 5050]; // X, Y coords of Throne Room leech spot
 		Config.AutoBaal.LongRangeSupport = false; // Cast long distance skills from a safe spot
-	Scripts.BaalHelper = false;
-		Config.BaalHelper.Wait = 120; // Seconds to wait for a runner to be in Throne
+	Scripts.BaalHelper = true;
+		Config.BaalHelper.Wait = 720; // Seconds to wait for a runner to be in Throne
 		Config.BaalHelper.KillNihlathak = false; // Kill Nihlathak before going to Throne
 		Config.BaalHelper.FastChaos = false; // Kill Diablo before going to Throne
 		Config.BaalHelper.DollQuit = false;  // End script if Dolls (Undead Soul Killers) are found.
@@ -208,7 +208,7 @@ function LoadConfig() {
 	// *** Guest scripts ***
 
 	// Baal Assistant by YourGreatestMember
-	Scripts.BaalAssistant = true; // Used to leech or help in baal runs.
+	Scripts.BaalAssistant = false; // Used to leech or help in baal runs.
 		Config.BaalAssistant.Wait = 480; // Seconds to wait for a runner to be in the throne / portal wait / safe TP wait / hot TP wait...
 		Config.BaalAssistant.KillNihlathak = false; // Kill Nihlathak before going to Throne
 		Config.BaalAssistant.FastChaos = false; // Kill Diablo before going to Throne
@@ -484,11 +484,12 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
+	//240小旋風,250暴風
 	Config.AttackSkill[0] = -1; // Preattack skill.
-	Config.AttackSkill[1] = -1; // Primary skill to bosses.
-	Config.AttackSkill[2] = -1; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
-	Config.AttackSkill[3] = -1; // Primary skill to others.
-	Config.AttackSkill[4] = -1; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	Config.AttackSkill[1] = 250 // Primary skill to bosses.
+	Config.AttackSkill[2] = 240; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
+	Config.AttackSkill[3] = 250; // Primary skill to others.
+	Config.AttackSkill[4] = 240; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
 	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
