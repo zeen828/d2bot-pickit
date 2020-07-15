@@ -16,7 +16,7 @@
 //[name] == demonhidesash && [quality] == unique && [flag] != ethereal # [lifeleech] >= 5 && [damageresist] >= 10 && [magicdamagereduction] >= 10 //(長串之耳)string of ears
 //[name] == sharkskinbelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 100 //(剃刀之尾)razortail
 //[name] == battlebelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 100 //(雪之衝突)snowclash
-[name] == warbelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 100 //(雷神之力)thundergod's vigor
+//[name] == warbelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 100 //(雷神之力)thundergod's vigor
 [name] == spiderwebsash && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 75 //(蜘蛛之網)arachnid mesh
 [name] == vampirefangbelt && [quality] == unique && [flag] != ethereal # [lifeleech] >= 5 && [defense] >= 50 //(吸血聖王之圈)nosferatu's coil
 [name] == mithrilcoil && [quality] == unique && [flag] != ethereal # ([vitality] >= 1 && [damageresist] >= 10 && [hpregen] >= 1) || ([vitality] >= 30 && [damageresist] >= 10 && [hpregen] >= 6) //(維爾登戈的心結)verdungo's hearty cord
@@ -57,8 +57,8 @@
 [name] == serpentskinarmor && [quality] == unique # [coldresist] >= 5 && [magicdamagereduction] >= 1 //(蛇魔法師之皮)skin of the vipermagi
 [name] == cuirass && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(都瑞爾的殼)duriel's shell
 [name] == cuirass && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 //ethereal duriel's shell
-[name] == mesharmor && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(謝夫特斯坦布)shaftstop
-[name] == mesharmor && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 20 //ethereal shaftstop
+//[name] == mesharmor && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(謝夫特斯坦布)shaftstop
+//[name] == mesharmor && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 20 //ethereal shaftstop
 //[name] == russetarmor && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(詩寇蒂的憤怒)skullder's ire
 //[name] == russetarmor && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 //ethereal skullder's ire
 //[name] == templarcoat && [quality] == unique # [enhanceddefense] >= 15 //(守護天使)guardian angel
@@ -167,7 +167,7 @@
 //(獨特刺客)unique assassin 
 [name] == greatertalons && [quality] == unique # [enhanceddamage] >= 190 && [lifeleech] >= 7 //(巨鷹爪)bartuc's cut-throat
 [name] == feralclaws && [quality] == unique && [flag] != ethereal # [enhanceddamage] >= 260 //(火蜥蜴之爪)firelizard's talons
-[name] == wristsword && [quality] == unique && [flag] != ethereal # [enhanceddamage] >= 230 //(碧玉爪)jade talon
+//[name] == wristsword && [quality] == unique && [flag] != ethereal # [enhanceddamage] >= 230 //(碧玉爪)jade talon
 
 //(獨特野蠻人)unique barbarian 
 [name] == slayerguard && [quality] == unique # [enhanceddefense] >= 180 //(亞瑞特的面容)arreat's face

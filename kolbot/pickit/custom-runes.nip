@@ -24,36 +24,36 @@
 
 //(精華)respec essences
 //[name] == twistedessenceofsuffering # # [maxquantity] == 2 //扭曲的苦痛精華
-[name] == chargedessenceofhatred # # [maxquantity] == 2
+//[name] == chargedessenceofhatred # # [maxquantity] == 2
 [name] == burningessenceofterror # # [maxquantity] == 2
 [name] == festeringessenceofdestruction # # [maxquantity] == 2
 [name] == tokenofabsolution # # [maxquantity] == 5
 
 // # 符文 #
-//[name] == elrune # # [maxquantity] == 3
-//[name] == eldrune # # [maxquantity] == 3
-//[name] == tirrune # # [maxquantity] == 3
-//[name] == nefrune # # [maxquantity] == 3
-//[name] == ethrune # # [maxquantity] == 3
-//[name] == ithrune # # [maxquantity] == 3
-//[name] == talrune # # [maxquantity] == 3
-//[name] == ralrune # # [maxquantity] == 3
-//[name] == ortrune # # [maxquantity] == 3
-//[name] == thulrune # # [maxquantity] == 3
-//[name] == amnrune # # [maxquantity] == 3
-//[name] == solrune # # [maxquantity] == 3
-//[name] == shaelrune # # [maxquantity] == 3
-//[name] == dolrune # # [maxquantity] == 3
-//[name] == helrune # # [maxquantity] == 3
-//[name] == iorune # # [maxquantity] == 3
-//[name] == lumrune # # [maxquantity] == 3
-[name] == korune # # [maxquantity] == 3
-[name] == falrune # # [maxquantity] == 3
-[name] == lemrune # # [maxquantity] == 3
-[name] == pulrune # # [maxquantity] == 5
-[name] == umrune # # [maxquantity] == 5
-[name] == malrune # # [maxquantity] == 5
-[name] >= pulrune && [name] <= zodrune
+//[name] == elrune # # [maxquantity] == 3 //1
+//[name] == eldrune # # [maxquantity] == 3 //2
+//[name] == tirrune # # [maxquantity] == 3 //3
+//[name] == nefrune # # [maxquantity] == 3 //4
+//[name] == ethrune # # [maxquantity] == 3 //5
+//[name] == ithrune # # [maxquantity] == 3 //6
+//[name] == talrune # # [maxquantity] == 3 //7
+//[name] == ralrune # # [maxquantity] == 3 //8
+//[name] == ortrune # # [maxquantity] == 3 //9
+//[name] == thulrune # # [maxquantity] == 3 //10
+//[name] == amnrune # # [maxquantity] == 3 //11
+//[name] == solrune # # [maxquantity] == 3 //12
+//[name] == shaelrune # # [maxquantity] == 3 //13
+//[name] == dolrune # # [maxquantity] == 3 //14
+//[name] == helrune # # [maxquantity] == 3 //15
+//[name] == iorune # # [maxquantity] == 3 //16
+//[name] == lumrune # # [maxquantity] == 3 //17
+//[name] == korune # # [maxquantity] == 3 //18
+[name] == falrune # # [maxquantity] == 3 //19
+[name] == lemrune # # [maxquantity] == 3 //20
+[name] == pulrune # # [maxquantity] == 5 //21
+[name] == umrune # # [maxquantity] == 5 //22
+[name] == malrune # # [maxquantity] == 5 //23
+[name] >= pulrune && [name] <= zodrune //24-33
 
 //(寶石)gems
 //[name] == chippedamethyst # # [maxquantity] == 1
