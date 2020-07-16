@@ -33,12 +33,15 @@ https://notepad-plus-plus.org/
 
 ##### 腳本類型(Entry Script)
 ```
-D2BotLead.dbj 一般打寶,隊長
-D2BotFollow.dbj 跟隨者
-D2BotMuleLog.dbj 掃描倉庫用
-D2BotMule.dbj 自動註冊
 D2BotBlank.dbj
+D2BotChannel.dbj
+D2BotFollow.dbj 跟隨者
+D2BotGameAction.dbj
+D2BotLead.dbj 一般打寶,隊長
 D2BotMap.dbj 地圖全開,自動尋路
+D2BotMule.dbj 自動註冊
+D2BotMuleLog.dbj 掃描倉庫用
+D2BotPubJoin.dbj
 ```
 
 ## B. 組隊設定
@@ -114,3 +117,6 @@ Scripts.MFHelper = true;
 kolbot/libs/common/Pather.js
 任務名稱
 kolbot/tools/MapThread.js
+
+## D. 強化
+
