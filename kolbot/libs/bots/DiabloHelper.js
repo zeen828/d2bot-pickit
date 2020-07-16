@@ -224,7 +224,7 @@ function DiabloHelper() {
 			}
 		}
 
-		throw new Error("Diablo not found");
+		throw new Error("(找不到暗黑破壞神)Diablo not found");
 	};
 
 	this.preattack = function (id) {

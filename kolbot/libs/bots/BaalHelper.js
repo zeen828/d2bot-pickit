@@ -240,7 +240,7 @@ WSKLoop:
 		}
 
 		if (i === Config.BaalHelper.Wait) {
-			throw new Error("Player wait timed out (" + (Config.Leader ? "No leader" : "No player") + " portals found)");
+			throw new Error("(發現玩家等待超時門戶)Player wait timed out (" + (Config.Leader ? "No leader" : "No player") + " portals found)");
 		}
 	}
 

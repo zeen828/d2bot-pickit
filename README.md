@@ -54,7 +54,9 @@ D2BotFollow.dbj
 填的是外掛配置的Profile Name
 ```
 #### 2. 外掛設定
-要組隊需要有一位隊長(Entry Script選D2BotLead.dbj)一位以上組員(Entry Script選D2BotFollow.dbj)
+要組隊需要有一位隊長(Entry Script選D2BotLead.dbj)
+
+一位以上組員(Entry Script選D2BotFollow.dbj)
 
 #### 3. 組隊隊長Leader(法師範例)
 ```js
@@ -108,14 +110,20 @@ Sorceress.follow.js(隊員配置檔)
 
 #### 5. 補充說明
 Scripts.MFHelper = true;
+
 這個設定只針對暗黑&巴爾除外的任務
+
 暗黑跟巴爾還是要配置在牠專屬的區域
 
 ## C. 地圖全開
 語系翻譯包含
+
 地圖名稱
+
 kolbot/libs/common/Pather.js
+
 任務名稱
+
 kolbot/tools/MapThread.js
 
 ## D. 強化

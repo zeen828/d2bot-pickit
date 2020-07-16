@@ -226,7 +226,7 @@ var Attack = {
 		}
 
 		if (!target) {
-			throw new Error("Attack.kill: Target not found");
+			throw new Error("(進攻.殺死: 找不到目標)Attack.kill: Target not found");
 		}
 
 		gid = target.gid;

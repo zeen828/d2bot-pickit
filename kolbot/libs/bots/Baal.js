@@ -322,7 +322,7 @@ MainLoop:
 		if (portal) {
 			Pather.usePortal(null, null, portal);
 		} else {
-			throw new Error("Couldn't find portal.");
+			throw new Error("(找不到門戶)Couldn't find portal.");
 		}
 
 		Pather.moveTo(15134, 5923);

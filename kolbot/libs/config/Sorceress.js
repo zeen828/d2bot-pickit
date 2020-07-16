@@ -120,7 +120,7 @@ function LoadConfig() {
 		Config.Baal.DollQuit = false; // (避開燃燒靈魂)End script if Dolls (Undead Soul Killers) are found.
 		Config.Baal.KillBaal = true; // (是否殺巴爾)Kill Baal. Leaves game after wave 5 if false.
 
-	/* ### leeching section ###
+	/* ### (吸經驗用)leeching section ###
 	* Unless stated otherwise, leader's character name isn't needed on order to run.
 	* Don't use more scripts of the same type! (Run AutoBaal OR BaalHelper, not both)
 	*/
@@ -133,7 +133,7 @@ function LoadConfig() {
 	Scripts.TristramLeech = false; // Enters Tristram, attempts to stay close to the leader and will try and help kill.
 	Scripts.TravincalLeech = false; // Enters portal at back of Travincal.
 		Config.TravincalLeech.Helper = true; // If set to true the character will teleport to the stairs and help attack.
-	Scripts.MFHelper = false; // Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
+	Scripts.MFHelper = false; // (運行與領隊一樣的)Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
 	Scripts.Wakka = false; // Walking chaos leecher with auto leader assignment, stays at safe distance from the leader
 	Scripts.SealLeecher = false; // Enter safe portals to Chaos. Leader should run SealLeader.
 	Scripts.DiabloHelper = false; // Chaos helper, kills monsters and doesn't open seals on its own.
@@ -154,9 +154,9 @@ function LoadConfig() {
 		Config.BaalHelper.SkipTP = false; // Don't wait for a TP, go to WSK3 and wait for someone to go to throne. Anti PK measure.
 	Scripts.Follower = false; // Script that follows a manually played leader around like a merc. For a list of commands, see Follower.js
 
-	// *** special scripts ***
-	Scripts.WPGetter = false; // Get missing waypoints
-	Scripts.GetKeys = false;  // Hunt for T/H/D keys
+	// *** (特殊腳本)special scripts ***
+	Scripts.WPGetter = false; // (取得缺少的傳點)Get missing waypoints
+	Scripts.GetKeys = false;  // (獲取鑰匙)Hunt for T/H/D keys
 	Scripts.OrgTorch = false;
 		Config.OrgTorch.MakeTorch = true; // Convert organ sets to torches
 		Config.OrgTorch.WaitForKeys = true; // Enable Torch System to get keys from other profiles. See libs/TorchSystem.js for more info
@@ -179,7 +179,7 @@ function LoadConfig() {
 	Scripts.Gamble = false; // Gambling system, other characters will mule gold into your game so you can gamble infinitely. See Gambling.js
 	Scripts.Crafting = false; // Crafting system, other characters will mule crafting ingredients. See CraftingSystem.js
 	Scripts.GhostBusters = false; // Kill ghosts in most areas that contain them
-	Scripts.Enchant = false;
+	Scripts.Enchant = false; //強化腳本
 		Config.Enchant.Triggers = ["chant", "cows", "wps"]; // Chat commands for enchant, cow level and waypoint giving
 		Config.Enchant.GetLeg = false; // Get Wirt's Leg from Tristram. If set to false, it will check for the leg in town.
 		Config.Enchant.AutoChant = false; // Automatically enchant nearby players and their minions
@@ -207,16 +207,16 @@ function LoadConfig() {
 
 	// *** Guest scripts ***
 
-	// Baal Assistant by YourGreatestMember
+	// (巴爾跟班的打手腳本)Baal Assistant by YourGreatestMember
 	Scripts.BaalAssistant = false; // Used to leech or help in baal runs.
 		Config.BaalAssistant.Wait = 120; // Seconds to wait for a runner to be in the throne / portal wait / safe TP wait / hot TP wait...
 		Config.BaalAssistant.KillNihlathak = false; // Kill Nihlathak before going to Throne
 		Config.BaalAssistant.FastChaos = false; // Kill Diablo before going to Throne
-		Config.BaalAssistant.Helper = true; // Set to true to help attack, set false to to leech.
+		Config.BaalAssistant.Helper = true; // (協助攻擊)Set to true to help attack, set false to to leech.
 		Config.BaalAssistant.GetShrine = false; // Set to true to get a experience shrine at the start of the run.
 		Config.BaalAssistant.GetShrineWaitForHotTP = false; // Set to true to get a experience shrine after leader shouts the hot tp message as defined in Config.BaalAssistant.HotTPMessage
 		Config.BaalAssistant.SkipTP = false; // Set to true to enable the helper to skip the TP and teleport down to the throne room.
-		Config.BaalAssistant.WaitForSafeTP = false; // Set to true to wait for a safe TP message (defined in SafeTPMessage)
+		Config.BaalAssistant.WaitForSafeTP = false; // (等待安全門)Set to true to wait for a safe TP message (defined in SafeTPMessage)
 		Config.BaalAssistant.DollQuit = false; // Quit on dolls. (Hardcore players?)
 		Config.BaalAssistant.SoulQuit = false; // Quit on Souls. (Hardcore players?)
 		Config.BaalAssistant.KillBaal = true; // Set to true to kill baal, if you set to false you MUST configure Config.QuitList or Config.BaalAssistant.NextGameMessage or the bot will wait indefinitely.
@@ -225,32 +225,32 @@ function LoadConfig() {
 		Config.BaalAssistant.BaalMessage = ["Baal"]; // Configure baal messages, this is a precautionary measure.
 		Config.BaalAssistant.NextGameMessage = ["Next Game", "Next", "New Game"];	// Next Game message, this is a precautionary quit command, Reccomended setting up: Config.QuitList
 
-	// Town settings
+	// (城鎮設定)Town settings
 	Config.HealHP = 50; // Go to a healer if under designated percent of life.
 	Config.HealMP = 0; // Go to a healer if under designated percent of mana.
-	Config.HealStatus = false; // Go to a healer if poisoned or cursed
-	Config.UseMerc = true; // Use merc. This is ignored and always false in d2classic.
+	Config.HealStatus = false; // (解中毒詛咒)Go to a healer if poisoned or cursed
+	Config.UseMerc = true; // (使用傭兵)Use merc. This is ignored and always false in d2classic.
 	Config.MercWatch = false; // Instant merc revive during battle.
 
-	// Potion settings
-	Config.UseHP = 75; // Drink a healing potion if life is under designated percent.
-	Config.UseRejuvHP = 40;  // Drink a rejuvenation potion if life is under designated percent.
-	Config.UseMP = 30; // Drink a mana potion if mana is under designated percent.
-	Config.UseRejuvMP = 0; // Drink a rejuvenation potion if mana is under designated percent.
-	Config.UseMercHP = 75; // Give a healing potion to your merc if his/her life is under designated percent.
-	Config.UseMercRejuv = 0; // Give a rejuvenation potion to your merc if his/her life is under designated percent.
+	// (喝水設定)Potion settings
+	Config.UseHP = 75; // (生命低於喝水)Drink a healing potion if life is under designated percent.
+	Config.UseRejuvHP = 40;  // (生命低於喝紫水)Drink a rejuvenation potion if life is under designated percent.
+	Config.UseMP = 30; // (魔力低於喝水)Drink a mana potion if mana is under designated percent.
+	Config.UseRejuvMP = 0; // (魔力低於喝紫水)Drink a rejuvenation potion if mana is under designated percent.
+	Config.UseMercHP = 75; // (傭兵生命低於喝水)Give a healing potion to your merc if his/her life is under designated percent.
+	Config.UseMercRejuv = 0; // (傭兵生命低於喝紫水)Give a rejuvenation potion to your merc if his/her life is under designated percent.
 	Config.HPBuffer = 0; // Number of healing potions to keep in inventory.
 	Config.MPBuffer = 0; // Number of mana potions to keep in inventory.
 	Config.RejuvBuffer = 0; // Number of rejuvenation potions to keep in inventory.
 
-	// Chicken settings
-	Config.LifeChicken = 30; // Exit game if life is less or equal to designated percent.
-	Config.ManaChicken = 0; // Exit game if mana is less or equal to designated percent.
-	Config.MercChicken = 0; // Exit game if merc's life is less or equal to designated percent.
-	Config.TownHP = 0; // Go to town if life is under designated percent.
-	Config.TownMP = 0; // Go to town if mana is under designated percent.
+	// (退出回村設定)Chicken settings
+	Config.LifeChicken = 30; // (生命小於退出)Exit game if life is less or equal to designated percent.
+	Config.ManaChicken = 0; // (法力小於退出)Exit game if mana is less or equal to designated percent.
+	Config.MercChicken = 0; // (傭兵生命小於退出)Exit game if merc's life is less or equal to designated percent.
+	Config.TownHP = 0; // (生命小於回村)Go to town if life is under designated percent.
+	Config.TownMP = 0; // (魔力小於回村)Go to town if mana is under designated percent.
 
-	/* Inventory lock configuration. !!!READ CAREFULLY!!!
+	/* (道具設定)Inventory lock configuration. !!!READ CAREFULLY!!!
 	 * 0 = item is locked and won't be moved. If item occupies more than one slot, ALL of those slots must be set to 0 to lock it in place.
 	 * Put 0s where your torch, annihilus and everything else you want to KEEP is.
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
@@ -261,26 +261,26 @@ function LoadConfig() {
 	Config.Inventory[2] = [0,0,0,0,0,0,0,0,0,0];
 	Config.Inventory[3] = [0,0,0,0,0,0,0,0,0,0];
 
-	Config.StashGold = 100000; // Minimum amount of gold to stash.
+	Config.StashGold = 100000; // (滿額存錢)Minimum amount of gold to stash.
 
-	/* Potion types for belt columns from left to right.
+	/* (腰帶藥水)Potion types for belt columns from left to right.
 	 * Rejuvenation potions must always be rightmost.
 	 * Supported potions - Healing ("hp"), Mana ("mp") and Rejuvenation ("rv")
 	 */
 	Config.BeltColumn[0] = "hp";
-	Config.BeltColumn[1] = "mp";
-	Config.BeltColumn[2] = "rv";
+	Config.BeltColumn[1] = "hp";
+	Config.BeltColumn[2] = "mp";
 	Config.BeltColumn[3] = "rv";
 
-	/* Minimum amount of potions. If we have less, go to vendor to purchase more.
+	/* (藥水購買)Minimum amount of potions. If we have less, go to vendor to purchase more.
 	 * Set rejuvenation columns to 0, because they can't be bought.
 	 */
 	Config.MinColumn[0] = 3;
 	Config.MinColumn[1] = 3;
-	Config.MinColumn[2] = 0;
+	Config.MinColumn[2] = 3;
 	Config.MinColumn[3] = 0;
 
-	// Pickit config. Default folder is kolbot/pickit.
+	// (撿寶設定)Pickit config. Default folder is kolbot/pickit.
 	Config.PickitFiles.push("kolton.nip");
 	Config.PickitFiles.push("LLD.nip");
 	Config.PickRange = 40; // Pick radius
@@ -308,47 +308,48 @@ function LoadConfig() {
 	Config.ItemInfo = true; // Log stashed, skipped (due to no space) or sold items.
 	Config.ItemInfoQuality = []; // The quality of sold items to log. See NTItemAlias.dbl for values. Example: Config.ItemInfoQuality = [6, 7, 8];
 
-	// Item identification settings
-	Config.CainID.Enable = false; // Identify items at Cain
+	// (物品識別)Item identification settings
+	Config.CainID.Enable = false; // (在凱恩那辨識)Identify items at Cain
 	Config.CainID.MinGold = 2500000; // Minimum gold (stash + character) to have in order to use Cain.
 	Config.CainID.MinUnids = 3; // Minimum number of unid items in order to use Cain.
 	Config.FieldID = false; // Identify items in the field instead of going to town.
 	Config.DroppedItemsAnnounce.Enable = false;	// Announce Dropped Items to in-game newbs
 	Config.DroppedItemsAnnounce.Quality = []; // Quality of item to announce. See NTItemAlias.dbl for values. Example: Config.DroppedItemsAnnounce.Quality = [6, 7, 8];
 
-	// Manager Item Log Screen
-	Config.LogKeys = false; // Log keys on item viewer
-	Config.LogOrgans = true; // Log organs on item viewer
-	Config.LogLowRunes = false; // Log low runes (El - Dol) on item viewer
-	Config.LogMiddleRunes = false; // Log middle runes (Hel - Mal) on item viewer
-	Config.LogHighRunes = true; // Log high runes (Ist - Zod) on item viewer
-	Config.LogLowGems = false; // Log low gems (chipped, flawed, normal) on item viewer
-	Config.LogHighGems = false; // Log high gems (flawless, perfect) on item viewer
+	// (紀錄日誌)Manager Item Log Screen
+	Config.LogKeys = false; // (鑰匙)Log keys on item viewer
+	Config.LogOrgans = true; // (器官)Log organs on item viewer
+	Config.LogLowRunes = false; // (低符 艾爾1-多爾14)Log low runes (El - Dol) on item viewer
+	Config.LogMiddleRunes = false; // (中符 海爾15-馬爾23)Log middle runes (Hel - Mal) on item viewer
+	Config.LogHighRunes = true; // (高符 伊斯特24-薩德33)Log high runes (Ist - Zod) on item viewer
+	Config.LogLowGems = false; // (低寶 碎裂-破裂-正常)Log low gems (chipped, flawed, normal) on item viewer
+	Config.LogHighGems = false; // (高寶 無暇-完美)Log high gems (flawless, perfect) on item viewer
 	Config.SkipLogging = []; // Custom log skip list. Set as three digit item code or classid. Example: ["tes", "ceh", 656, 657] will ignore logging of essences.
 	Config.ShowCubingInfo = true; // Show cubing messages on console
 
-	// Repair settings
+	// (用符文海爾修復配置)Repair settings
 	Config.CubeRepair = false; // Repair weapons with Ort and armor with Ral rune. Don't use it if you don't understand the risk of losing items.
 	Config.RepairPercent = 40; // Durability percent of any equipped item that will trigger repairs.
 
-	// Gambling config
+	// (賭博配置)Gambling config
 	Config.Gamble = false;
 	Config.GambleGoldStart = 1000000;
 	Config.GambleGoldStop = 500000;
 
-	// List of item names or classids for gambling. Check libs/NTItemAlias.dbl file for other item classids.
-	Config.GambleItems.push("Amulet");
-	Config.GambleItems.push("Ring");
-	Config.GambleItems.push("Circlet");
-	Config.GambleItems.push("Coronet");
+	// (賭博項目)List of item names or classids for gambling. Check libs/NTItemAlias.dbl file for other item classids.
+	Config.GambleItems.push("Amulet"); //項鍊
+	Config.GambleItems.push("Ring"); //戒指
+	Config.GambleItems.push("Circlet"); //頭
+	Config.GambleItems.push("Coronet"); //頭
 
-	/* Cubing config. All recipe names are available in Templates/Cubing.txt. For item names/classids check NTItemAlias.dbl
+	/* (合成項目)Cubing config. All recipe names are available in Templates/Cubing.txt. For item names/classids check NTItemAlias.dbl
 	 * The format is Config.Recipes.push([recipe_name, item_name_or_classid, etherealness]). Etherealness is optional and only applies to some recipes.
 	 */
 	Config.Cubing = false; // Set to true to enable cubing.
 
 	// Ingredients for the following recipes will be auto-picked, for classids check libs/NTItemAlias.dbl
 
+	//寶石
 	//Config.Recipes.push([Recipe.Gem, "Flawless Amethyst"]); // Make Perfect Amethyst
 	//Config.Recipes.push([Recipe.Gem, "Flawless Topaz"]); // Make Perfect Topaz
 	//Config.Recipes.push([Recipe.Gem, "Flawless Sapphire"]); // Make Perfect Sapphire
@@ -359,12 +360,14 @@ function LoadConfig() {
 
 	//Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
 
+	//符文
 	//Config.Recipes.push([Recipe.Rune, "Pul Rune"]); // Upgrade Pul to Um
 	//Config.Recipes.push([Recipe.Rune, "Um Rune"]); // Upgrade Um to Mal
 	//Config.Recipes.push([Recipe.Rune, "Mal Rune"]); // Upgrade Mal to Ist
 	//Config.Recipes.push([Recipe.Rune, "Ist Rune"]); // Upgrade Ist to Gul
 	//Config.Recipes.push([Recipe.Rune, "Gul Rune"]); // Upgrade Gul to Vex
 
+	//手工藝品
 	//Config.Recipes.push([Recipe.Caster.Amulet]); // Craft Caster Amulet
 	//Config.Recipes.push([Recipe.Blood.Ring]); // Craft Blood Ring
 	//Config.Recipes.push([Recipe.Blood.Helm, "Armet"]); // Craft Blood Armet
@@ -377,7 +380,7 @@ function LoadConfig() {
 
 	//Config.Recipes.push([Recipe.Reroll.Rare, "Diadem"]); // Reroll rare Diadem
 
-	/* Base item for the following recipes must be in pickit. The rest of the ingredients will be auto-picked.
+	/* (打孔)Base item for the following recipes must be in pickit. The rest of the ingredients will be auto-picked.
 	 * Use Roll.Eth, Roll.NonEth or Roll.All to determine what kind of base item to roll - ethereal, non-ethereal or all.
 	 */
 	//Config.Recipes.push([Recipe.Socket.Weapon, "Thresher", Roll.Eth]); // Socket ethereal Thresher
@@ -385,6 +388,7 @@ function LoadConfig() {
 	//Config.Recipes.push([Recipe.Socket.Armor, "Sacred Armor", Roll.Eth]); // Socket ethereal Sacred Armor
 	//Config.Recipes.push([Recipe.Socket.Armor, "Archon Plate", Roll.Eth]); // Socket ethereal Archon Plate
 
+	//暗金升級
 	//Config.Recipes.push([Recipe.Unique.Armor.ToExceptional, "Heavy Gloves", Roll.NonEth]); // Upgrade Bloodfist to Exceptional
 	//Config.Recipes.push([Recipe.Unique.Armor.ToExceptional, "Light Gauntlets", Roll.NonEth]); // Upgrade Magefist to Exceptional
 	//Config.Recipes.push([Recipe.Unique.Armor.ToElite, "Sharkskin Gloves", Roll.NonEth]); // Upgrade Bloodfist or Grave Palm to Elite
@@ -406,7 +410,7 @@ function LoadConfig() {
 
 	//Config.KeepRunewords.push("[type] == shield || [type] == auricshields # [fcr] == 35");
 
-	// Public game options
+	// (共用設定)Public game options
 
 	// If LocalChat is enabled, chat can be sent via 'sendCopyData' instead of BNET
 	// To allow 'say' to use BNET, use 'say("msg", true)', the 2nd parameter will force BNET
@@ -415,29 +419,29 @@ function LoadConfig() {
 	Config.LocalChat.Toggle = false; // optional, set to KEY value to toggle through modes 0, 1, 2
 	Config.LocalChat.Mode = 0; // 0 = disabled, 1 = chat from 'say' (recommended), 2 = all chat (for manual play)
 	// If Config.Leader is set, the bot will only accept invites from leader. If Config.PublicMode is not 0, Baal and Diablo script will open Town Portals.
-	Config.PublicMode = 2; // 1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
+	Config.PublicMode = 2; // (組隊設定)1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
 	// Party message settings. Each setting represents an array of messages that will be randomly chosen.
 	// $name, $level, $class and $killer are replaced by the player's name, level, class and killer
-	Config.Greetings = []; // Example: ["Hello, $name (level $level $class)"]
-	Config.DeathMessages = []; // Example: ["Watch out for that $killer, $name!"]
-	Config.Congratulations = []; // Example: ["Congrats on level $level, $name!"]
+	Config.Greetings = []; // (組隊歡迎消息)Example: ["Hello, $name (level $level $class)"]
+	Config.DeathMessages = []; // (組隊死亡消息)Example: ["Watch out for that $killer, $name!"]
+	Config.Congratulations = []; // (組隊升級消息)Example: ["Congrats on level $level, $name!"]
 	Config.ShitList = false; // Blacklist hostile players so they don't get invited to party.
 	Config.UnpartyShitlisted = false; // Leave party if someone invited a blacklisted player.
 
-	// General config
+	// (遊戲配置)General config
 	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
 	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
-	Config.MinGameTime = 60; // Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
-	Config.MaxGameTime = 0; // Maximum game time in seconds. Quit game when limit is reached.
+	Config.MinGameTime = 60; // (最短遊戲時間/秒)Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
+	Config.MaxGameTime = 0; // (最長遊戲時間/秒)Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
 	Config.OpenChests = false; // Open chests. Controls key buying.
 	Config.MiniShopBot = true; // Scan items in NPC shops.
 	Config.PacketShopping = false; // Use packets to shop. Improves shopping speed.
 	Config.TownCheck = false; // Go to town if out of potions
-	Config.LogExperience = true; // Print experience statistics in the manager.
+	Config.LogExperience = true; // (經驗LOG)Print experience statistics in the manager.
 	Config.PingQuit = [{Ping: 0, Duration: 0}]; // Quit if ping is over the given value for over the given time period in seconds.
 
-	// Shrine Scanner - scan for shrines while moving.
+	// (自訂點神殿)Shrine Scanner - scan for shrines while moving.
 	// Put the shrine types in order of priority (from highest to lowest). For a list of types, see sdk/shrines.txt
 	Config.ScanShrines = [];
 
@@ -455,20 +459,20 @@ function LoadConfig() {
 	Config.PacketCasting = 0; // 0 = disable, 1 = packet teleport, 2 = full packet casting.
 	Config.WaypointMenu = true;
 
-	// Anti-hostile config
+	// (敵對設定)Anti-hostile config
 	Config.AntiHostile = false; // Enable anti-hostile.
 	Config.HostileAction = 0; // 0 - quit immediately, 1 - quit when hostile player is sighted, 2 - attack hostile.
 	Config.TownOnHostile = false; // Go to town instead of quitting when HostileAction is 0 or 1.
 	Config.RandomPrecast = false; // Anti-PK measure, only supported in Baal and BaalHelper and BaalAssisstant at the moment.
 	Config.ViperCheck = false; // Quit if revived Tomb Vipers are sighted.
 
-	// DClone config
+	// (地表暗黑檢測)DClone config
 	Config.StopOnDClone = true; // Go to town and idle as soon as Diablo walks the Earth
 	Config.SoJWaitTime = 5; // Time in minutes to wait for another SoJ sale before leaving game. 0 = disabled
 	Config.KillDclone = false; // Go to Palace Cellar 3 and try to kill Diablo Clone. Pointless if you already have Annihilus.
 	Config.DCloneQuit = false; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
 
-	// Monster skip config
+	// (怪物跳過)Monster skip config
 	// Skip immune monsters. Possible options: "fire", "cold", "lightning", "poison", "physical", "magic".
 	// You can combine multiple resists with "and", for example - "fire and cold", "physical and cold and poison"
 	Config.SkipImmune = [];
@@ -480,7 +484,7 @@ function LoadConfig() {
 	// Uncomment the following line to always attempt to kill these bosses despite immunities and mods
 	//Config.SkipException = [getLocaleString(2851), getLocaleString(2852), getLocaleString(2853)]; // vizier, de seis, infector
 
-	/* Attack config
+	/* (攻擊技能配置)Attack config
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
@@ -505,8 +509,8 @@ function LoadConfig() {
 		//"Monster Name": [-1, -1]
 	};
 
-	Config.Dodge = false; // Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
-	Config.DodgeRange = 15; // Distance to keep from monsters.
+	Config.Dodge = false; // (遠離怪物打怪)Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
+	Config.DodgeRange = 15; // (與怪物保持距離)Distance to keep from monsters.
 	Config.DodgeHP = 100; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
 	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
