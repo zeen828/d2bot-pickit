@@ -129,3 +129,8 @@ kolbot/tools/MapThread.js
 ## D. 強化
 外掛設定選D2BotPubJoin.dbj
 
+### 臨時要不存檔改
+```js
+kolbot/tools/ToolsThread.js
+572: //this.exit();
+```
