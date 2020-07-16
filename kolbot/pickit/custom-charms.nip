@@ -83,7 +83,7 @@
 [name] == smallcharm && [quality] == magic # [dexterity] == 2 //+2敏
 
 // (小護身符-)mf & gf sc
-[name] == smallcharm && [quality] == magic # [itemmagicbonus] >= 8
+[name] == smallcharm && [quality] == magic # [itemmagicbonus] >= 7
 [name] == smallcharm && [quality] == magic # [itemgoldbonus] >= 10
 [name] == smallcharm && [quality] == magic # [mana] >= 10 && ([itemmagicbonus] >= 7 || [itemgoldbonus] >= 10)
 [name] == smallcharm && [quality] == magic # [maxdamage] == 3 && [tohit] >= 10 && ([itemmagicbonus] >= 7 || [itemgoldbonus] >= 10)
