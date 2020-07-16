@@ -1,4 +1,4 @@
-// (德魯伊)Druid config file
+// (聖騎士)Paladin config file
 
 /* Brief instructions:
  * Notepad++ is HIGHLY recommended to use for editing these files. Visit http://notepad-plus-plus.org/
@@ -133,10 +133,10 @@ function LoadConfig() {
 	Scripts.TristramLeech = false; // Enters Tristram, attempts to stay close to the leader and will try and help kill.
 	Scripts.TravincalLeech = false; // Enters portal at back of Travincal.
 		Config.TravincalLeech.Helper = true; // If set to true the character will teleport to the stairs and help attack.
-	Scripts.MFHelper = true; // Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
+	Scripts.MFHelper = false; // Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
 	Scripts.Wakka = false; // Walking chaos leecher with auto leader assignment, stays at safe distance from the leader
 	Scripts.SealLeecher = false; // Enter safe portals to Chaos. Leader should run SealLeader.
-	Scripts.DiabloHelper = true; // Chaos helper, kills monsters and doesn't open seals on its own.
+	Scripts.DiabloHelper = false; // Chaos helper, kills monsters and doesn't open seals on its own.
 		Config.DiabloHelper.Wait = 720; // Seconds to wait for a runner to be in Chaos. If Config.Leader is set, it will wait only for the leader.
 		Config.DiabloHelper.Entrance = true; // Start from entrance. Set to false to start from star.
 		Config.DiabloHelper.SkipTP = false; // Don't wait for town portal and directly head to chaos. It will clear monsters around chaos entrance and wait for the runner.
@@ -145,14 +145,14 @@ function LoadConfig() {
 		Config.AutoBaal.FindShrine = false; // false = disabled, 1 = search after hot tp message, 2 = search as soon as leader is found
 		Config.AutoBaal.LeechSpot = [15115, 5050]; // X, Y coords of Throne Room leech spot
 		Config.AutoBaal.LongRangeSupport = false; // Cast long distance skills from a safe spot
-	Scripts.BaalHelper = true;
+	Scripts.BaalHelper = false;
 		Config.BaalHelper.Wait = 720; // Seconds to wait for a runner to be in Throne
 		Config.BaalHelper.KillNihlathak = false; // Kill Nihlathak before going to Throne
 		Config.BaalHelper.FastChaos = false; // Kill Diablo before going to Throne
 		Config.BaalHelper.DollQuit = false;  // End script if Dolls (Undead Soul Killers) are found.
 		Config.BaalHelper.KillBaal = true; // Kill Baal. If set to false, you must configure Config.QuitList or the bot will wait indefinitely.
 		Config.BaalHelper.SkipTP = false; // Don't wait for a TP, go to WSK3 and wait for someone to go to throne. Anti PK measure.
-	Scripts.Follower = true; // Script that follows a manually played leader around like a merc. For a list of commands, see Follower.js
+	Scripts.Follower = false; // Script that follows a manually played leader around like a merc. For a list of commands, see Follower.js
 
 	// *** special scripts ***
 	Scripts.WPGetter = false; // Get missing waypoints
@@ -208,7 +208,7 @@ function LoadConfig() {
 	// *** Guest scripts ***
 
 	// Baal Assistant by YourGreatestMember
-	Scripts.BaalAssistant = false; // Used to leech or help in baal runs.
+	Scripts.BaalAssistant = true; // Used to leech or help in baal runs.
 		Config.BaalAssistant.Wait = 480; // Seconds to wait for a runner to be in the throne / portal wait / safe TP wait / hot TP wait...
 		Config.BaalAssistant.KillNihlathak = false; // Kill Nihlathak before going to Throne
 		Config.BaalAssistant.FastChaos = false; // Kill Diablo before going to Throne
@@ -256,10 +256,10 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [1,1,1,1,1,1,1,0,0,0];
-	Config.Inventory[1] = [1,1,1,1,1,1,1,0,0,0];
-	Config.Inventory[2] = [1,1,1,1,1,1,1,0,0,0];
-	Config.Inventory[3] = [1,1,1,1,1,1,1,0,0,0];
+	Config.Inventory[0] = [1,1,1,1,1,1,1,1,0,0];
+	Config.Inventory[1] = [1,1,1,1,1,1,1,1,0,0];
+	Config.Inventory[2] = [1,1,1,1,1,1,1,1,0,0];
+	Config.Inventory[3] = [1,1,1,1,1,1,1,1,0,0];
 
 	Config.StashGold = 100000; // Minimum amount of gold to stash.
 
@@ -280,9 +280,17 @@ function LoadConfig() {
 	Config.MinColumn[2] = 3;
 	Config.MinColumn[3] = 0;
 
-	// Pickit config. Default folder is kolbot/pickit.
-	Config.PickitFiles.push("kolton.nip");
-	Config.PickitFiles.push("LLD.nip");
+	// (撿寶設定)Pickit config. Default folder is kolbot/pickit.
+	Config.PickitFiles.push("kolton.nip");//暗金裝備
+	Config.PickitFiles.push("LLD.nip");//白,藍,黃裝備
+	Config.PickitFiles.push("classic.nip");//橘色手工藝
+	Config.PickitFiles.push("gold.nip");//金幣
+	Config.PickitFiles.push("custom-set.nip");//自訂成套裝備
+	Config.PickitFiles.push("custom-unique.nip");//自訂獨特裝備
+	Config.PickitFiles.push("custom-charms.nip");//自訂護符
+	Config.PickitFiles.push("custom-runes.nip");//自訂符文
+	Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
+	Config.PickitFiles.push("test.nip");//測試
 	Config.PickRange = 40; // Pick radius
 	Config.FastPick = false; // Check and pick items between attacks
 
@@ -484,21 +492,21 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	//240小旋風,250暴風
+	//106白熱,122狂熱
 	Config.AttackSkill[0] = -1; // Preattack skill.
-	Config.AttackSkill[1] = 250 // Primary skill to bosses.
-	Config.AttackSkill[2] = 240; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
-	Config.AttackSkill[3] = 250; // Primary skill to others.
-	Config.AttackSkill[4] = 240; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	Config.AttackSkill[1] = 106; // Primary skill to bosses.
+	Config.AttackSkill[2] = 122; // Primary aura to bosses
+	Config.AttackSkill[3] = 106; // Primary skill to others.
+	Config.AttackSkill[4] = 122; // Primary aura to others.
 	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
-	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
+	Config.AttackSkill[6] = -1; // Secondary aura.
 
 	// Low mana skills - these will be used if main skills can't be cast.
-	Config.LowManaSkill[0] = -1; // Timed low mana skill.
-	Config.LowManaSkill[1] = -1; // Untimed low mana skill.
+	Config.LowManaSkill[0] = -1; // Low mana skill.
+	Config.LowManaSkill[1] = -1; // Low mana aura.
 
 	/* Advanced Attack config. Allows custom skills to be used on custom monsters.
-	 *	Format: "Monster Name": [timed skill id, untimed skill id]
+	 *	Format: "Monster Name": [attack skill id, aura skill id]
 	 *	Multiple entries are separated by commas
 	 */
 	Config.CustomAttack = {
@@ -507,16 +515,15 @@ function LoadConfig() {
 
 	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
-	Config.TeleStomp = false; // Use merc to attack bosses if they're immune to attacks, but not to physical damage
 
 	// Wereform setup. Make sure you read Templates/Attacks.txt for attack skill format.
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear
 
 	// Class specific config
-	Config.SummonRaven = false;
-	Config.SummonAnimal = "Grizzly"; // 0 = disabled, 1 or "Spirit Wolf" = summon spirit wolf, 2 or "Dire Wolf" = summon dire wolf, 3 or "Grizzly" = summon grizzly
-	Config.SummonSpirit = "Oak Sage"; // 0 = disabled, 1 / "Oak Sage", 2 / "Heart of Wolverine", 3 / "Spirit of Barbs"
-	Config.SummonVine = "Poison Creeper"; // 0 = disabled, 1 / "Poison Creeper", 2 / "Carrion Vine", 3 / "Solar Creeper"
+	Config.AvoidDolls = false; // Try to attack dolls from a greater distance with hammerdins.
+	Config.Vigor = true; // Swith to Vigor when running
+	Config.Charge = true; // Use Charge when running
+	Config.Redemption = [50, 50]; // Switch to Redemption after clearing an area if under designated life or mana. Format: [lifepercent, manapercent]
 
 	/* AutoSkill builds character based on array defined by the user and it replaces AutoBuild's skill system.
 	 * AutoSkill will automatically spend skill points and it can also allocate any prerequisite skills as required.
