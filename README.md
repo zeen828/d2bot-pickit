@@ -119,4 +119,5 @@ kolbot/libs/common/Pather.js
 kolbot/tools/MapThread.js
 
 ## D. 強化
+外掛設定選D2BotPubJoin.dbj
 
