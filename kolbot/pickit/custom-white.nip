@@ -184,7 +184,7 @@
 // ##### (盾牌)shields = normal ########################################################################### 
 //[type] == shield && [class] == elite && [quality] == normal && [flag] != ethereal # [sockets] == 3 // dream 
 //[name] == monarch && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 4) // phoenix or spirit
-[name] == monarch && [quality] == normal && [flag] != ethereal # && [sockets] == 4 // phoenix or spirit
+[name] == monarch && [quality] == normal && [flag] != ethereal # ([sockets] == 4) // phoenix or spirit
 
 // ##### (野蠻人)barbarian helms ############################################################################
 //[type] == primalhelm && [class] == elite && [quality] <= superior && [flag] != ethereal # [sockets] == 3 && [skillbattleorders]+[skillbattlecommand] >= 6 // delirium
