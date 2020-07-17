@@ -492,12 +492,12 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	//74屍體爆炸,75黏土石摩,84白骨之矛
+	//70哭魯,74屍體爆炸,75黏土石摩,80魔法哭魯,84白骨之矛
 	Config.AttackSkill[0] = 75; // Preattack skill.
-	Config.AttackSkill[1] = 91; // Primary skill to bosses.
-	Config.AttackSkill[2] = 91; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
-	Config.AttackSkill[3] = 91; // Primary skill to others.
-	Config.AttackSkill[4] = 91; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	Config.AttackSkill[1] = 70; // Primary skill to bosses.
+	Config.AttackSkill[2] = 80; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
+	Config.AttackSkill[3] = 70; // Primary skill to others.
+	Config.AttackSkill[4] = 80; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
 	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
