@@ -133,11 +133,11 @@ function LoadConfig() {
 	Scripts.TristramLeech = false; // Enters Tristram, attempts to stay close to the leader and will try and help kill.
 	Scripts.TravincalLeech = false; // Enters portal at back of Travincal.
 		Config.TravincalLeech.Helper = true; // If set to true the character will teleport to the stairs and help attack.
-	Scripts.MFHelper = false; // Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
+	Scripts.MFHelper = true; // Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
 	Scripts.Wakka = false; // Walking chaos leecher with auto leader assignment, stays at safe distance from the leader
 	Scripts.SealLeecher = false; // Enter safe portals to Chaos. Leader should run SealLeader.
-	Scripts.DiabloHelper = false; // Chaos helper, kills monsters and doesn't open seals on its own.
-		Config.DiabloHelper.Wait = 120; // Seconds to wait for a runner to be in Chaos. If Config.Leader is set, it will wait only for the leader.
+	Scripts.DiabloHelper = true; // Chaos helper, kills monsters and doesn't open seals on its own.
+		Config.DiabloHelper.Wait = 720; // Seconds to wait for a runner to be in Chaos. If Config.Leader is set, it will wait only for the leader.
 		Config.DiabloHelper.Entrance = true; // Start from entrance. Set to false to start from star.
 		Config.DiabloHelper.SkipTP = false; // Don't wait for town portal and directly head to chaos. It will clear monsters around chaos entrance and wait for the runner.
 		Config.DiabloHelper.SkipIfBaal = false; // End script if there are party members in a Baal run.
@@ -145,8 +145,8 @@ function LoadConfig() {
 		Config.AutoBaal.FindShrine = false; // false = disabled, 1 = search after hot tp message, 2 = search as soon as leader is found
 		Config.AutoBaal.LeechSpot = [15115, 5050]; // X, Y coords of Throne Room leech spot
 		Config.AutoBaal.LongRangeSupport = false; // Cast long distance skills from a safe spot
-	Scripts.BaalHelper = false;
-		Config.BaalHelper.Wait = 120; // Seconds to wait for a runner to be in Throne
+	Scripts.BaalHelper = true;
+		Config.BaalHelper.Wait = 720; // Seconds to wait for a runner to be in Throne
 		Config.BaalHelper.KillNihlathak = false; // Kill Nihlathak before going to Throne
 		Config.BaalHelper.FastChaos = false; // Kill Diablo before going to Throne
 		Config.BaalHelper.DollQuit = false;  // End script if Dolls (Undead Soul Killers) are found.
@@ -208,7 +208,7 @@ function LoadConfig() {
 	// *** Guest scripts ***
 
 	// Baal Assistant by YourGreatestMember
-	Scripts.BaalAssistant = true; // Used to leech or help in baal runs.
+	Scripts.BaalAssistant = false; // Used to leech or help in baal runs.
 		Config.BaalAssistant.Wait = 480; // Seconds to wait for a runner to be in the throne / portal wait / safe TP wait / hot TP wait...
 		Config.BaalAssistant.KillNihlathak = false; // Kill Nihlathak before going to Throne
 		Config.BaalAssistant.FastChaos = false; // Kill Diablo before going to Throne
@@ -225,30 +225,30 @@ function LoadConfig() {
 		Config.BaalAssistant.BaalMessage = ["Baal"]; // Configure baal messages, this is a precautionary measure.
 		Config.BaalAssistant.NextGameMessage = ["Next Game", "Next", "New Game"];	// Next Game message, this is a precautionary quit command, Reccomended setting up: Config.QuitList
 
-	// Town settings
+	// (城鎮設定)Town settings
 	Config.HealHP = 50; // Go to a healer if under designated percent of life.
 	Config.HealMP = 0; // Go to a healer if under designated percent of mana.
-	Config.HealStatus = false; // Go to a healer if poisoned or cursed
-	Config.UseMerc = true; // Use merc. This is ignored and always false in d2classic.
+	Config.HealStatus = true; // (解中毒詛咒)Go to a healer if poisoned or cursed
+	Config.UseMerc = true; // (使用傭兵)Use merc. This is ignored and always false in d2classic.
 	Config.MercWatch = false; // Instant merc revive during battle.
 
-	// Potion settings
-	Config.UseHP = 75; // Drink a healing potion if life is under designated percent.
-	Config.UseRejuvHP = 40;  // Drink a rejuvenation potion if life is under designated percent.
-	Config.UseMP = 30; // Drink a mana potion if mana is under designated percent.
-	Config.UseRejuvMP = 0; // Drink a rejuvenation potion if mana is under designated percent.
-	Config.UseMercHP = 75; // Give a healing potion to your merc if his/her life is under designated percent.
-	Config.UseMercRejuv = 0; // Give a rejuvenation potion to your merc if his/her life is under designated percent.
+	// (喝水設定)Potion settings
+	Config.UseHP = 60; // (生命低於喝水)Drink a healing potion if life is under designated percent.
+	Config.UseRejuvHP = 40;  // (生命低於喝紫水)Drink a rejuvenation potion if life is under designated percent.
+	Config.UseMP = 30; // (魔力低於喝水)Drink a mana potion if mana is under designated percent.
+	Config.UseRejuvMP = 0; // (魔力低於喝紫水)Drink a rejuvenation potion if mana is under designated percent.
+	Config.UseMercHP = 75; // (傭兵生命低於喝水)Give a healing potion to your merc if his/her life is under designated percent.
+	Config.UseMercRejuv = 20; // (傭兵生命低於喝紫水)Give a rejuvenation potion to your merc if his/her life is under designated percent.
 	Config.HPBuffer = 0; // Number of healing potions to keep in inventory.
 	Config.MPBuffer = 0; // Number of mana potions to keep in inventory.
 	Config.RejuvBuffer = 0; // Number of rejuvenation potions to keep in inventory.
 
-	// Chicken settings
-	Config.LifeChicken = 30; // Exit game if life is less or equal to designated percent.
-	Config.ManaChicken = 0; // Exit game if mana is less or equal to designated percent.
-	Config.MercChicken = 0; // Exit game if merc's life is less or equal to designated percent.
-	Config.TownHP = 0; // Go to town if life is under designated percent.
-	Config.TownMP = 0; // Go to town if mana is under designated percent.
+	// (退出回村設定)Chicken settings
+	Config.LifeChicken = 0; // (生命小於退出)Exit game if life is less or equal to designated percent.
+	Config.ManaChicken = 0; // (法力小於退出)Exit game if mana is less or equal to designated percent.
+	Config.MercChicken = 0; // (傭兵生命小於退出)Exit game if merc's life is less or equal to designated percent.
+	Config.TownHP = 0; // (生命小於回村)Go to town if life is under designated percent.
+	Config.TownMP = 0; // (魔力小於回村)Go to town if mana is under designated percent.
 
 	/* Inventory lock configuration. !!!READ CAREFULLY!!!
 	 * 0 = item is locked and won't be moved. If item occupies more than one slot, ALL of those slots must be set to 0 to lock it in place.
@@ -256,10 +256,10 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [0,0,0,0,0,0,0,0,0,0];
-	Config.Inventory[1] = [0,0,0,0,0,0,0,0,0,0];
-	Config.Inventory[2] = [0,0,0,0,0,0,0,0,0,0];
-	Config.Inventory[3] = [0,0,0,0,0,0,0,0,0,0];
+	Config.Inventory[0] = [1,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[1] = [1,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[2] = [1,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[3] = [1,1,1,1,1,1,0,0,0,0];
 
 	Config.StashGold = 100000; // Minimum amount of gold to stash.
 
@@ -268,8 +268,8 @@ function LoadConfig() {
 	 * Supported potions - Healing ("hp"), Mana ("mp") and Rejuvenation ("rv")
 	 */
 	Config.BeltColumn[0] = "hp";
-	Config.BeltColumn[1] = "mp";
-	Config.BeltColumn[2] = "rv";
+	Config.BeltColumn[1] = "hp";
+	Config.BeltColumn[2] = "mp";
 	Config.BeltColumn[3] = "rv";
 
 	/* Minimum amount of potions. If we have less, go to vendor to purchase more.
@@ -277,12 +277,20 @@ function LoadConfig() {
 	 */
 	Config.MinColumn[0] = 3;
 	Config.MinColumn[1] = 3;
-	Config.MinColumn[2] = 0;
+	Config.MinColumn[2] = 3;
 	Config.MinColumn[3] = 0;
 
-	// Pickit config. Default folder is kolbot/pickit.
-	Config.PickitFiles.push("kolton.nip");
-	Config.PickitFiles.push("LLD.nip");
+	// (撿寶設定)Pickit config. Default folder is kolbot/pickit.
+	Config.PickitFiles.push("kolton.nip");//暗金裝備
+	Config.PickitFiles.push("LLD.nip");//白,藍,黃裝備
+	Config.PickitFiles.push("classic.nip");//橘色手工藝
+	Config.PickitFiles.push("gold.nip");//金幣
+	Config.PickitFiles.push("custom-set.nip");//自訂成套裝備
+	Config.PickitFiles.push("custom-unique.nip");//自訂獨特裝備
+	Config.PickitFiles.push("custom-charms.nip");//自訂護符
+	Config.PickitFiles.push("custom-runes.nip");//自訂符文
+	Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
+	Config.PickitFiles.push("test.nip");//測試
 	Config.PickRange = 40; // Pick radius
 	Config.FastPick = false; // Check and pick items between attacks
 
@@ -484,11 +492,12 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	Config.AttackSkill[0] = -1; // Preattack skill.
-	Config.AttackSkill[1] = -1; // Primary skill to bosses.
-	Config.AttackSkill[2] = -1; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
-	Config.AttackSkill[3] = -1; // Primary skill to others.
-	Config.AttackSkill[4] = -1; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	//74屍體爆炸,75黏土石摩,84白骨之矛
+	Config.AttackSkill[0] = 75; // Preattack skill.
+	Config.AttackSkill[1] = 91; // Primary skill to bosses.
+	Config.AttackSkill[2] = 91; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
+	Config.AttackSkill[3] = 91; // Primary skill to others.
+	Config.AttackSkill[4] = 91; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
 	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
@@ -515,8 +524,9 @@ function LoadConfig() {
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear
 
 	// Class specific config
-	Config.Curse[0] = 0; // Boss curse. Use skill number or set to 0 to disable.
-	Config.Curse[1] = 0; // Other monsters curse. Use skill number or set to 0 to disable.
+	//87衰老,91降低抵抗
+	Config.Curse[0] = 87; // (頭目詛咒)Boss curse. Use skill number or set to 0 to disable.
+	Config.Curse[1] = 91; // (小怪詛咒)Other monsters curse. Use skill number or set to 0 to disable.
 
 	Config.ExplodeCorpses = 0; // Explode corpses. Use skill number or 0 to disable. 74 = Corpse Explosion, 83 = Poison Explosion
 	Config.Golem = "None"; // Golem. 0 or "None" = don't summon, 1 or "Clay" = Clay Golem, 2 or "Blood" = Blood Golem, 3 or "Fire" = Fire Golem
