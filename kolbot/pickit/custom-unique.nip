@@ -52,10 +52,12 @@
 [name] == tiara && [quality] == unique # [coldresist]+[fireresist]+[lightresist]+[poisonresist] >= 20 && [plusdefense] >= 1 //(奇拉的守護)kira's guardian
 [name] == diadem && [quality] == unique && [flag] != ethereal # (([passiveltngmastery] >= 10 && [passiveltngpierce] >= 0) || ([passiveltngmastery] >= 1 && [passiveltngpierce] >= 1)) //(格利風之眼)griffon's eye
 [name] == corona && [quality] == unique # [sockets] >= 0 && [damageresist] >= 1 && [coldresist]+[fireresist]+[lightresist]+[poisonresist] >= 8 //(年紀之冠)crown of ages/
+[name] == fullhelm && [quality] == unique //(格利風之眼)
+[name] == fullhelm && [quality] == unique && [flag] == ethereal //
 
 //(獨特盔甲)unique armor
 [name] == serpentskinarmor && [quality] == unique # [coldresist] >= 5 && [magicdamagereduction] >= 1 //(蛇魔法師之皮)skin of the vipermagi
-[name] == cuirass && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(都瑞爾的殼)duriel's shell
+//[name] == cuirass && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(都瑞爾的殼)duriel's shell
 [name] == cuirass && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 //ethereal duriel's shell
 //[name] == mesharmor && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(謝夫特斯坦布)shaftstop
 //[name] == mesharmor && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 20 //ethereal shaftstop
@@ -78,7 +80,8 @@
 //[name] == roundshield && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(摩西祝福之環)moser's blessed circle
 //[name] == barbedshield && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(長槍守衛)lance guard
 //[name] == pavise && [quality] == unique && [flag] != ethereal # [coldresist]+[fireresist]+[lightresist]+[poisonresist] >= 10 && [normaldamagereduction] >=1 && [magicdamagereduction] >= 1 //(基爾克的聖堂)gerke's sanctuary
-[name] == grimshield && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 //(警戒之牆)ethereal lidless wall
+[name] == grimshield && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(警戒之牆)ethereal lidless wall
+//[name] == grimshield && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 //(警戒之牆)ethereal lidless wall
 //[name] == luna && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(黑橡樹盾)blackoak shield
 [name] == monarch && [quality] == unique && [flag] != ethereal //(暴風之盾)stormshield
 [name] == trollnest && [quality] == unique && [flag] != ethereal # [sockets] >= 0 && [plusdefense] >= 40 && [armorclassvsmissile] >= 35 && [fireresist] >= 3 && [poisonresist] >= 4 //(獵頭人的榮耀)head hunter's glory
@@ -176,6 +179,7 @@
 //(獨特德魯伊)unique druid
 //[name] == skyspirit && [quality] == unique # [passivefirepierce] >= 15 //(烏鴉之王)ravenlore
 [name] == earthspirit && [quality] == unique # [itemabsorblight] >= 12 && [itemabsorbcoldpercent] >= 20 //(靈魂看守者)spirit keeper
+[name] == totemicmask && [quality] == unique //(加爾長髮)
 
 //(獨特死靈法師)unique necromancer 
 [name] == hierophanttrophy && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 190 //(侏儒)homunculus
