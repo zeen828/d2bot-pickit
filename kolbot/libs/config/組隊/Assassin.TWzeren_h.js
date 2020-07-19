@@ -485,11 +485,12 @@ function LoadConfig() {
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 * Don't put LS/DS/WoF/WoI here! Use Config. UseTraps, Config.Traps and Config.BossTraps
 	 */
-	Config.AttackSkill[0] = -1; // Preattack skill.
-	Config.AttackSkill[1] = -1; // Primary skill to bosses.
-	Config.AttackSkill[2] = -1; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
-	Config.AttackSkill[3] = -1; // Primary skill to others.
-	Config.AttackSkill[4] = -1; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	//271雷光守衛
+	Config.AttackSkill[0] = 271; // Preattack skill.
+	Config.AttackSkill[1] = 271; // Primary skill to bosses.
+	Config.AttackSkill[2] = 271; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
+	Config.AttackSkill[3] = 271; // Primary skill to others.
+	Config.AttackSkill[4] = 271; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
 	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
