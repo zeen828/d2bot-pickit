@@ -98,7 +98,7 @@
 // # (艾爾多的守衛)aldur's watchtower #
 //[name] == hunter'sguise && [quality] == set // (-頭)aldur's stony gaze
 //[name] == battleboots && [quality] == set // ()aldur's advance
-[name] == shadowplate && [quality] == set // ()aldur's deception
+//[name] == shadowplate && [quality] == set // ()aldur's deception
 //[name] == jaggedstar && [quality] == set // ()aldur's rhythm
 
 // # (布爾凱索的孩子)bul kathos' children #
@@ -139,13 +139,13 @@
 //[name] == warbelt && [quality] == set // (-腰)immortal king's detail
 //[name] == avengerguard && [quality] == set // (不朽之王的意志-頭)immortal king's will
 //[name] == ogremaul && [quality] == set // (不朽之王的碎魂者-槌)immortal king's stone crusher
-[name] == sacredarmor && [quality] == set // immortal king's soul cage
+//[name] == sacredarmor && [quality] == set // immortal king's soul cage
 //[name] == wargauntlets && [quality] == set // (不朽之王的融爐-手)immortal king's forge
 //[name] == warboots && [quality] == set // (不朽之王之柱-腳)immortal king's pillar
 
 // # (馬維娜之戰鬥詩歌)m'avina's battle hymn #
-[name] == diadem && [quality] == set // (-頭)m'avina's true sight
-[name] == grandmatronbow && [quality] == set // (-弓)m'avina's caster
+//[name] == diadem && [quality] == set // (-頭)m'avina's true sight
+//[name] == grandmatronbow && [quality] == set // (-弓)m'avina's caster
 //[name] == krakenshell && [quality] == set // (-盔甲)m'avina's embrace
 //[name] == battlegauntlets && [quality] == set // (-手)m'avina's icy clutch
 //[name] == sharkskinbelt && [quality] == set // (-腰)m'avina's tenet
@@ -189,8 +189,8 @@
 [name] == meshbelt && [quality] == set # [itemmagicbonus] >= 15 //(-頂腰)10-15 tal rasha's fine-spun cloth
 
 // # (塔格奧的化身)trang-oul's avatar #
-[name] == bonevisage && [quality] == set // (-頭)trang-oul's guise
+//[name] == bonevisage && [quality] == set // (-頭)trang-oul's guise
 //[name] == chaosarmor && [quality] == set // (-甲)trang-oul's scales
-[name] == cantortrophy && [quality] == set // (-副手)trang-oul's wing
-[name] == trollbelt && [quality] == set // (-腰)trang-oul's girth
+//[name] == cantortrophy && [quality] == set // (-副手)trang-oul's wing
+//[name] == trollbelt && [quality] == set // (-腰)trang-oul's girth
 //[name] == heavybracers && [quality] == set // (-手)trang-oul's claws

@@ -256,10 +256,10 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [0,0,0,0,0,0,0,0,0,0];
-	Config.Inventory[1] = [0,0,0,0,0,0,0,0,0,0];
-	Config.Inventory[2] = [0,0,0,0,0,0,0,0,0,0];
-	Config.Inventory[3] = [0,0,0,0,0,0,0,0,0,0];
+	Config.Inventory[0] = [1,1,1,1,1,1,1,1,0,0];
+	Config.Inventory[1] = [1,1,1,1,1,1,1,1,0,0];
+	Config.Inventory[2] = [1,1,1,1,1,1,1,1,0,0];
+	Config.Inventory[3] = [1,1,1,1,1,1,1,1,0,0];
 
 	Config.StashGold = 100000; // Minimum amount of gold to stash.
 
@@ -280,9 +280,17 @@ function LoadConfig() {
 	Config.MinColumn[2] = 3;
 	Config.MinColumn[3] = 0;
 
-	// Pickit config. Default folder is kolbot/pickit.
-	Config.PickitFiles.push("kolton.nip");
-	Config.PickitFiles.push("LLD.nip");
+	// (撿寶設定)Pickit config. Default folder is kolbot/pickit.
+	Config.PickitFiles.push("kolton.nip");//暗金裝備
+	Config.PickitFiles.push("LLD.nip");//白,藍,黃裝備
+	Config.PickitFiles.push("classic.nip");//橘色手工藝
+	Config.PickitFiles.push("gold.nip");//金幣
+	Config.PickitFiles.push("custom-set.nip");//自訂成套裝備
+	Config.PickitFiles.push("custom-unique.nip");//自訂獨特裝備
+	Config.PickitFiles.push("custom-charms.nip");//自訂護符
+	Config.PickitFiles.push("custom-runes.nip");//自訂符文
+	Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
+	Config.PickitFiles.push("test.nip");//測試
 	Config.PickRange = 40; // Pick radius
 	Config.FastPick = false; // Check and pick items between attacks
 

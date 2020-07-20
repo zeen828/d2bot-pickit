@@ -5,7 +5,7 @@
 //(獨特手套)unique gloves
 //[name] == heavygloves && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(血拳)blood fist
 //[name] == chaingloves && [quality] == unique && [flag] != ethereal # [itemmagicbonus] >= 20 && [enhanceddefense] >= 20 //(運氣守護)chance guards
-//[name] == lightgauntlets && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(法師之拳)magefist
+[name] == lightgauntlets && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(法師之拳)magefist
 //[name] == gauntlets && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(霜燃)frostburn
 [name] == vampirebonegloves && [quality] == unique && [flag] != ethereal # [strength] == 15 && [lifeleech] >= 5 && [itemhealafterkill] >= 1 //(卓古拉之握)dracul's grasp
 [name] == vambraces && [quality] == unique && [flag] != ethereal # [lifeleech] >= 5 && [manaleech] >= 5 && [enhanceddefense] >= 100 //(吸魂者)soul drainer
@@ -18,7 +18,7 @@
 //[name] == battlebelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 100 //(雪之衝突)snowclash
 //[name] == warbelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 100 //(雷神之力)thundergod's vigor
 [name] == spiderwebsash && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 75 //(蜘蛛之網)arachnid mesh
-[name] == vampirefangbelt && [quality] == unique && [flag] != ethereal # [lifeleech] >= 5 && [defense] >= 50 //(吸血聖王之圈)nosferatu's coil
+//[name] == vampirefangbelt && [quality] == unique && [flag] != ethereal # [lifeleech] >= 5 && [defense] >= 50 //(吸血聖王之圈)nosferatu's coil
 [name] == mithrilcoil && [quality] == unique && [flag] != ethereal # ([vitality] >= 1 && [damageresist] >= 10 && [hpregen] >= 1) || ([vitality] >= 30 && [damageresist] >= 10 && [hpregen] >= 6) //(維爾登戈的心結)verdungo's hearty cord
 
 //(獨特鞋子)unique boots
@@ -27,9 +27,9 @@
 //[name] == sharkskinboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 70 && [maxhp] >= 45 //(水上飄)waterwalk
 [name] == battleboots && [quality] == unique && [flag] != ethereal # [itemmagicbonus] >= 20 //(戰爭旅者)war traveler
 [name] == warboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 95 //(蝕肉騎士)gore rider
-[name] == scarabshellboots && [quality] == unique && [flag] != ethereal # [strength] >= 5 && [vitality] >= 5 && [poisonresist] >= 1 //(沙暴之旅)sandstorm trek
-[name] == scarabshellboots && [quality] == unique && [flag] == ethereal # [strength] >= 5 && [vitality] >= 0 && [poisonresist] >= 1 //ethereal sandstorm trek
-[name] == boneweaveboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 50 && [skillskeletonmastery] >= 0 && [strength] >= 0 //(骨隨行走)marrowwalk
+//[name] == scarabshellboots && [quality] == unique && [flag] != ethereal # [strength] >= 5 && [vitality] >= 5 && [poisonresist] >= 1 //(沙暴之旅)sandstorm trek
+//[name] == scarabshellboots && [quality] == unique && [flag] == ethereal # [strength] >= 5 && [vitality] >= 0 && [poisonresist] >= 1 //ethereal sandstorm trek
+//[name] == boneweaveboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 50 && [skillskeletonmastery] >= 0 && [strength] >= 0 //(骨隨行走)marrowwalk
 [name] == myrmidongreaves && [quality] == unique && [flag] != ethereal # [shadowdisciplinesskilltab] >= 1 && [dexterity] >= 5 //(影舞者)shadow dancer
 
 //(獨特頭盔)unique helms
@@ -58,7 +58,7 @@
 //(獨特盔甲)unique armor
 [name] == serpentskinarmor && [quality] == unique # [coldresist] >= 5 && [magicdamagereduction] >= 1 //(蛇魔法師之皮)skin of the vipermagi
 //[name] == cuirass && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(都瑞爾的殼)duriel's shell
-[name] == cuirass && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 //ethereal duriel's shell
+//[name] == cuirass && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 //ethereal duriel's shell
 //[name] == mesharmor && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(謝夫特斯坦布)shaftstop
 //[name] == mesharmor && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 20 //ethereal shaftstop
 //[name] == russetarmor && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(詩寇蒂的憤怒)skullder's ire
@@ -69,7 +69,7 @@
 //[name] == duskshroud && [quality] == unique # ([skillfirebolt] >= 0 || [skillfireball] >= 0 || [skillmeteor] >= 0) //(奧瑪斯的長袍)ormus' robes
 //[name] == duskshroud && [quality] == unique # ([skillchainlightning] >= 0 || [skilllightning] >= 0 || [skillnova] >= 0 || [skillenergyshield] >= 0) //ormus' robes
 //[name] == duskshroud && [quality] == unique # ([skillblizzard] >= 0 || [skillglacialspike] >= 0 || [skilliceblast] >= 0) //ormus' robes
-[name] == wirefleece && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 50 && [normaldamagereduction] >= 2 && [magicdamagereduction] >= 2 //(鬥士的禍根)the gladiator's bane
+//[name] == wirefleece && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 50 && [normaldamagereduction] >= 2 && [magicdamagereduction] >= 2 //(鬥士的禍根)the gladiator's bane
 [name] == balrogskin && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 50 && [itemallskills] >= 0 && [normaldamagereduction] >= 1 //(阿凱尼的榮耀)arkaine's valor
 [name] == krakenshell && [quality] == unique # [enhanceddefense] >= 10 && [plusdefense] >= 10 && [damageresist] >= 0 && [strength] >= 0 //(海王利維亞桑)leviathan
 [name] == shadowplate && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 && [manarecovery] >= 0 && [coldresist] >= 0 && [normaldamagereduction] >= 1 //(鋼鐵鎧甲)steel carapace
@@ -84,7 +84,7 @@
 //[name] == grimshield && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 //(警戒之牆)ethereal lidless wall
 //[name] == luna && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(黑橡樹盾)blackoak shield
 [name] == monarch && [quality] == unique && [flag] != ethereal //(暴風之盾)stormshield
-[name] == trollnest && [quality] == unique && [flag] != ethereal # [sockets] >= 0 && [plusdefense] >= 40 && [armorclassvsmissile] >= 35 && [fireresist] >= 3 && [poisonresist] >= 4 //(獵頭人的榮耀)head hunter's glory
+//[name] == trollnest && [quality] == unique && [flag] != ethereal # [sockets] >= 0 && [plusdefense] >= 40 && [armorclassvsmissile] >= 35 && [fireresist] >= 3 && [poisonresist] >= 4 //(獵頭人的榮耀)head hunter's glory
 [name] == ward && [quality] == unique && [flag] != ethereal # [fireresist] >= 4 && [toblock] >= 3 && [itemabsorbcold] >= 1 //(魂系結界)spirit ward
 
 //(獨特匕首)unique daggers
@@ -94,7 +94,7 @@
 //(獨特刀劍)unique swords
 [name] == tulwar && [quality] == unique # [dexterity] >= 15 && [enhanceddamage] >= 120 //(阿里巴巴之刃)blade of ali baba
 [name] == phaseblade && [quality] == unique # [enhanceddamage] >= 230 && [ias] == 30 //(青色忿怒)azurewrath
-[name] == phaseblade && [quality] == unique # [enhanceddamage] >= 190 && [ias] == 20 //(光之軍刀)lightsabre
+//[name] == phaseblade && [quality] == unique # [enhanceddamage] >= 190 && [ias] == 20 //(光之軍刀)lightsabre
 [name] == championsword && [quality] == unique # [enhanceddamage] >= 235 //(末日毀滅者)doombringer
 [name] == colossusblade && [quality] == unique # [enhanceddamage] >= 250 //(祖父)the grandfather
 
@@ -109,7 +109,7 @@
 //[name] == shortsiegebow && [quality] == unique # [enhanceddamage] >= 165 //(狂野之弦)witchwild string
 //[name] == gothicbow && [quality] == unique # [enhanceddamage] >= 240 //(金擊圓弧)goldstrike arch
 //[name] == wardbow && [quality] == unique # [enhanceddamage] >= 190 && [plusskillguidedarrow] >= 5 //(戮夫刃)widowmaker
-[name] == hydrabow && [quality] == unique //# [manaleech] >= 8 //(風之力)windforce
+//[name] == hydrabow && [quality] == unique //# [manaleech] >= 8 //(風之力)windforce
 
 //(獨特十字弓)unique crossbows
 //[name] == arbalest && [quality] == unique # [enhanceddamage] >= 195 && [itemmagicbonus] >= 60 //(蘭格 布里瑟)langer briser
@@ -157,18 +157,19 @@
 //[name] == wingedharpoon && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 220 && [lifeleech] >= 12 //(石像鬼之噬)gargoyle's bite
 
 //(獨特魔杖)unique wands 
-[name] == lichwand && [quality] == unique # [skillbonespirit] >= 2 && [skillbonespear] >= 3 && [skillbonewall] >= 3 && [skillbonearmor] >= 5 && [skillteeth] >= 5 //(白骨陰影)perfect boneshade
-[name] == unearthedwand && [quality] == unique # [poisonandboneskilltab] >= 2 && [passivepoispierce] >= 40 //(死亡之網)perfectish death's web
+//[name] == lichwand && [quality] == unique # [skillbonespirit] >= 2 && [skillbonespear] >= 3 && [skillbonewall] >= 3 && [skillbonearmor] >= 5 && [skillteeth] >= 5 //(白骨陰影)perfect boneshade
+//[name] == unearthedwand && [quality] == unique # [poisonandboneskilltab] >= 2 && [passivepoispierce] >= 40 //(死亡之網)perfectish death's web
 
 //(獨特亞馬遜)unique amazon
 //[name] == ceremonialbow && [quality] == unique # [enhanceddamage] >= 190 //(雷山德的指標)lycander's aim
 [name] == ceremonialjavelin && [quality] == unique //(泰坦的復仇)titan's revenge
+[name] == ceremonialjavelin && [quality] == unique && [flag] != ethereal # [enhanceddamage] >= 190 //(泰坦的復仇)titan's revenge
 [name] == ceremonialjavelin && [quality] == unique && [flag] != ethereal # [enhanceddamage] >= 200 && [lifeleech] >= 8 //(泰坦的復仇)titan's revenge
 [name] == ceremonialjavelin && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 150 && [lifeleech] >= 5 //ethereal titan's revenge
 [name] == matriarchalbow && [quality] == unique # [enhanceddamage] >= 220 //(血鳥的襲擊)bloodraven's charge
 
 //(獨特刺客)unique assassin 
-[name] == greatertalons && [quality] == unique # [enhanceddamage] >= 190 && [lifeleech] >= 7 //(巨鷹爪)bartuc's cut-throat
+//[name] == greatertalons && [quality] == unique # [enhanceddamage] >= 190 && [lifeleech] >= 7 //(巨鷹爪)bartuc's cut-throat
 [name] == feralclaws && [quality] == unique && [flag] != ethereal # [enhanceddamage] >= 260 //(火蜥蜴之爪)firelizard's talons
 //[name] == wristsword && [quality] == unique && [flag] != ethereal # [enhanceddamage] >= 230 //(碧玉爪)jade talon
 
@@ -182,17 +183,17 @@
 [name] == totemicmask && [quality] == unique //(加爾長髮)
 
 //(獨特死靈法師)unique necromancer 
-[name] == hierophanttrophy && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 190 //(侏儒)homunculus
+//[name] == hierophanttrophy && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 190 //(侏儒)homunculus
 [name] == succubusskull && [quality] == unique && [flag] != ethereal //(骨焰)boneflame
 [name] == bloodlordskull && [quality] == unique //(魔力肇生)darkforce spawn
 
 //(獨特聖騎士)unique paladin
 [name] == gildedshield && [quality] == unique //(撒卡蘭姆使者)herald of zakarum
 [name] == sacredrondache && [quality] == unique //(阿爾瑪 尼格拉)alma negra
-[name] == zakarumshield && [quality] == unique //(龍鱗)dragonscale
+//[name] == zakarumshield && [quality] == unique //(龍鱗)dragonscale
 
 //(獨特女巫)unique sorceress
-[name] == swirlingcrystal && [quality] == unique //(眼球)the oculus
+//[name] == swirlingcrystal && [quality] == unique //(眼球)the oculus
 [name] == eldritchorb && [quality] == unique //(艾斯屈塔的脾氣)eschuta's temper
 [name] == dimensionalshard && [quality] == unique //(死亡深度)death's fathom
 
