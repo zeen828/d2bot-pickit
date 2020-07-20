@@ -153,7 +153,7 @@
 // # (娜塔亞的非難)natalya's odium #
 //[name] == grimhelm && [quality] == set // (-頭)natalya's totem
 [name] == scissorssuwayyah && [quality] == set // natalya's mark
-[name] == loricatedmail && [quality] == set // natalya's shadow
+//[name] == loricatedmail && [quality] == set // (-鎧甲)natalya's shadow
 //[name] == meshboots && [quality] == set // (-腳)natalya's soul
 
 // # (娜吉的古代遺跡)naj's ancient vestige #
