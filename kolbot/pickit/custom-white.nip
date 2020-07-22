@@ -168,10 +168,10 @@
 [name] == berserkeraxe && [quality] == superior && [flag] == ethereal # ([sockets] == 0 || [sockets] == 6) && [enhanceddamage] >= 10 && [itemmaxdurabilitypercent] == 10 // breath of the dying
 
 // ##### (斧頭)axes = normal ############################################################################## 
-[name] == berserkeraxe && [quality] == normal && [flag] != ethereal # [sockets] >= 3  // grief, fury, passion, hoj 
-[name] == berserkeraxe && [quality] == normal && [flag] != ethereal # [sockets] >= 3  // grief, fury, passion, hoj
-[name] == berserkeraxe && [quality] == normal && [flag] == ethereal # ([sockets] == 0 || [sockets] == 6)  // breath of the dying
-[name] == berserkeraxe && [quality] == normal && [flag] == ethereal # ([sockets] == 0 || [sockets] == 6)  // breath of the dying
+[name] == berserkeraxe && [quality] == normal && [flag] != ethereal # [sockets] >= 3  // (狂戰士斧)grief, fury, passion, hoj 
+[name] == berserkeraxe && [quality] == normal && [flag] != ethereal # [sockets] >= 3  // (狂戰士斧)grief, fury, passion, hoj
+[name] == berserkeraxe && [quality] == normal && [flag] == ethereal # ([sockets] == 0 || [sockets] == 6)  // (狂戰士斧)breath of the dying
+[name] == berserkeraxe && [quality] == normal && [flag] == ethereal # ([sockets] == 0 || [sockets] == 6)  // (狂戰士斧)breath of the dying
 
 // ##### (盾牌)shields = perfect superior ################################################################# 
 //[type] == shield && [class] == elite && [quality] == superior && [flag] != ethereal # [sockets] == 3 && [enhanceddefense] >= 15 && [itemmaxdurabilitypercent] >= 15 // dream 

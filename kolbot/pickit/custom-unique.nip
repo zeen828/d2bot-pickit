@@ -52,8 +52,6 @@
 [name] == tiara && [quality] == unique # [coldresist]+[fireresist]+[lightresist]+[poisonresist] >= 20 && [plusdefense] >= 1 //(奇拉的守護)kira's guardian
 [name] == diadem && [quality] == unique && [flag] != ethereal # (([passiveltngmastery] >= 10 && [passiveltngpierce] >= 0) || ([passiveltngmastery] >= 1 && [passiveltngpierce] >= 1)) //(格利風之眼)griffon's eye
 [name] == corona && [quality] == unique # [sockets] >= 0 && [damageresist] >= 1 && [coldresist]+[fireresist]+[lightresist]+[poisonresist] >= 8 //(年紀之冠)crown of ages/
-[name] == fullhelm && [quality] == unique //(格利風之眼)
-[name] == fullhelm && [quality] == unique && [flag] == ethereal //
 
 //(獨特盔甲)unique armor
 [name] == serpentskinarmor && [quality] == unique # [coldresist] >= 5 && [magicdamagereduction] >= 1 //(蛇魔法師之皮)skin of the vipermagi

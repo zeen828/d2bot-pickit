@@ -514,7 +514,7 @@ function LoadConfig() {
 	};
 
 	Config.Dodge = true; // (遠離怪物打怪)Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
-	Config.DodgeRange = 10; // (與怪物保持距離)Distance to keep from monsters.
+	Config.DodgeRange = 15; // (與怪物保持距離)Distance to keep from monsters.
 	Config.DodgeHP = 100; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
 	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
