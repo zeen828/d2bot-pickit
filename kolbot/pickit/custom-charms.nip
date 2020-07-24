@@ -107,4 +107,4 @@
 // (小護身符-)poison sc
 [name] == smallcharm && [quality] == magic # [poisonmindam] >= 175
 [name] == smallcharm && [quality] == magic # [poisonmaxdam] >= 175
-[name] == smallcharm && [quality] == magic # [poisonmaxdam] >= 20 //50毒
+//[name] == smallcharm && [quality] == magic # [poisonmaxdam] >= 20 //20毒up
