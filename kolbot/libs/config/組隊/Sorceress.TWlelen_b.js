@@ -497,7 +497,7 @@ function LoadConfig() {
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
 	//55冰尖柱,59暴風雪
-	Config.AttackSkill[0] = 59; // Preattack skill.
+	Config.AttackSkill[0] = -1; // Preattack skill.
 	Config.AttackSkill[1] = 59; // Primary skill to bosses.
 	Config.AttackSkill[2] = 55; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
 	Config.AttackSkill[3] = -1; // Primary skill to others.
@@ -506,7 +506,7 @@ function LoadConfig() {
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
 	// Low mana skills - these will be used if main skills can't be cast.
-	Config.LowManaSkill[0] = 40; // Timed low mana skill.
+	Config.LowManaSkill[0] = -1; // Timed low mana skill.
 	Config.LowManaSkill[1] = -1; // Untimed low mana skill.
 
 	/* Advanced Attack config. Allows custom skills to be used on custom monsters.
