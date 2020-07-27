@@ -280,11 +280,19 @@ function LoadConfig() {
 	Config.MinColumn[2] = 3;
 	Config.MinColumn[3] = 0;
 
-	// Pickit config. Default folder is kolbot/pickit.
-	Config.PickitFiles.push("kolton.nip");
-	Config.PickitFiles.push("LLD.nip");
-	Config.PickRange = 40; // Pick radius
-	Config.FastPick = false; // Check and pick items between attacks
+	// (撿寶設定)Pickit config. Default folder is kolbot/pickit.
+	Config.PickitFiles.push("kolton.nip");//暗金裝備
+	Config.PickitFiles.push("LLD.nip");//白,藍,黃裝備
+	Config.PickitFiles.push("classic.nip");//橘色手工藝
+	Config.PickitFiles.push("gold.nip");//金幣
+	Config.PickitFiles.push("custom-set.nip");//自訂成套裝備
+	Config.PickitFiles.push("custom-unique.nip");//自訂獨特裝備
+	Config.PickitFiles.push("custom-charms.nip");//自訂護符
+	Config.PickitFiles.push("custom-runes.nip");//自訂符文
+	Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
+	Config.PickitFiles.push("test.nip");//測試
+	Config.PickRange = 40; // (撿取距離)Pick radius
+	Config.FastPick = true; // Check and pick items between attacks
 
 	/* Advanced automule settings
 	 * Trigger - Having an item that is on the list will initiate muling. Useful if you want to mule something immediately upon finding.
