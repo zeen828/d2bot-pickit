@@ -492,8 +492,8 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	//106白熱,122狂熱
-	Config.AttackSkill[0] = -1; // Preattack skill.
+	//106白熱,117神聖之盾,122狂熱
+	Config.AttackSkill[0] = 117; // Preattack skill.
 	Config.AttackSkill[1] = 106; // Primary skill to bosses.
 	Config.AttackSkill[2] = 122; // Primary aura to bosses
 	Config.AttackSkill[3] = 106; // Primary skill to others.
