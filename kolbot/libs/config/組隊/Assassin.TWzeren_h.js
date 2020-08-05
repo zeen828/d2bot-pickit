@@ -493,7 +493,7 @@ function LoadConfig() {
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 * Don't put LS/DS/WoF/WoI here! Use Config. UseTraps, Config.Traps and Config.BossTraps
 	 */
-	//271雷光守衛
+	//251火焰陣爆,271雷光守衛,276亡者守衛
 	Config.AttackSkill[0] = 271; // Preattack skill.
 	Config.AttackSkill[1] = 271; // Primary skill to bosses.
 	Config.AttackSkill[2] = 271; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
