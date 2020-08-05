@@ -41,23 +41,23 @@
 //[name] == sacredarmor && [quality] == superior && [flag] != ethereal # [enhanceddefense] >= 10 && [itemmaxdurabilitypercent] >= 10 && ([sockets] == 3 || [sockets] == 4) 
 
 // ##### (盔甲)armor = normal #############################################################################
-//[name] == breastplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) //胸甲
-[name] == mageplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) 
-//[name] == duskshroud && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) //法師鎧甲
-//[name] == wyrmhide && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) //古龍皮
-[name] == scarabhusk && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
-[name] == wirefleece && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
-[name] == diamondmail && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
-[name] == loricatedmail && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
-[name] == greathauberk && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
-[name] == boneweave && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
-[name] == balrogskin && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
-[name] == archonplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) 
-[name] == krakenshell && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
-[name] == hellforgeplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
-[name] == lacqueredplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
-[name] == shadowplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
-[name] == sacredarmor && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4)
+//[name] == breastplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) // 胸甲
+[name] == mageplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) // 法師鎧甲
+//[name] == duskshroud && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 灰暮壽衣
+//[name] == wyrmhide && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 古龍皮
+//[name] == scarabhusk && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 聖甲蟲殼皮甲
+//[name] == wirefleece && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 線羊毛皮甲
+//[name] == diamondmail && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 鑽石鎖子甲
+//[name] == loricatedmail && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 甲殼鎧鱗甲
+//[name] == greathauberk && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 巨型鱗鎧胸甲
+//[name] == boneweave && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 骸骨鏈甲
+//[name] == balrogskin && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 炎魔皮板甲
+[name] == archonplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 執政官鎧甲
+//[name] == krakenshell && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 海妖殼甲
+//[name] == hellforgeplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 地獄鍛甲
+//[name] == lacqueredplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 漆甲
+//[name] == shadowplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 陰影鎧甲
+//[name] == sacredarmor && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 神聖盔甲
 
 // ##### (盔甲)armor for bugging = perfect ethereal ####################################################### 
 //[name] == mageplate && [quality] == normal && [flag] == ethereal # [defense] >= 391 && [sockets] == 0 
