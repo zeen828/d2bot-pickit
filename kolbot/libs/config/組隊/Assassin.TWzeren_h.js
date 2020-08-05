@@ -225,30 +225,30 @@ function LoadConfig() {
 		Config.BaalAssistant.BaalMessage = ["Baal"]; // Configure baal messages, this is a precautionary measure.
 		Config.BaalAssistant.NextGameMessage = ["Next Game", "Next", "New Game"];	// Next Game message, this is a precautionary quit command, Reccomended setting up: Config.QuitList
 
-	// Town settings
+	// (城鎮設定)Town settings
 	Config.HealHP = 50; // Go to a healer if under designated percent of life.
 	Config.HealMP = 0; // Go to a healer if under designated percent of mana.
-	Config.HealStatus = false; // Go to a healer if poisoned or cursed
-	Config.UseMerc = true; // Use merc. This is ignored and always false in d2classic.
+	Config.HealStatus = true; // (解中毒詛咒)Go to a healer if poisoned or cursed
+	Config.UseMerc = true; // (使用傭兵)Use merc. This is ignored and always false in d2classic.
 	Config.MercWatch = false; // Instant merc revive during battle.
 
-	// Potion settings
-	Config.UseHP = 75; // Drink a healing potion if life is under designated percent.
-	Config.UseRejuvHP = 40;  // Drink a rejuvenation potion if life is under designated percent.
-	Config.UseMP = 30; // Drink a mana potion if mana is under designated percent.
-	Config.UseRejuvMP = 0; // Drink a rejuvenation potion if mana is under designated percent.
-	Config.UseMercHP = 75; // Give a healing potion to your merc if his/her life is under designated percent.
-	Config.UseMercRejuv = 0; // Give a rejuvenation potion to your merc if his/her life is under designated percent.
+	// (喝水設定)Potion settings
+	Config.UseHP = 60; // (生命低於喝水)Drink a healing potion if life is under designated percent.
+	Config.UseRejuvHP = 40;  // (生命低於喝紫水)Drink a rejuvenation potion if life is under designated percent.
+	Config.UseMP = 30; // (魔力低於喝水)Drink a mana potion if mana is under designated percent.
+	Config.UseRejuvMP = 0; // (魔力低於喝紫水)Drink a rejuvenation potion if mana is under designated percent.
+	Config.UseMercHP = 75; // (傭兵生命低於喝水)Give a healing potion to your merc if his/her life is under designated percent.
+	Config.UseMercRejuv = 20; // (傭兵生命低於喝紫水)Give a rejuvenation potion to your merc if his/her life is under designated percent.
 	Config.HPBuffer = 0; // Number of healing potions to keep in inventory.
 	Config.MPBuffer = 0; // Number of mana potions to keep in inventory.
 	Config.RejuvBuffer = 0; // Number of rejuvenation potions to keep in inventory.
 
-	// Chicken settings
-	Config.LifeChicken = 30; // Exit game if life is less or equal to designated percent.
-	Config.ManaChicken = 0; // Exit game if mana is less or equal to designated percent.
-	Config.MercChicken = 0; // Exit game if merc's life is less or equal to designated percent.
-	Config.TownHP = 0; // Go to town if life is under designated percent.
-	Config.TownMP = 0; // Go to town if mana is under designated percent.
+	// (退出回村設定)Chicken settings
+	Config.LifeChicken = 0; // (生命小於退出)Exit game if life is less or equal to designated percent.
+	Config.ManaChicken = 0; // (法力小於退出)Exit game if mana is less or equal to designated percent.
+	Config.MercChicken = 0; // (傭兵生命小於退出)Exit game if merc's life is less or equal to designated percent.
+	Config.TownHP = 0; // (生命小於回村)Go to town if life is under designated percent.
+	Config.TownMP = 0; // (魔力小於回村)Go to town if mana is under designated percent.
 
 	/* Inventory lock configuration. !!!READ CAREFULLY!!!
 	 * 0 = item is locked and won't be moved. If item occupies more than one slot, ALL of those slots must be set to 0 to lock it in place.
@@ -470,9 +470,9 @@ function LoadConfig() {
 	Config.RandomPrecast = false; // Anti-PK measure, only supported in Baal and BaalHelper and BaalAssisstant at the moment.
 	Config.ViperCheck = false; // Quit if revived Tomb Vipers are sighted
 
-	// DClone config
+	// (地表暗黑檢測)DClone config
 	Config.StopOnDClone = true; // Go to town and idle as soon as Diablo walks the Earth
-	Config.SoJWaitTime = 5; // Time in minutes to wait for another SoJ sale before leaving game. 0 = disabled
+	Config.SoJWaitTime = 30; // Time in minutes to wait for another SoJ sale before leaving game. 0 = disabled
 	Config.KillDclone = false; // Go to Palace Cellar 3 and try to kill Diablo Clone. Pointless if you already have Annihilus.
 	Config.DCloneQuit = false; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
 
