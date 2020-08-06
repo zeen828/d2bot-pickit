@@ -134,17 +134,17 @@ function LoadConfig() {
 	Scripts.TravincalLeech = false; // Enters portal at back of Travincal.
 		Config.TravincalLeech.Helper = true; // If set to true the character will teleport to the stairs and help attack.
 	Scripts.MFHelper = false; // (運行與領隊一樣的)Run the same MF run as the MFLeader. Leader must have Config.MFLeader = true
-	Scripts.Wakka = false; // Walking chaos leecher with auto leader assignment, stays at safe distance from the leader
-	Scripts.SealLeecher = false; // Enter safe portals to Chaos. Leader should run SealLeader.
-	Scripts.DiabloHelper = false; // Chaos helper, kills monsters and doesn't open seals on its own.
-		Config.DiabloHelper.Wait = 120; // Seconds to wait for a runner to be in Chaos. If Config.Leader is set, it will wait only for the leader.
-		Config.DiabloHelper.Entrance = true; // Start from entrance. Set to false to start from star.
-		Config.DiabloHelper.SkipTP = false; // Don't wait for town portal and directly head to chaos. It will clear monsters around chaos entrance and wait for the runner.
+	Scripts.Wakka = false; // (混沌避難所小號跑路跟隨Leader升級腳本)Walking chaos leecher with auto leader assignment, stays at safe distance from the leader
+	Scripts.SealLeecher = false; // (小號吸祭壇怪經驗用的，對應的LEADER需要運行SealLeader腳本。)Enter safe portals to Chaos. Leader should run SealLeader.
+	Scripts.DiabloHelper = false; // (多人遊戲裡幫手運行的Chaos腳本。不開封印只打怪。)Chaos helper, kills monsters and doesn't open seals on its own.
+		Config.DiabloHelper.Wait = 120; // (等待leader的時間，單位：秒。)Seconds to wait for a runner to be in Chaos. If Config.Leader is set, it will wait only for the leader.
+		Config.DiabloHelper.Entrance = true; // (是否從進門處開始清理，如果為false則從五角星處開始清理。)Start from entrance. Set to false to start from star.
+		Config.DiabloHelper.SkipTP = false; // (不等待Leader的傳送門，直接自己跑到Chaos門口清理完小怪後等待Leader。)Don't wait for town portal and directly head to chaos. It will clear monsters around chaos entrance and wait for the runner.
 		Config.DiabloHelper.SkipIfBaal = false; // End script if there are party members in a Baal run.
-	Scripts.AutoBaal = false; // Baal leecher with auto leader assignment
-		Config.AutoBaal.FindShrine = false; // false = disabled, 1 = search after hot tp message, 2 = search as soon as leader is found
+	Scripts.AutoBaal = false; // (簡單解釋一下，這個腳本和BaalHelper的區別在於，這個用來給小號升級吸經驗。 BaalHelper用來幫忙一起打。)Baal leecher with auto leader assignment
+		Config.AutoBaal.FindShrine = false; // (自動尋找經驗神殿，1=檢測到hot tp信息後去找 2=檢測到Leader就去找。)false = disabled, 1 = search after hot tp message, 2 = search as soon as leader is found
 		Config.AutoBaal.LeechSpot = [15115, 5050]; // X, Y coords of Throne Room leech spot
-		Config.AutoBaal.LongRangeSupport = false; // Cast long distance skills from a safe spot
+		Config.AutoBaal.LongRangeSupport = false; // (在遠處安全的位置丟技能。)Cast long distance skills from a safe spot
 	Scripts.BaalHelper = false;
 		Config.BaalHelper.Wait = 120; // Seconds to wait for a runner to be in Throne
 		Config.BaalHelper.KillNihlathak = false; // Kill Nihlathak before going to Throne
@@ -184,7 +184,7 @@ function LoadConfig() {
 		Config.Enchant.GetLeg = false; // Get Wirt's Leg from Tristram. If set to false, it will check for the leg in town.
 		Config.Enchant.AutoChant = false; // Automatically enchant nearby players and their minions
 		Config.Enchant.GameLength = 20; // Game length in minutes
-	Scripts.IPHunter = false;
+	Scripts.IPHunter = false; //找IP腳本
 		Config.IPHunter.IPList = []; // List of IPs to look for. example: [165, 201, 64]
 		Config.IPHunter.GameLength = 3; // Number of minutes to stay in game if ip wasn't found
 	Scripts.KillDclone = false; // Kill Diablo Clone by using Arcane Sanctuary waypoint. Diablo needs to walk the Earth in the game.
@@ -196,18 +196,18 @@ function LoadConfig() {
 		Config.ShopBot.ScanIDs = [];
 		Config.ShopBot.CycleDelay = 0; // Delay between shopping cycles in milliseconds, might help with crashes.
 		Config.ShopBot.QuitOnMatch = false; // Leave game as soon as an item is shopped.
-	Scripts.ChestMania = false; // Open chests in configured areas. See sdk/areas.txt
+	Scripts.ChestMania = false; // (開箱子專用腳本。下面可以定義需要掃蕩的地圖。)Open chests in configured areas. See sdk/areas.txt
 		Config.ChestMania.Act1 = [13, 14, 15, 16, 18, 19]; // List of act 1 areas to open chests in
 		Config.ChestMania.Act2 = [55, 59, 65, 66, 67, 68, 69, 70, 71, 72]; // List of act 2 areas to open chests in
 		Config.ChestMania.Act3 = [79, 80, 81, 92, 93, 84, 85, 90]; // List of act 3 areas to open chests in
 		Config.ChestMania.Act4 = []; // List of act 4 areas to open chests in
 		Config.ChestMania.Act5 = [115, 116, 119, 125, 126, 127]; // List of act 5 areas to open chests in
-	Scripts.ClearAnyArea = false; // Clear any area. Uses Config.ClearType to determine which type of monsters to kill.
+	Scripts.ClearAnyArea = false; // (清理任意地圖腳本，需在下方定義地圖id)Clear any area. Uses Config.ClearType to determine which type of monsters to kill.
 		Config.ClearAnyArea.AreaList = []; // List of area ids to clear. See sdk/areas.txt
 
 	// *** Guest scripts ***
 
-	// (巴爾跟班的打手腳本)Baal Assistant by YourGreatestMember
+	// (巴爾跟班的打手腳本 （與上面的baalhelper腳本選擇一個使用），這個區別在於根據聊天命令判斷進門時機。可以用在非同一台機器的Team Bot中。具體設置參考上方的baal設置。)Baal Assistant by YourGreatestMember
 	Scripts.BaalAssistant = false; // Used to leech or help in baal runs.
 		Config.BaalAssistant.Wait = 120; // Seconds to wait for a runner to be in the throne / portal wait / safe TP wait / hot TP wait...
 		Config.BaalAssistant.KillNihlathak = false; // Kill Nihlathak before going to Throne
@@ -230,7 +230,7 @@ function LoadConfig() {
 	Config.HealMP = 0; // Go to a healer if under designated percent of mana.
 	Config.HealStatus = true; // (解中毒詛咒)Go to a healer if poisoned or cursed
 	Config.UseMerc = true; // (使用傭兵)Use merc. This is ignored and always false in d2classic.
-	Config.MercWatch = false; // Instant merc revive during battle.
+	Config.MercWatch = false; // (傭兵在戰鬥中死亡是否立即回城復活。)Instant merc revive during battle.
 
 	// (喝水設定)Potion settings
 	Config.UseHP = 60; // (生命低於喝水)Drink a healing potion if life is under designated percent.
@@ -239,9 +239,9 @@ function LoadConfig() {
 	Config.UseRejuvMP = 0; // (魔力低於喝紫水)Drink a rejuvenation potion if mana is under designated percent.
 	Config.UseMercHP = 75; // (傭兵生命低於喝水)Give a healing potion to your merc if his/her life is under designated percent.
 	Config.UseMercRejuv = 20; // (傭兵生命低於喝紫水)Give a rejuvenation potion to your merc if his/her life is under designated percent.
-	Config.HPBuffer = 0; // Number of healing potions to keep in inventory.
-	Config.MPBuffer = 0; // Number of mana potions to keep in inventory.
-	Config.RejuvBuffer = 0; // Number of rejuvenation potions to keep in inventory.
+	Config.HPBuffer = 0; // (背包保存多少瓶紅藥。)Number of healing potions to keep in inventory.
+	Config.MPBuffer = 0; // (背包保存多少瓶藍藥。)Number of mana potions to keep in inventory.
+	Config.RejuvBuffer = 0; // (背包保存多少瓶紫藥。)Number of rejuvenation potions to keep in inventory.
 
 	// (退出回村設定)Chicken settings
 	Config.LifeChicken = 0; // (生命小於退出)Exit game if life is less or equal to designated percent.
@@ -251,6 +251,7 @@ function LoadConfig() {
 	Config.TownMP = 0; // (魔力小於回村)Go to town if mana is under designated percent.
 
 	/* (道具設定)Inventory lock configuration. !!!READ CAREFULLY!!!
+	 * 背包設定，0為鎖定的背包位置，1為允許BOT使用的背包位置。
 	 * 0 = item is locked and won't be moved. If item occupies more than one slot, ALL of those slots must be set to 0 to lock it in place.
 	 * Put 0s where your torch, annihilus and everything else you want to KEEP is.
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
@@ -292,7 +293,7 @@ function LoadConfig() {
 	Config.PickitFiles.push("custom-white.nip");//自訂白色裝備&鑲材
 	Config.PickitFiles.push("test.nip");//測試
 	Config.PickRange = 40; // (撿取距離)Pick radius
-	Config.FastPick = true; // Check and pick items between attacks
+	Config.FastPick = true; // (是否在攻擊時進行拾取。)Check and pick items between attacks
 
 	/* Advanced automule settings
 	 * Trigger - Having an item that is on the list will initiate muling. Useful if you want to mule something immediately upon finding.
@@ -313,13 +314,13 @@ function LoadConfig() {
 	Config.AutoMule.Exclude = [];
 
 	// Additional item info log settings. All info goes to \logs\ItemLog.txt
-	Config.ItemInfo = true; // Log stashed, skipped (due to no space) or sold items.
+	Config.ItemInfo = true; // (是否啟用物品日誌文件。)Log stashed, skipped (due to no space) or sold items.
 	Config.ItemInfoQuality = []; // The quality of sold items to log. See NTItemAlias.dbl for values. Example: Config.ItemInfoQuality = [6, 7, 8];
 
 	// (物品識別)Item identification settings
 	Config.CainID.Enable = false; // (在凱恩那辨識)Identify items at Cain
 	Config.CainID.MinGold = 2500000; // Minimum gold (stash + character) to have in order to use Cain.
-	Config.CainID.MinUnids = 3; // Minimum number of unid items in order to use Cain.
+	Config.CainID.MinUnids = 3; // (最少有幾件未鑑定物品才使用凱恩進行鑑定。)Minimum number of unid items in order to use Cain.
 	Config.FieldID = false; // Identify items in the field instead of going to town.
 	Config.DroppedItemsAnnounce.Enable = false;	// Announce Dropped Items to in-game newbs
 	Config.DroppedItemsAnnounce.Quality = []; // Quality of item to announce. See NTItemAlias.dbl for values. Example: Config.DroppedItemsAnnounce.Quality = [6, 7, 8];
@@ -427,7 +428,7 @@ function LoadConfig() {
 	Config.LocalChat.Toggle = false; // optional, set to KEY value to toggle through modes 0, 1, 2
 	Config.LocalChat.Mode = 0; // 0 = disabled, 1 = chat from 'say' (recommended), 2 = all chat (for manual play)
 	// If Config.Leader is set, the bot will only accept invites from leader. If Config.PublicMode is not 0, Baal and Diablo script will open Town Portals.
-	Config.PublicMode = 1; // (組隊設定)1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
+	Config.PublicMode = 1; // (組隊設定:1為發送或接受組隊邀請,2為僅接受組隊邀請,3為僅發送組隊要求,0為關閉組隊功能)1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
 	// Party message settings. Each setting represents an array of messages that will be randomly chosen.
 	// $name, $level, $class and $killer are replaced by the player's name, level, class and killer
 	Config.Greetings = []; // (組隊歡迎消息)Example: ["Hello, $name (level $level $class)"]
@@ -438,7 +439,7 @@ function LoadConfig() {
 
 	// (遊戲配置)General config
 	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
-	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
+	Config.LastMessage = ""; // (游戏结束前发送的消息。)Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
 	Config.MinGameTime = 480; // (最短遊戲時間/秒)Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
 	Config.MaxGameTime = 1800; // (最長遊戲時間/秒)Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
@@ -447,11 +448,11 @@ function LoadConfig() {
 	Config.PacketShopping = false; // Use packets to shop. Improves shopping speed.
 	Config.TownCheck = false; // Go to town if out of potions
 	Config.LogExperience = true; // (經驗LOG)Print experience statistics in the manager.
-	Config.PingQuit = [{Ping: 0, Duration: 0}]; // Quit if ping is over the given value for over the given time period in seconds.
+	Config.PingQuit = [{Ping: 0, Duration: 0}]; // (是否在達到設定ping值多少秒後退出遊戲)Quit if ping is over the given value for over the given time period in seconds.
 
 	// (自訂點神殿)Shrine Scanner - scan for shrines while moving.
 	// Put the shrine types in order of priority (from highest to lowest). For a list of types, see sdk/shrines.txt
-	Config.ScanShrines = [];
+	Config.ScanShrines = [ 15 ];
 
 	// MF Switch
 	Config.MFSwitchPercent = 0; // Boss life % to switch to secondary weapon slot. Set to 0 to disable.
@@ -520,10 +521,10 @@ function LoadConfig() {
 
 	Config.Dodge = true; // (遠離怪物打怪)Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
 	Config.DodgeRange = 15; // (與怪物保持距離)Distance to keep from monsters.
-	Config.DodgeHP = 100; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
-	Config.BossPriority = true; // Set to true to attack Unique/SuperUnique monsters first when clearing
-	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
-	Config.TeleStomp = false; // Use merc to attack bosses if they're immune to attacks, but not to physical damage
+	Config.DodgeHP = 100; // (血量低於多少百分比開始啟用遠距離攻擊模式,100為總是啟用遠距離攻擊模式)Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
+	Config.BossPriority = true; // (是否優先擊殺金怪)Set to true to attack Unique/SuperUnique monsters first when clearing
+	Config.ClearType = 0; // (清場模式：0xF為跳過普通怪物,0為所有怪物全部清理)Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
+	Config.TeleStomp = false; // (使用傭兵攻擊免疫怪物)Use merc to attack bosses if they're immune to attacks, but not to physical damage
 
 	// Wereform setup. Make sure you read Templates/Attacks.txt for attack skill format.
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear

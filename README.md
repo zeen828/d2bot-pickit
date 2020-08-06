@@ -134,3 +134,17 @@ kolbot/tools/MapThread.js
 kolbot/tools/ToolsThread.js
 572: //this.exit();
 ```
+
+## E. 自動倉庫
+配置檔案在kolbot > libs > AutoMule.js
+找到TorchAnniMules
+```js
+accountPrefix: "",  // (帳號前墜)Account prefix. Numbers added automatically when making accounts.
+accountPassword: "",  // (帳號密碼)Account password.
+charPrefix: "",  // (人物前墜)Character prefix. Suffix added automatically when making characters.
+realm: "", // (遊戲區域)Available options: "useast", "uswest", "europe", "asia"
+```
+
+找到
+```js
+```
