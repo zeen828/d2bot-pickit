@@ -148,3 +148,8 @@ realm: "", // (遊戲區域)Available options: "useast", "uswest", "europe", "as
 找到
 ```js
 ```
+
+備註參考網址
+http://www.battlecn.net/forum.php?mod=forumdisplay&fid=10&page=6
+http://www.battlecn.net/forum.php?mod=viewthread&tid=865832&extra=page%3D5
+http://www.battlecn.net/forum.php?mod=viewthread&tid=42683&extra=page%3D4
