@@ -35,6 +35,10 @@ var JoinSettings = {
 	"zeren_a_leader": ["zeren_b_follow", "zeren_c_follow", "zeren_d_follow", "zeren_e_follow", "zeren_f_follow", "zeren_g_follow", "zeren_h_follow",
 	 "lelen_a_follow", "lelen_b_follow", "lelen_c_follow", "lelen_d_follow", "lelen_e_follow", "lelen_f_follow", "lelen_g_follow", "lelen_h_follow"],
 	"lelen_a_leader": ["lelen_b_follow", "lelen_c_follow", "lelen_d_follow", "lelen_e_follow", "lelen_f_follow", "lelen_g_follow", "lelen_h_follow",
+	 "zeren_a_follow", "zeren_b_follow", "zeren_c_follow", "zeren_d_follow", "zeren_e_follow", "zeren_f_follow", "zeren_g_follow", "zeren_h_follow"],
+	"zeren_f_leader": ["zeren_a_follow", "zeren_b_follow", "zeren_c_follow", "zeren_d_follow", "zeren_e_follow", "zeren_g_follow", "zeren_h_follow",
+	 "lelen_a_follow", "lelen_b_follow", "lelen_c_follow", "lelen_d_follow", "lelen_e_follow", "lelen_f_follow", "lelen_g_follow", "lelen_h_follow"],
+	"lelen_f_leader": ["lelen_a_follow", "lelen_b_follow", "lelen_c_follow", "lelen_d_follow", "lelen_e_follow", "lelen_g_follow", "lelen_h_follow",
 	 "zeren_a_follow", "zeren_b_follow", "zeren_c_follow", "zeren_d_follow", "zeren_e_follow", "zeren_f_follow", "zeren_g_follow", "zeren_h_follow"]
 };
 
