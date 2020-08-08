@@ -26,7 +26,7 @@
 //[name] == demonhideboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 100 && [itemgoldbonus] >= 40 //(地獄闊步)infernostride
 //[name] == sharkskinboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 70 && [maxhp] >= 45 //(水上飄)waterwalk
 [name] == battleboots && [quality] == unique && [flag] != ethereal # [itemmagicbonus] >= 20 //(戰爭旅者)war traveler
-[name] == warboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 95 //(蝕肉騎士)gore rider
+//[name] == warboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 95 //(蝕肉騎士)gore rider
 [name] == scarabshellboots && [quality] == unique && [flag] != ethereal # [strength] >= 5 && [vitality] >= 5 && [poisonresist] >= 1 //(沙暴之旅)sandstorm trek
 [name] == scarabshellboots && [quality] == unique && [flag] == ethereal # [strength] >= 5 && [vitality] >= 0 && [poisonresist] >= 1 //ethereal sandstorm trek
 //[name] == boneweaveboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 50 && [skillskeletonmastery] >= 0 && [strength] >= 0 //(骨隨行走)marrowwalk
@@ -55,8 +55,8 @@
 
 //(獨特盔甲)unique armor
 //[name] == serpentskinarmor && [quality] == unique # [coldresist] >= 5 && [magicdamagereduction] >= 1 //(蛇魔法師之皮)skin of the vipermagi
-//[name] == cuirass && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(都瑞爾的殼)duriel's shell
-//[name] == cuirass && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 //ethereal duriel's shell
+[name] == cuirass && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(都瑞爾的殼)duriel's shell
+[name] == cuirass && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 10 //ethereal duriel's shell
 //[name] == mesharmor && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 20 //(謝夫特斯坦布)shaftstop
 //[name] == mesharmor && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 20 //ethereal shaftstop
 //[name] == russetarmor && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 10 //(詩寇蒂的憤怒)skullder's ire
