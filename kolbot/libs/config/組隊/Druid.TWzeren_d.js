@@ -492,12 +492,12 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	//240小旋風,250暴風
+	//240鐮鼬風,245龍捲風,250暴風
 	Config.AttackSkill[0] = -1; // Preattack skill.
 	Config.AttackSkill[1] = 250 // Primary skill to bosses.
-	Config.AttackSkill[2] = 240; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
+	Config.AttackSkill[2] = 245; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
 	Config.AttackSkill[3] = 250; // Primary skill to others.
-	Config.AttackSkill[4] = 240; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	Config.AttackSkill[4] = 245; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
 	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
