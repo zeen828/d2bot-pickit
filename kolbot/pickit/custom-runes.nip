@@ -32,16 +32,16 @@
 // # 符文 #
 //[name] == elrune # # [maxquantity] == 3 //1
 //[name] == eldrune # # [maxquantity] == 3 //2
-[name] == tirrune # # [maxquantity] == 3 //3
+//[name] == tirrune # # [maxquantity] == 3 //3
 //[name] == nefrune # # [maxquantity] == 3 //4
 //[name] == ethrune # # [maxquantity] == 3 //5
 //[name] == ithrune # # [maxquantity] == 3 //6
-[name] == talrune # # [maxquantity] == 3 //7
-[name] == ralrune # # [maxquantity] == 3 //8
-[name] == ortrune # # [maxquantity] == 3 //9
-[name] == thulrune # # [maxquantity] == 3 //10
-[name] == amnrune # # [maxquantity] == 3 //11
-[name] == solrune # # [maxquantity] == 3 //12
+//[name] == talrune # # [maxquantity] == 3 //7
+//[name] == ralrune # # [maxquantity] == 3 //8
+//[name] == ortrune # # [maxquantity] == 3 //9
+//[name] == thulrune # # [maxquantity] == 3 //10
+//[name] == amnrune # # [maxquantity] == 3 //11
+//[name] == solrune # # [maxquantity] == 3 //12
 //[name] == shaelrune # # [maxquantity] == 3 //13
 //[name] == dolrune # # [maxquantity] == 3 //14
 //[name] == helrune # # [maxquantity] == 3 //15

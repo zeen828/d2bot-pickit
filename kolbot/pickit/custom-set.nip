@@ -102,8 +102,8 @@
 //[name] == jaggedstar && [quality] == set // ()aldur's rhythm
 
 // # (布爾凱索的孩子)bul kathos' children #
-[name] == colossusblade && [quality] == set // bul-kathos' sacred charge
-[name] == mythicalsword && [quality] == set // bul-kathos' tribal guardian
+//[name] == colossusblade && [quality] == set // bul-kathos' sacred charge
+//[name] == mythicalsword && [quality] == set // bul-kathos' tribal guardian
 
 // # (牛魔王之皮甲)cow king's leathers #
 [name] == warhat && [quality] == set // cow king's horns

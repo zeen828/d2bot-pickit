@@ -132,7 +132,7 @@
 //[name] == giantthresher && [quality] == unique # [enhanceddamage] >= 25 //stormspire
 
 //(獨特權杖)unique scepters
-[name] == mightyscepter && [quality] == unique && [flag] != ethereal # [sockets] >= 0 && [paladinskills] >= 0 //[enhanceddamage] >= 290 && //(天堂之光)heaven's light
+//[name] == mightyscepter && [quality] == unique && [flag] != ethereal # [sockets] >= 0 && [paladinskills] >= 0 //[enhanceddamage] >= 290 && //(天堂之光)heaven's light
 [name] == caduceus && [quality] == unique # [enhanceddamage] >= 24 //&& [palicombatskilltab] >= 4 && [normaldamagereduction] >= 4 && [itemtohitpercent] >= 150 //(愛斯特龍之鐵的保護區)astreon's iron ward
 
 //(獨特長槍)unique spears 
@@ -168,12 +168,12 @@
 
 //(獨特刺客)unique assassin 
 //[name] == greatertalons && [quality] == unique # [enhanceddamage] >= 190 && [lifeleech] >= 7 //(巨鷹爪)bartuc's cut-throat
-[name] == feralclaws && [quality] == unique && [flag] != ethereal # [enhanceddamage] >= 260 //(火蜥蜴之爪)firelizard's talons
+//[name] == feralclaws && [quality] == unique && [flag] != ethereal # [enhanceddamage] >= 260 //(火蜥蜴之爪)firelizard's talons
 //[name] == wristsword && [quality] == unique && [flag] != ethereal # [enhanceddamage] >= 230 //(碧玉爪)jade talon
 
 //(獨特野蠻人)unique barbarian 
-[name] == slayerguard && [quality] == unique # [enhanceddefense] >= 180 //(亞瑞特的面容)arreat's face
-[name] == conquerorcrown && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 155 //(海拉柏得的國度)halaberd's reign
+//[name] == slayerguard && [quality] == unique # [enhanceddefense] >= 180 //(亞瑞特的面容)arreat's face
+//[name] == conquerorcrown && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 155 //(海拉柏得的國度)halaberd's reign
 
 //(獨特德魯伊)unique druid
 //[name] == skyspirit && [quality] == unique # [passivefirepierce] >= 15 //(烏鴉之王)ravenlore
@@ -187,7 +187,7 @@
 
 //(獨特聖騎士)unique paladin
 [name] == gildedshield && [quality] == unique //(撒卡蘭姆使者)herald of zakarum
-[name] == sacredrondache && [quality] == unique //(阿爾瑪 尼格拉)alma negra
+//[name] == sacredrondache && [quality] == unique //(阿爾瑪 尼格拉)alma negra
 //[name] == zakarumshield && [quality] == unique //(龍鱗)dragonscale
 
 //(獨特女巫)unique sorceress

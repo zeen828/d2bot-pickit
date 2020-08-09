@@ -42,7 +42,8 @@
 
 // ##### (盔甲)armor = normal #############################################################################
 //[name] == breastplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) // 胸甲
-[name] == mageplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) // 法師鎧甲
+//[name] == mageplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) // 法師鎧甲
+[name] == mageplate && [quality] == normal && [flag] != ethereal # ([sockets] == 3) // 法師鎧甲
 //[name] == duskshroud && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 灰暮壽衣
 //[name] == wyrmhide && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 古龍皮
 //[name] == scarabhusk && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 聖甲蟲殼皮甲
@@ -52,7 +53,8 @@
 //[name] == greathauberk && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 巨型鱗鎧胸甲
 //[name] == boneweave && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 骸骨鏈甲
 //[name] == balrogskin && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 炎魔皮板甲
-[name] == archonplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 執政官鎧甲
+//[name] == archonplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 執政官鎧甲
+[name] == archonplate && [quality] == normal && [flag] != ethereal # ([[sockets] == 3 || [sockets] == 4) // 執政官鎧甲
 //[name] == krakenshell && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 海妖殼甲
 //[name] == hellforgeplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 地獄鍛甲
 //[name] == lacqueredplate && [quality] == normal && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 4) // 漆甲
